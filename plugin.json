@@ -1,0 +1,24 @@
+{
+  "name": "microsoft-security",
+  "description": "Microsoft Security skills for AI agents: practical, task-oriented guidance for Microsoft Defender XDR, Microsoft Sentinel, Microsoft Entra, Microsoft Intune, Microsoft Purview, Microsoft Security Copilot, and Azure platform security. Grounded in public Microsoft Learn documentation.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Microsoft",
+    "url": "https://www.microsoft.com"
+  },
+  "homepage": "https://github.com/microsoft/microsoft-security-skills",
+  "repository": "https://github.com/microsoft/microsoft-security-skills",
+  "license": "MIT",
+  "keywords": [
+    "security",
+    "microsoft",
+    "defender",
+    "sentinel",
+    "entra",
+    "purview",
+    "intune",
+    "zero-trust",
+    "security-copilot"
+  ],
+  "skills": "./skills/"
+}
