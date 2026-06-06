@@ -37,8 +37,14 @@ collaboration, and endpoints.
 - Complete data classification first — DLP without classification generates excessive noise.
 - Teams DLP applies only to messages posted **after** the policy is created (not retroactive).
 
+## Example prompts
+- `Help me build a Purview DLP policy to protect financial data in Exchange and SharePoint.`
+- `How do I configure Endpoint DLP to block USB copy of sensitive files?`
+- `What DLP simulation mode steps should I follow before enforcing a new policy?`
+- `Design a DLP policy for GDPR that covers personal data across Microsoft 365.`
+- `How do I tune a DLP rule to reduce false positives on credit card numbers?`
+
 ## Microsoft Learn
-- DLP overview: https://learn.microsoft.com/purview/dlp-learn-about-dlp
 - Create & deploy a DLP policy: https://learn.microsoft.com/purview/dlp-create-deploy-policy
 - Endpoint DLP: https://learn.microsoft.com/purview/endpoint-dlp-learn-about
 - DLP policy reference: https://learn.microsoft.com/purview/dlp-policy-reference

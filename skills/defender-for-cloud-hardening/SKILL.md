@@ -1,6 +1,6 @@
 ---
 name: defender-for-cloud-hardening
-description: "Guidance for Microsoft Defender for Cloud — cloud security posture management (CSPM) and cloud workload protection (CWPP) across Azure, AWS, and GCP. Covers Secure Score, Defender plans, agentless scanning, attack path analysis, and recommendations remediation. WHEN: Defender for Cloud, CSPM, cloud workload protection, Secure Score, harden cloud posture, Defender plans, attack path analysis, multicloud security, remediate recommendations, cloud security hardening."
+description: "Guidance for Microsoft Defender for Cloud — cloud security posture management (CSPM) and cloud workload protection (CWPP) across Azure, AWS, and GCP. Covers Secure Score, Defender plans, agentless scanning, attack path analysis, and recommendations remediation. WHEN: Defender for Cloud, CSPM, cloud workload protection, Secure Score, harden cloud posture, Defender plans, attack path analysis, multicloud security, remediate recommendations, cloud security hardening, how do I improve my Azure Secure Score, harden my Azure subscription, protect VMs and containers in Defender for Cloud, multicloud CSPM across AWS and GCP. DO NOT USE for SaaS application posture (use cloud-app-security-posture) or extending Azure management to on-premises servers (use azure-arc)."
 license: MIT
 metadata:
   author: Microsoft

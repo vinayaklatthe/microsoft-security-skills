@@ -1,6 +1,6 @@
 ---
 name: security-copilot
-description: "Guidance for Microsoft Security Copilot — the generative-AI security platform that helps analysts investigate, hunt, and respond using natural language, plugins, and promptbooks. Covers SCU provisioning, plugins, promptbooks, and embedded experiences. WHEN: Microsoft Security Copilot, AI for SOC, security copilot units SCU, promptbooks, Copilot plugins, natural language investigation, summarize incident with AI, Copilot for Security setup."
+description: "Guidance for Microsoft Security Copilot — the generative-AI security platform that helps analysts investigate, hunt, and respond using natural language, plugins, and promptbooks. Covers SCU provisioning, plugins, promptbooks, and embedded experiences. WHEN: Microsoft Security Copilot, AI for SOC, security copilot units SCU, promptbooks, Copilot plugins, natural language investigation, summarize incident with AI, Copilot for Security setup, how do I use AI in my SOC, set up Security Copilot, use AI to speed up incident investigation, explain a KQL query with AI, summarise an alert for a stakeholder. DO NOT USE when the goal is configuring autonomous triage or remediation agents (use security-copilot-agents)."
 license: MIT
 metadata:
   author: Microsoft

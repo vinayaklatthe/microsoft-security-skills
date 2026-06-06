@@ -1,6 +1,6 @@
 ---
 name: compromise-recovery
-description: "Guidance for responding to and recovering from a significant identity/tenant compromise — regaining administrative control, evicting the adversary, and hardening to prevent reentry. Covers containment, eviction, and rebuild of trust. WHEN: compromise recovery, incident response, regain control after breach, evict attacker, tenant compromise, rebuild trust, ransomware recovery, post-breach hardening, kick out adversary, emergency response."
+description: "Guidance for responding to and recovering from a significant identity/tenant compromise — regaining administrative control, evicting the adversary, and hardening to prevent reentry. Covers containment, eviction, and rebuild of trust. WHEN: compromise recovery, incident response, regain control after breach, evict attacker, tenant compromise, rebuild trust, ransomware recovery, post-breach hardening, kick out adversary, emergency response, we got hacked, attacker is in our tenant right now, how do I kick out an attacker, ransomware hit our organisation, how do I regain admin access after a breach, adversary has domain admin."
 license: MIT
 metadata:
   author: Microsoft
@@ -36,8 +36,14 @@ adversary) where normal remediation is insufficient.
 - Sequence eviction carefully — partial eviction warns the adversary and invites re-entrenchment.
 - Preserve forensic evidence before remediating where investigation is required.
 
+## Example prompts
+- `We believe an attacker has Global Admin in our tenant — what are the immediate steps?`
+- `Walk me through the Microsoft incident response process for a ransomware attack.`
+- `How do I evict an adversary from an Entra ID tenant without tipping them off?`
+- `What should I do in the first 24 hours after discovering a tenant compromise?`
+- `How do I rebuild trust in our admin accounts after a breach?`
+
 ## Microsoft Learn
-- Microsoft Incident Response: https://learn.microsoft.com/security/operations/incident-response-overview
 - Recover from systemic identity compromise: https://learn.microsoft.com/security/operations/incident-response-playbooks
 - Protect against ransomware: https://learn.microsoft.com/security/ransomware/
 - Privileged access strategy: https://learn.microsoft.com/security/privileged-access-workstations/overview

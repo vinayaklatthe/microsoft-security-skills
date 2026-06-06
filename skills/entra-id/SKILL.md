@@ -41,6 +41,13 @@ hybrid identity with on-premises Active Directory.
 ## Microsoft Learn
 - Overview: https://learn.microsoft.com/entra/fundamentals/whatis
 - Hybrid identity: https://learn.microsoft.com/entra/identity/hybrid/
+## Example prompts
+- `How do I design a hybrid identity model with Entra Connect and password hash sync?`
+- `What is the recommended approach for going passwordless with FIDO2 security keys?`
+- `How do I prevent illicit consent grants in our Entra ID tenant?`
+- `Configure SSPR with writeback for a hybrid environment.`
+- `What break-glass account practices should I follow in Entra ID?`
+
 - Authentication methods: https://learn.microsoft.com/entra/identity/authentication/concept-authentication-methods
 - Passwordless: https://learn.microsoft.com/entra/identity/authentication/concept-authentication-passwordless
 - Zero Trust identity: https://learn.microsoft.com/security/zero-trust/deploy/identity

@@ -1,6 +1,6 @@
 ---
 name: conditional-access-mfa
-description: "Guidance for Microsoft Entra Conditional Access and multifactor authentication — the Zero Trust policy engine that enforces access controls based on user, device, location, app, and risk signals. Covers policy design, MFA, device compliance grants, and rollout. WHEN: Conditional Access, MFA enforcement, require compliant device, block legacy authentication, Zero Trust access policy, phishing-resistant MFA, session controls, CA policy design, require MFA for admins."
+description: "Guidance for Microsoft Entra Conditional Access and multifactor authentication — the Zero Trust policy engine that enforces access controls based on user, device, location, app, and risk signals. Covers policy design, MFA, device compliance grants, and rollout. WHEN: Conditional Access, MFA enforcement, require compliant device, block legacy authentication, Zero Trust access policy, phishing-resistant MFA, session controls, CA policy design, require MFA for admins, how do I require MFA for all users, block access from untrusted countries, enforce compliant device for M365, protect admin accounts with MFA, users logging in from risky locations."
 license: MIT
 metadata:
   author: Microsoft
@@ -37,8 +37,13 @@ integrated application.
 - Always keep at least two excluded emergency access accounts, monitored via alerts.
 - Block legacy auth — it bypasses MFA.
 
+## Example prompts
+- `Design a Conditional Access baseline policy set for a mid-size organisation.`
+- `How do I require phishing-resistant MFA for all Global Admins?`
+- `Block legacy authentication protocols with Conditional Access.`
+- `Require a compliant Intune device for access to Exchange Online.`
+- `How do I roll out a new Conditional Access policy safely without locking users out?`
+
 ## Microsoft Learn
-- Overview: https://learn.microsoft.com/entra/identity/conditional-access/overview
-- Recommended/template policies: https://learn.microsoft.com/entra/identity/conditional-access/concept-conditional-access-policy-common
 - Authentication strengths: https://learn.microsoft.com/entra/identity/authentication/concept-authentication-strengths
 - Report-only mode: https://learn.microsoft.com/entra/identity/conditional-access/concept-conditional-access-report-only

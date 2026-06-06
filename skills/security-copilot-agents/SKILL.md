@@ -1,6 +1,6 @@
 ---
 name: security-copilot-agents
-description: "Guidance for Microsoft Security Copilot agents — autonomous, purpose-built AI agents (e.g., phishing triage, alert triage, conditional access optimization, vulnerability remediation) that work within Security Copilot. Covers available agents, identity/permissions, and supervision. WHEN: Security Copilot agents, autonomous SOC agent, phishing triage agent, alert triage agent, agent identity, supervise AI agent, agentic security, Copilot agent permissions."
+description: "Guidance for Microsoft Security Copilot agents — autonomous, purpose-built AI agents (e.g., phishing triage, alert triage, conditional access optimization, vulnerability remediation) that work within Security Copilot. Covers available agents, identity/permissions, and supervision. WHEN: Security Copilot agents, autonomous SOC agent, phishing triage agent, alert triage agent, agent identity, supervise AI agent, agentic security, Copilot agent permissions, automate phishing triage, AI agent for SOC, autonomous alert triage, hands-off triage of high-volume alerts. DO NOT USE for basic Security Copilot setup, SCU provisioning, or promptbooks (use security-copilot)."
 license: MIT
 metadata:
   author: Microsoft

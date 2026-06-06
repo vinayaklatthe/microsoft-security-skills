@@ -1,6 +1,6 @@
 ---
 name: purview-general
-description: "Orientation skill for the Microsoft Purview data security, governance, and compliance suite. Helps choose the right Purview solution for a goal and understand the unified portal, roles, and licensing model. WHEN: Microsoft Purview overview, which Purview solution, Purview portal, data governance vs data security vs compliance, Purview roles and permissions, where to start with Purview, Purview licensing."
+description: "Orientation skill for the Microsoft Purview data security, governance, and compliance suite. Helps choose the right Purview solution for a goal and understand the unified portal, roles, and licensing model. WHEN: Microsoft Purview overview, which Purview solution, Purview portal, data governance vs data security vs compliance, Purview roles and permissions, where to start with Purview, Purview licensing, I do not know which Purview feature to use, what does Purview cover, getting started with Purview, Purview product overview, which compliance tool do I need. Use this skill first for Purview orientation, then follow up with the specific skill for your use case."
 license: MIT
 metadata:
   author: Microsoft

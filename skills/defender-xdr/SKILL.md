@@ -1,6 +1,6 @@
 ---
 name: defender-xdr
-description: "Guidance for Microsoft Defender XDR, the extended detection and response suite that correlates signals across endpoints, identities, email, and cloud apps into unified incidents. Covers onboarding, incident investigation, advanced hunting, and automatic attack disruption. WHEN: Microsoft Defender XDR, XDR incident investigation, correlate alerts across workloads, advanced hunting KQL, automatic attack disruption, Defender portal incidents, cross-domain detection."
+description: "Guidance for Microsoft Defender XDR, the extended detection and response suite that correlates signals across endpoints, identities, email, and cloud apps into unified incidents. Covers onboarding, incident investigation, advanced hunting, and automatic attack disruption. WHEN: Microsoft Defender XDR, XDR incident investigation, correlate alerts across workloads, advanced hunting KQL, automatic attack disruption, Defender portal incidents, cross-domain detection, how do I investigate an attack across multiple Microsoft 365 products, alert correlation across endpoint and identity, unified incident view, I see an alert but do not know the full attack story. DO NOT USE when the need is SIEM log ingestion or custom KQL detections from third-party sources (use sentinel), merging Sentinel into the Defender portal (use unified-secops-platform), or endpoint-only EDR (use defender-for-endpoint)."
 license: MIT
 metadata:
   author: Microsoft
@@ -38,8 +38,13 @@ Running coordinated detection and response across the Microsoft 365 estate from 
 - Review automatic attack disruption scope and exclusions in a controlled rollout.
 - Tune custom detection rules to limit alert fatigue.
 
+## Example prompts
+- `What are the first Defender XDR controls I should enable for a new Microsoft 365 tenant?`
+- `Walk me through how to investigate a multi-stage incident in Defender XDR.`
+- `Write an advanced hunting KQL query to find suspicious PowerShell execution across devices.`
+- `How does automatic attack disruption work and what should I configure first?`
+- `How do I correlate an identity alert with a device alert in the same incident?`
+
 ## Microsoft Learn
-- Overview: https://learn.microsoft.com/defender-xdr/microsoft-365-defender
-- Incidents: https://learn.microsoft.com/defender-xdr/incidents-overview
 - Advanced hunting: https://learn.microsoft.com/defender-xdr/advanced-hunting-overview
 - Attack disruption: https://learn.microsoft.com/defender-xdr/automatic-attack-disruption

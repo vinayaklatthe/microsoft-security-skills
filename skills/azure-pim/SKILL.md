@@ -1,6 +1,6 @@
 ---
 name: azure-pim
-description: "Guidance for Microsoft Entra Privileged Identity Management (PIM) — just-in-time, time-bound, approval-based elevation for Entra roles, Azure resource roles, and PIM for Groups. Covers eligible vs active assignments, activation settings, and access reviews. WHEN: Privileged Identity Management, PIM, just-in-time access, time-bound role, eligible assignment, require approval to activate, privileged role activation, PIM for groups, access review privileged roles, reduce standing access."
+description: "Guidance for Microsoft Entra Privileged Identity Management (PIM) — just-in-time, time-bound, approval-based elevation for Entra roles, Azure resource roles, and PIM for Groups. Covers eligible vs active assignments, activation settings, and access reviews. WHEN: Privileged Identity Management, PIM, just-in-time access, time-bound role, eligible assignment, require approval to activate, privileged role activation, PIM for groups, access review privileged roles, reduce standing access, how do I remove permanent admin rights, temporary admin access, admins should not have standing Global Admin, JIT access for Azure roles."
 license: MIT
 metadata:
   author: Microsoft

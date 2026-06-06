@@ -1,6 +1,6 @@
 ---
 name: unified-secops-platform
-description: "Guidance for the Microsoft unified security operations platform that brings Microsoft Sentinel, Microsoft Defender XDR, Security Copilot, Threat Intelligence, and Exposure Management together in the Microsoft Defender portal. WHEN: unified SecOps, onboard Sentinel to Defender portal, single SOC pane of glass, unified incident queue, connect Sentinel workspace to Defender XDR, exposure management, unified portal."
+description: "Guidance for the Microsoft unified security operations platform that brings Microsoft Sentinel, Microsoft Defender XDR, Security Copilot, Threat Intelligence, and Exposure Management together in the Microsoft Defender portal. WHEN: unified SecOps, onboard Sentinel to Defender portal, single SOC pane of glass, unified incident queue, connect Sentinel workspace to Defender XDR, exposure management, unified portal, I want everything in one SOC portal, how do I merge Sentinel and Defender XDR, reduce context-switching for analysts, single pane of glass, move off the Azure Sentinel portal. DO NOT USE when the question is about Sentinel-only workspace design (use sentinel) or Defender XDR-only incident investigation (use defender-xdr)."
 license: MIT
 metadata:
   author: Microsoft

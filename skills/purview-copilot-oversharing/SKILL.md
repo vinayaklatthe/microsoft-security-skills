@@ -1,6 +1,6 @@
 ---
 name: purview-copilot-oversharing
-description: "Guidance for assessing and remediating oversharing before and during Microsoft 365 Copilot adoption, using SharePoint Advanced Management, sensitivity labels, and DLP so Copilot only surfaces content users should access. WHEN: Copilot oversharing, prepare data for Copilot, restrict Copilot access, SharePoint Advanced Management, data access governance, oversharing remediation, Copilot readiness data security, limit Copilot content."
+description: "Guidance for assessing and remediating oversharing before and during Microsoft 365 Copilot adoption, using SharePoint Advanced Management, sensitivity labels, and DLP so Copilot only surfaces content users should access. WHEN: Copilot oversharing, prepare data for Copilot, restrict Copilot access, SharePoint Advanced Management, data access governance, oversharing remediation, Copilot readiness data security, limit Copilot content, Copilot is surfacing files users should not see, too many people have access to SharePoint sites, tighten up permissions before Copilot rollout, how do I make SharePoint Copilot-ready. DO NOT USE when the goal is monitoring what sensitive data users are actively sending in AI prompts (use purview-dspm-ai)."
 license: MIT
 metadata:
   author: Microsoft

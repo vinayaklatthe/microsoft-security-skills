@@ -1,0 +1,20 @@
+name: microsoft-security-skills
+version: 0.1.0
+description: Curated Microsoft Security skills for AI agents. Practical guidance
+  across Defender, Sentinel, Entra, Intune, Purview, and Azure platform security,
+  grounded in public Microsoft Learn documentation.
+
+# Marketplace authoring: source of truth for plugin registration.
+# Regenerate with `apm pack` (https://github.com/microsoft/apm).
+marketplace:
+  owner:
+    name: Microsoft
+    url: https://www.microsoft.com
+  packages:
+    - name: microsoft-security
+      description: Curated Microsoft Security skills for AI agents covering threat
+        protection, identity, compliance, and cloud platform security. Provides
+        decision trees, workflows, and guardrails grounded in public Microsoft
+        Learn documentation.
+      source: ./
+      homepage: https://github.com/microsoft/microsoft-security-skills

@@ -1,6 +1,6 @@
 ---
 name: cloud-app-security-posture
-description: "Guidance for cloud and SaaS security posture management — combining Defender for Cloud CSPM (IaaS/PaaS) and Defender for Cloud Apps SSPM (SaaS) to assess and harden posture across cloud and SaaS apps. WHEN: cloud security posture, SaaS security posture management, SSPM, CSPM, secure cloud apps, posture recommendations, harden SaaS configuration, app security posture, multicloud and SaaS hardening."
+description: "Guidance for cloud and SaaS security posture management — combining Defender for Cloud CSPM (IaaS/PaaS) and Defender for Cloud Apps SSPM (SaaS) to assess and harden posture across cloud and SaaS apps. WHEN: cloud security posture, SaaS security posture management, SSPM, CSPM, secure cloud apps, posture recommendations, harden SaaS configuration, app security posture, multicloud and SaaS hardening, how do I harden our Microsoft 365 SaaS settings, find misconfigured Salesforce or ServiceNow settings, SaaS app misconfiguration. DO NOT USE for IaaS and PaaS cloud workload protection plans (use defender-for-cloud-hardening)."
 license: MIT
 metadata:
   author: Microsoft

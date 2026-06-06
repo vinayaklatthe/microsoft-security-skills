@@ -1,6 +1,6 @@
 ---
 name: purview-dspm-ai
-description: "Guidance for Microsoft Purview Data Security Posture Management for AI (DSPM for AI) — discovering, monitoring, and protecting sensitive data interactions with generative AI apps like Microsoft 365 Copilot and third-party AI. Covers AI usage visibility, policies, and oversharing risk. WHEN: DSPM for AI, AI data security posture, Copilot data risk, monitor AI prompts, sensitive data in AI, generative AI data protection, third-party AI usage visibility, secure Copilot data."
+description: "Guidance for Microsoft Purview Data Security Posture Management for AI (DSPM for AI) — discovering, monitoring, and protecting sensitive data interactions with generative AI apps like Microsoft 365 Copilot and third-party AI. Covers AI usage visibility, policies, and oversharing risk. WHEN: DSPM for AI, AI data security posture, Copilot data risk, monitor AI prompts, sensitive data in AI, generative AI data protection, third-party AI usage visibility, secure Copilot data, what sensitive data is being sent to AI, monitor what users are putting into Copilot prompts, detect sensitive data in AI responses, ChatGPT data leakage risk. DO NOT USE when the goal is remediating overshared SharePoint content before Copilot rollout (use purview-copilot-oversharing)."
 license: MIT
 metadata:
   author: Microsoft

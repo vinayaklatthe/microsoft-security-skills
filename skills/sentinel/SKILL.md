@@ -1,6 +1,6 @@
 ---
 name: sentinel
-description: "Guidance for designing and operating Microsoft Sentinel, the cloud-native SIEM and SOAR. Covers workspace design, data connectors, analytics rules, hunting, watchlists, automation (playbooks), and cost/commitment-tier optimisation. WHEN: deploy Microsoft Sentinel, design SIEM, onboard data connectors, write analytics rule, KQL detection, Sentinel playbook, SOAR automation, Sentinel cost optimization, log ingestion tiers, Sentinel workspace design."
+description: "Guidance for designing and operating Microsoft Sentinel, the cloud-native SIEM and SOAR. Covers workspace design, data connectors, analytics rules, hunting, watchlists, automation (playbooks), and cost/commitment-tier optimisation. WHEN: deploy Microsoft Sentinel, design SIEM, onboard data connectors, write analytics rule, KQL detection, Sentinel playbook, SOAR automation, Sentinel cost optimization, log ingestion tiers, Sentinel workspace design, how do I set up a SIEM, collect logs from third-party tools, ingest firewall or Linux syslog into Azure, write a detection rule, automate incident response, how much does Sentinel cost. DO NOT USE when the goal is correlating Microsoft 365 XDR alerts into incidents (use defender-xdr) or onboarding Sentinel into the unified Defender portal (use unified-secops-platform)."
 license: MIT
 metadata:
   author: Microsoft
@@ -38,9 +38,14 @@ hunting across data, and automating response.
 - Avoid duplicate ingestion (e.g., don't ingest Defender XDR raw + advanced hunting unless needed).
 - Use table-level RBAC instead of multiple workspaces when isolation is the only driver.
 
+## Example prompts
+- `How do I design a Microsoft Sentinel workspace for a multi-region organisation?`
+- `What data connectors should I enable first in Sentinel for a Microsoft 365 tenant?`
+- `Write a Sentinel analytics rule to detect impossible travel sign-ins.`
+- `How do I use Auxiliary logs to reduce Sentinel ingestion costs?`
+- `Create a Sentinel playbook that notifies Teams when a high-severity incident is created.`
+
 ## Microsoft Learn
-- Overview: https://learn.microsoft.com/azure/sentinel/overview
-- Workspace design best practices: https://learn.microsoft.com/azure/sentinel/best-practices-workspace-architecture
 - Data connectors: https://learn.microsoft.com/azure/sentinel/connect-data-sources
 - Costs & ingestion tiers: https://learn.microsoft.com/azure/sentinel/billing
 - Automation & playbooks: https://learn.microsoft.com/azure/sentinel/automation/automation

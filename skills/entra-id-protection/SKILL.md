@@ -1,6 +1,6 @@
 ---
 name: entra-id-protection
-description: "Guidance for Microsoft Entra ID Protection — risk-based identity security that detects user and sign-in risk and automates remediation. Covers risk detections, risk policies, integration with Conditional Access, and risk investigation. WHEN: Entra ID Protection, identity risk policy, risky users, risky sign-ins, user risk policy, sign-in risk policy, risk-based Conditional Access, leaked credentials, automate identity remediation."
+description: "Guidance for Microsoft Entra ID Protection — risk-based identity security that detects user and sign-in risk and automates remediation. Covers risk detections, risk policies, integration with Conditional Access, and risk investigation. WHEN: Entra ID Protection, identity risk policy, risky users, risky sign-ins, user risk policy, sign-in risk policy, risk-based Conditional Access, leaked credentials, automate identity remediation, alert about leaked credentials, user flagged as risky, force password reset for compromised accounts, block sign-in when identity risk is high."
 license: MIT
 metadata:
   author: Microsoft
