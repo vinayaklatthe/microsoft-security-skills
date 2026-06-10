@@ -1,49 +1,70 @@
-<svg width="1280" height="320" viewBox="0 0 1280 320" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Microsoft Security Skills">
+<svg width="1280" height="340" viewBox="0 0 1280 340" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Microsoft Security Skills">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1280" y2="320" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#12345C"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="1280" y2="340" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0E2A4A"/>
+      <stop offset="0.55" stop-color="#0A1D38"/>
       <stop offset="1" stop-color="#050E1E"/>
     </linearGradient>
-    <linearGradient id="cyan" x1="0" y1="0" x2="0" y2="320" gradientUnits="userSpaceOnUse">
+    <linearGradient id="cyan" x1="0" y1="0" x2="0" y2="340" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#50E6FF"/>
       <stop offset="1" stop-color="#2BB9E0"/>
     </linearGradient>
+    <radialGradient id="glow" cx="0.82" cy="0.4" r="0.5">
+      <stop offset="0" stop-color="#50E6FF" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#50E6FF" stop-opacity="0"/>
+    </radialGradient>
   </defs>
 
   <!-- background -->
-  <rect width="1280" height="320" fill="url(#bg)"/>
-  <rect x="0.5" y="0.5" width="1279" height="319" fill="none" stroke="#50E6FF" stroke-opacity="0.18"/>
+  <rect width="1280" height="340" fill="url(#bg)"/>
+  <rect width="1280" height="340" fill="url(#glow)"/>
+  <rect x="0.5" y="0.5" width="1279" height="339" fill="none" stroke="#50E6FF" stroke-opacity="0.16"/>
+
+  <!-- faint grid dots -->
+  <g fill="#50E6FF" fill-opacity="0.05">
+    <circle cx="980" cy="60" r="2"/><circle cx="1030" cy="60" r="2"/><circle cx="1080" cy="60" r="2"/><circle cx="1130" cy="60" r="2"/><circle cx="1180" cy="60" r="2"/>
+    <circle cx="980" cy="110" r="2"/><circle cx="1030" cy="110" r="2"/><circle cx="1080" cy="110" r="2"/><circle cx="1130" cy="110" r="2"/><circle cx="1180" cy="110" r="2"/>
+  </g>
 
   <!-- accent bar (Fluent signature) -->
-  <rect x="80" y="80" width="64" height="6" rx="3" fill="url(#cyan)"/>
+  <rect x="80" y="72" width="64" height="6" rx="3" fill="url(#cyan)"/>
+
+  <!-- four-square mark + wordmark -->
+  <g transform="translate(80, 98)">
+    <rect x="0"  y="0"  width="22" height="22" rx="2" fill="#50E6FF"/>
+    <rect x="26" y="0"  width="22" height="22" rx="2" fill="#9FE9F7"/>
+    <rect x="0"  y="26" width="22" height="22" rx="2" fill="#3BA9CC"/>
+    <rect x="26" y="26" width="22" height="22" rx="2" fill="#6FD6EC"/>
+    <text x="66" y="38" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="22" font-weight="600" letter-spacing="3" fill="#9FB4CC">MICROSOFT SECURITY</text>
+  </g>
 
   <!-- shield glyph -->
-  <g transform="translate(1000, 70)">
-    <path d="M90 6 L168 34 V96 C168 150 132 182 90 196 C48 182 12 150 12 96 V34 Z"
+  <g transform="translate(1010, 78)">
+    <path d="M86 4 L160 30 V90 C160 142 126 172 86 186 C46 172 12 142 12 90 V30 Z"
           fill="#0A2540" stroke="#50E6FF" stroke-width="3" stroke-opacity="0.85"/>
-    <path d="M58 98 L82 122 L126 70" fill="none" stroke="#50E6FF" stroke-width="9"
+    <path d="M54 92 L78 116 L122 64" fill="none" stroke="#50E6FF" stroke-width="9"
           stroke-linecap="round" stroke-linejoin="round"/>
   </g>
 
   <!-- title -->
-  <text x="80" y="148" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="58" font-weight="700" fill="#FFFFFF">Microsoft Security Skills</text>
-  <text x="80" y="196" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="26" font-weight="400" fill="#9FB4CC">Curated security expertise for AI agents, grounded in Microsoft Learn</text>
+  <text x="80" y="206" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="60" font-weight="700" fill="#FFFFFF">Security Skills for AI Agents</text>
+  <text x="80" y="246" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="24" font-weight="400" fill="#9FB4CC">56 curated skills - decision trees, workflows, guardrails - grounded in Microsoft Learn</text>
 
   <!-- chips -->
-  <g font-family="Segoe UI, Inter, Arial, sans-serif" font-size="20" font-weight="600">
-    <rect x="80" y="232" width="190" height="44" rx="22" fill="#0A2540" stroke="#50E6FF" stroke-opacity="0.45"/>
-    <text x="175" y="260" fill="#50E6FF" text-anchor="middle">56 Skills</text>
+  <g font-family="Segoe UI, Inter, Arial, sans-serif" font-size="19" font-weight="600">
+    <rect x="80"  y="276" width="118" height="40" rx="20" fill="#50E6FF" fill-opacity="0.12" stroke="#50E6FF" stroke-opacity="0.5"/>
+    <text x="139" y="302" fill="#50E6FF" text-anchor="middle">56 Skills</text>
 
-    <rect x="286" y="232" width="240" height="44" rx="22" fill="#0A2540" stroke="#50E6FF" stroke-opacity="0.45"/>
-    <text x="406" y="260" fill="#CFE9F5" text-anchor="middle">Defender . Sentinel . Entra</text>
+    <rect x="210" y="276" width="232" height="40" rx="20" fill="#0A2540" stroke="#50E6FF" stroke-opacity="0.35"/>
+    <text x="326" y="302" fill="#CFE9F5" text-anchor="middle">Defender . Sentinel . Entra</text>
 
-    <rect x="542" y="232" width="240" height="44" rx="22" fill="#0A2540" stroke="#50E6FF" stroke-opacity="0.45"/>
-    <text x="662" y="260" fill="#CFE9F5" text-anchor="middle">Purview . Intune . Copilot</text>
+    <rect x="454" y="276" width="232" height="40" rx="20" fill="#0A2540" stroke="#50E6FF" stroke-opacity="0.35"/>
+    <text x="570" y="302" fill="#CFE9F5" text-anchor="middle">Purview . Intune . Copilot</text>
 
-    <rect x="798" y="232" width="150" height="44" rx="22" fill="#0A2540" stroke="#50E6FF" stroke-opacity="0.45"/>
-    <text x="873" y="260" fill="#CFE9F5" text-anchor="middle">Zero Trust</text>
+    <rect x="698" y="276" width="132" height="40" rx="20" fill="#0A2540" stroke="#50E6FF" stroke-opacity="0.35"/>
+    <text x="764" y="302" fill="#CFE9F5" text-anchor="middle">Zero Trust</text>
   </g>
 
   <!-- watermark -->
-  <text x="1200" y="296" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="18" fill="#5C7A99" text-anchor="end">Vinayak Latthe</text>
+  <text x="1200" y="318" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="17" fill="#5C7A99" text-anchor="end">Vinayak Latthe</text>
 </svg>
