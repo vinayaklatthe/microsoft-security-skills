@@ -1,70 +1,35 @@
-<svg width="1280" height="340" viewBox="0 0 1280 340" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Microsoft Security Skills">
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1280" y2="340" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#0E2A4A"/>
-      <stop offset="0.55" stop-color="#0A1D38"/>
-      <stop offset="1" stop-color="#050E1E"/>
-    </linearGradient>
-    <linearGradient id="cyan" x1="0" y1="0" x2="0" y2="340" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#50E6FF"/>
-      <stop offset="1" stop-color="#2BB9E0"/>
-    </linearGradient>
-    <radialGradient id="glow" cx="0.82" cy="0.4" r="0.5">
-      <stop offset="0" stop-color="#50E6FF" stop-opacity="0.16"/>
-      <stop offset="1" stop-color="#50E6FF" stop-opacity="0"/>
-    </radialGradient>
-  </defs>
+<svg width="1280" height="340" viewBox="0 0 1280 340" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="microsoft-security-skills">
+  <!-- clean white GitHub-card background -->
+  <rect width="1280" height="340" fill="#FFFFFF"/>
+  <rect x="1" y="1" width="1278" height="338" fill="none" stroke="#D8DEE4" stroke-width="2"/>
 
-  <!-- background -->
-  <rect width="1280" height="340" fill="url(#bg)"/>
-  <rect width="1280" height="340" fill="url(#glow)"/>
-  <rect x="0.5" y="0.5" width="1279" height="339" fill="none" stroke="#50E6FF" stroke-opacity="0.16"/>
+  <!-- owner / repo heading -->
+  <text x="80" y="118" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="40" font-weight="400" fill="#57606A" xml:space="preserve">vinayaklatthe&#160;/&#160;<tspan font-weight="700" fill="#1F2328">microsoft-security-skills</tspan></text>
 
-  <!-- faint grid dots -->
-  <g fill="#50E6FF" fill-opacity="0.05">
-    <circle cx="980" cy="60" r="2"/><circle cx="1030" cy="60" r="2"/><circle cx="1080" cy="60" r="2"/><circle cx="1130" cy="60" r="2"/><circle cx="1180" cy="60" r="2"/>
-    <circle cx="980" cy="110" r="2"/><circle cx="1030" cy="110" r="2"/><circle cx="1080" cy="110" r="2"/><circle cx="1130" cy="110" r="2"/><circle cx="1180" cy="110" r="2"/>
+  <!-- description -->
+  <text x="80" y="170" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="26" font-weight="400" fill="#57606A">56 Microsoft Security skills for AI agents - Defender, Sentinel, Entra,</text>
+  <text x="80" y="206" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="26" font-weight="400" fill="#57606A">Purview, Intune, and Security Copilot.</text>
+
+  <!-- value stats -->
+  <g>
+    <text x="82"  y="270" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="34" font-weight="700" fill="#1F2328">56</text>
+    <text x="82"  y="298" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="18" font-weight="400" fill="#57606A">Skills</text>
+
+    <text x="200" y="270" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="34" font-weight="700" fill="#1F2328">6</text>
+    <text x="200" y="298" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="18" font-weight="400" fill="#57606A">Product areas</text>
+
+    <text x="400" y="270" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="34" font-weight="700" fill="#1F2328">5</text>
+    <text x="400" y="298" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="18" font-weight="400" fill="#57606A">Agent hosts</text>
+
+    <text x="566" y="270" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="34" font-weight="700" fill="#1F2328">MIT</text>
+    <text x="566" y="298" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="18" font-weight="400" fill="#57606A">Licensed</text>
   </g>
 
-  <!-- accent bar (Fluent signature) - left edge framing the text block -->
-  <rect x="80" y="100" width="6" height="216" rx="3" fill="url(#cyan)"/>
-
-  <!-- four-square mark + wordmark -->
-  <g transform="translate(108, 98)">
-    <rect x="0"  y="0"  width="22" height="22" rx="2" fill="#50E6FF"/>
-    <rect x="26" y="0"  width="22" height="22" rx="2" fill="#9FE9F7"/>
-    <rect x="0"  y="26" width="22" height="22" rx="2" fill="#3BA9CC"/>
-    <rect x="26" y="26" width="22" height="22" rx="2" fill="#6FD6EC"/>
-    <text x="66" y="38" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="22" font-weight="600" letter-spacing="3" fill="#9FB4CC">SKILLS FOR AI AGENTS</text>
+  <!-- Microsoft-style four-square mark (right) -->
+  <g transform="translate(1084, 110)">
+    <rect x="0"  y="0"  width="58" height="58" fill="#F25022"/>
+    <rect x="64" y="0"  width="58" height="58" fill="#7FBA00"/>
+    <rect x="0"  y="64" width="58" height="58" fill="#00A4EF"/>
+    <rect x="64" y="64" width="58" height="58" fill="#FFB900"/>
   </g>
-
-  <!-- shield glyph -->
-  <g transform="translate(1010, 78)">
-    <path d="M86 4 L160 30 V90 C160 142 126 172 86 186 C46 172 12 142 12 90 V30 Z"
-          fill="#0A2540" stroke="#50E6FF" stroke-width="3" stroke-opacity="0.85"/>
-    <path d="M54 92 L78 116 L122 64" fill="none" stroke="#50E6FF" stroke-width="9"
-          stroke-linecap="round" stroke-linejoin="round"/>
-  </g>
-
-  <!-- title -->
-  <text x="108" y="206" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="60" font-weight="700" fill="#FFFFFF">Microsoft Security Skills</text>
-  <text x="108" y="246" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="24" font-weight="400" fill="#9FB4CC">56 curated skills - decision trees, workflows, guardrails - grounded in Microsoft Learn</text>
-
-  <!-- chips -->
-  <g font-family="Segoe UI, Inter, Arial, sans-serif" font-size="19" font-weight="600">
-    <rect x="108" y="276" width="118" height="40" rx="20" fill="#50E6FF" fill-opacity="0.12" stroke="#50E6FF" stroke-opacity="0.5"/>
-    <text x="167" y="302" fill="#50E6FF" text-anchor="middle">56 Skills</text>
-
-    <rect x="238" y="276" width="232" height="40" rx="20" fill="#0A2540" stroke="#50E6FF" stroke-opacity="0.35"/>
-    <text x="354" y="302" fill="#CFE9F5" text-anchor="middle">Defender . Sentinel . Entra</text>
-
-    <rect x="482" y="276" width="232" height="40" rx="20" fill="#0A2540" stroke="#50E6FF" stroke-opacity="0.35"/>
-    <text x="598" y="302" fill="#CFE9F5" text-anchor="middle">Purview . Intune . Copilot</text>
-
-    <rect x="726" y="276" width="132" height="40" rx="20" fill="#0A2540" stroke="#50E6FF" stroke-opacity="0.35"/>
-    <text x="792" y="302" fill="#CFE9F5" text-anchor="middle">Zero Trust</text>
-  </g>
-
-  <!-- watermark -->
-  <text x="1200" y="318" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="17" fill="#5C7A99" text-anchor="end">Vinayak Latthe</text>
 </svg>
