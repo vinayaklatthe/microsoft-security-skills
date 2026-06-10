@@ -26,11 +26,11 @@
     <circle cx="980" cy="110" r="2"/><circle cx="1030" cy="110" r="2"/><circle cx="1080" cy="110" r="2"/><circle cx="1130" cy="110" r="2"/><circle cx="1180" cy="110" r="2"/>
   </g>
 
-  <!-- accent bar (Fluent signature) -->
-  <rect x="80" y="72" width="64" height="6" rx="3" fill="url(#cyan)"/>
+  <!-- accent bar (Fluent signature) - left edge framing the text block -->
+  <rect x="80" y="100" width="6" height="216" rx="3" fill="url(#cyan)"/>
 
   <!-- four-square mark + wordmark -->
-  <g transform="translate(80, 98)">
+  <g transform="translate(108, 98)">
     <rect x="0"  y="0"  width="22" height="22" rx="2" fill="#50E6FF"/>
     <rect x="26" y="0"  width="22" height="22" rx="2" fill="#9FE9F7"/>
     <rect x="0"  y="26" width="22" height="22" rx="2" fill="#3BA9CC"/>
@@ -47,22 +47,22 @@
   </g>
 
   <!-- title -->
-  <text x="80" y="206" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="60" font-weight="700" fill="#FFFFFF">Microsoft Security Skills</text>
-  <text x="80" y="246" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="24" font-weight="400" fill="#9FB4CC">56 curated skills - decision trees, workflows, guardrails - grounded in Microsoft Learn</text>
+  <text x="108" y="206" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="60" font-weight="700" fill="#FFFFFF">Microsoft Security Skills</text>
+  <text x="108" y="246" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="24" font-weight="400" fill="#9FB4CC">56 curated skills - decision trees, workflows, guardrails - grounded in Microsoft Learn</text>
 
   <!-- chips -->
   <g font-family="Segoe UI, Inter, Arial, sans-serif" font-size="19" font-weight="600">
-    <rect x="80"  y="276" width="118" height="40" rx="20" fill="#50E6FF" fill-opacity="0.12" stroke="#50E6FF" stroke-opacity="0.5"/>
-    <text x="139" y="302" fill="#50E6FF" text-anchor="middle">56 Skills</text>
+    <rect x="108" y="276" width="118" height="40" rx="20" fill="#50E6FF" fill-opacity="0.12" stroke="#50E6FF" stroke-opacity="0.5"/>
+    <text x="167" y="302" fill="#50E6FF" text-anchor="middle">56 Skills</text>
 
-    <rect x="210" y="276" width="232" height="40" rx="20" fill="#0A2540" stroke="#50E6FF" stroke-opacity="0.35"/>
-    <text x="326" y="302" fill="#CFE9F5" text-anchor="middle">Defender . Sentinel . Entra</text>
+    <rect x="238" y="276" width="232" height="40" rx="20" fill="#0A2540" stroke="#50E6FF" stroke-opacity="0.35"/>
+    <text x="354" y="302" fill="#CFE9F5" text-anchor="middle">Defender . Sentinel . Entra</text>
 
-    <rect x="454" y="276" width="232" height="40" rx="20" fill="#0A2540" stroke="#50E6FF" stroke-opacity="0.35"/>
-    <text x="570" y="302" fill="#CFE9F5" text-anchor="middle">Purview . Intune . Copilot</text>
+    <rect x="482" y="276" width="232" height="40" rx="20" fill="#0A2540" stroke="#50E6FF" stroke-opacity="0.35"/>
+    <text x="598" y="302" fill="#CFE9F5" text-anchor="middle">Purview . Intune . Copilot</text>
 
-    <rect x="698" y="276" width="132" height="40" rx="20" fill="#0A2540" stroke="#50E6FF" stroke-opacity="0.35"/>
-    <text x="764" y="302" fill="#CFE9F5" text-anchor="middle">Zero Trust</text>
+    <rect x="726" y="276" width="132" height="40" rx="20" fill="#0A2540" stroke="#50E6FF" stroke-opacity="0.35"/>
+    <text x="792" y="302" fill="#CFE9F5" text-anchor="middle">Zero Trust</text>
   </g>
 
   <!-- watermark -->
