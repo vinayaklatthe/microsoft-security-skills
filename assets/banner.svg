@@ -35,7 +35,7 @@
     <rect x="26" y="0"  width="22" height="22" rx="2" fill="#9FE9F7"/>
     <rect x="0"  y="26" width="22" height="22" rx="2" fill="#3BA9CC"/>
     <rect x="26" y="26" width="22" height="22" rx="2" fill="#6FD6EC"/>
-    <text x="66" y="38" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="22" font-weight="600" letter-spacing="3" fill="#9FB4CC">MICROSOFT SECURITY</text>
+    <text x="66" y="38" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="22" font-weight="600" letter-spacing="3" fill="#9FB4CC">SKILLS FOR AI AGENTS</text>
   </g>
 
   <!-- shield glyph -->
@@ -47,7 +47,7 @@
   </g>
 
   <!-- title -->
-  <text x="80" y="206" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="60" font-weight="700" fill="#FFFFFF">Security Skills for AI Agents</text>
+  <text x="80" y="206" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="60" font-weight="700" fill="#FFFFFF">Microsoft Security Skills</text>
   <text x="80" y="246" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="24" font-weight="400" fill="#9FB4CC">56 curated skills - decision trees, workflows, guardrails - grounded in Microsoft Learn</text>
 
   <!-- chips -->
