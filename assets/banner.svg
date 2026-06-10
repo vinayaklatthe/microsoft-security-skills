@@ -1,0 +1,49 @@
+<svg width="1280" height="320" viewBox="0 0 1280 320" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Microsoft Security Skills">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1280" y2="320" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#12345C"/>
+      <stop offset="1" stop-color="#050E1E"/>
+    </linearGradient>
+    <linearGradient id="cyan" x1="0" y1="0" x2="0" y2="320" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#50E6FF"/>
+      <stop offset="1" stop-color="#2BB9E0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- background -->
+  <rect width="1280" height="320" fill="url(#bg)"/>
+  <rect x="0.5" y="0.5" width="1279" height="319" fill="none" stroke="#50E6FF" stroke-opacity="0.18"/>
+
+  <!-- accent bar (Fluent signature) -->
+  <rect x="80" y="80" width="64" height="6" rx="3" fill="url(#cyan)"/>
+
+  <!-- shield glyph -->
+  <g transform="translate(1000, 70)">
+    <path d="M90 6 L168 34 V96 C168 150 132 182 90 196 C48 182 12 150 12 96 V34 Z"
+          fill="#0A2540" stroke="#50E6FF" stroke-width="3" stroke-opacity="0.85"/>
+    <path d="M58 98 L82 122 L126 70" fill="none" stroke="#50E6FF" stroke-width="9"
+          stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- title -->
+  <text x="80" y="148" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="58" font-weight="700" fill="#FFFFFF">Microsoft Security Skills</text>
+  <text x="80" y="196" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="26" font-weight="400" fill="#9FB4CC">Curated security expertise for AI agents, grounded in Microsoft Learn</text>
+
+  <!-- chips -->
+  <g font-family="Segoe UI, Inter, Arial, sans-serif" font-size="20" font-weight="600">
+    <rect x="80" y="232" width="190" height="44" rx="22" fill="#0A2540" stroke="#50E6FF" stroke-opacity="0.45"/>
+    <text x="175" y="260" fill="#50E6FF" text-anchor="middle">56 Skills</text>
+
+    <rect x="286" y="232" width="240" height="44" rx="22" fill="#0A2540" stroke="#50E6FF" stroke-opacity="0.45"/>
+    <text x="406" y="260" fill="#CFE9F5" text-anchor="middle">Defender . Sentinel . Entra</text>
+
+    <rect x="542" y="232" width="240" height="44" rx="22" fill="#0A2540" stroke="#50E6FF" stroke-opacity="0.45"/>
+    <text x="662" y="260" fill="#CFE9F5" text-anchor="middle">Purview . Intune . Copilot</text>
+
+    <rect x="798" y="232" width="150" height="44" rx="22" fill="#0A2540" stroke="#50E6FF" stroke-opacity="0.45"/>
+    <text x="873" y="260" fill="#CFE9F5" text-anchor="middle">Zero Trust</text>
+  </g>
+
+  <!-- watermark -->
+  <text x="1200" y="296" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="18" fill="#5C7A99" text-anchor="end">Vinayak Latthe</text>
+</svg>

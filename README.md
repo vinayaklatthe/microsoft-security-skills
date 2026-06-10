@@ -1,12 +1,29 @@
-# Microsoft Security Skills Plugin
+<p align="center">
+  <img src="assets/banner.svg" alt="Microsoft Security Skills" width="100%">
+</p>
+
+<h1 align="center">Microsoft Security Skills Plugin</h1>
+
+<p align="center">
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-50E6FF?style=flat-square&labelColor=0A2540" alt="License: MIT"></a>
+  <img src="https://img.shields.io/badge/skills-56-50E6FF?style=flat-square&labelColor=0A2540" alt="56 skills">
+  <img src="https://img.shields.io/badge/grounded%20in-Microsoft%20Learn-50E6FF?style=flat-square&labelColor=0A2540" alt="Grounded in Microsoft Learn">
+  <img src="https://img.shields.io/badge/hosts-Copilot%20%7C%20Claude%20%7C%20Cursor%20%7C%20Codex%20%7C%20Gemini-50E6FF?style=flat-square&labelColor=0A2540" alt="Compatible hosts">
+</p>
+
+<p align="center">
+  <a href="#install-in-60-seconds"><b>Install the plugin</b></a> .
+  <a href="#which-skill-for-my-use-case"><b>Which skill do I use?</b></a> .
+  <a href="#prompts-to-try"><b>Prompts to try</b></a>
+</p>
+
+---
 
 Security work is not just a configuration problem. It is a decision problem: which control
 applies here, what needs to be validated before a policy goes live, which investigation path to
 follow, and what guardrails matter in this environment. The Microsoft Security Skills Plugin
 packages security expertise into curated skills so compatible coding agents can give accurate,
 opinionated Microsoft Security guidance instead of generic security advice.
-
-**[Install the plugin](#install-in-60-seconds)**
 
 - 56 curated Microsoft Security skills
 - Coverage: Security, Identity and Management, Compliance and Privacy, Cloud platform security
