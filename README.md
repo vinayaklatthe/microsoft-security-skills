@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/banner.svg" alt="Microsoft Security Skills" width="100%">
+  <img src="assets/banner-v2.svg" alt="Microsoft Security Skills" width="100%">
 </p>
 
 <h1 align="center">Microsoft Security Skills Plugin</h1>
