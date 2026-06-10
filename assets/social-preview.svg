@@ -1,42 +1,72 @@
-<svg width="1280" height="640" viewBox="0 0 1280 640" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="microsoft-security-skills">
-  <!-- clean white GitHub-card background -->
-  <rect width="1280" height="640" fill="#FFFFFF"/>
-  <rect x="1" y="1" width="1278" height="638" fill="none" stroke="#D8DEE4" stroke-width="2"/>
+<svg width="1280" height="640" viewBox="0 0 1280 640" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Microsoft Security Skills">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1280" y2="640" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0E2A4A"/>
+      <stop offset="0.55" stop-color="#0A1D38"/>
+      <stop offset="1" stop-color="#050E1E"/>
+    </linearGradient>
+    <linearGradient id="cyan" x1="0" y1="0" x2="0" y2="640" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#50E6FF"/>
+      <stop offset="1" stop-color="#2BB9E0"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.8" cy="0.32" r="0.55">
+      <stop offset="0" stop-color="#50E6FF" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#50E6FF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
 
-  <!-- owner / repo heading (GitHub social-card style) -->
-  <text x="90" y="172" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="64" font-weight="400" fill="#57606A">vinayaklatthe /</text>
-  <text x="90" y="262" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="76" font-weight="700" fill="#1F2328">microsoft-</text>
-  <text x="90" y="348" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="76" font-weight="700" fill="#1F2328">security-skills</text>
+  <!-- background -->
+  <rect width="1280" height="640" fill="url(#bg)"/>
+  <rect width="1280" height="640" fill="url(#glow)"/>
 
-  <!-- description -->
-  <text x="90" y="436" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="31" font-weight="400" fill="#57606A">56 Microsoft Security skills for AI agents - Defender,</text>
-  <text x="90" y="480" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="31" font-weight="400" fill="#57606A">Sentinel, Entra, Purview, Intune, and Security Copilot.</text>
+  <!-- bottom accent strip (GitHub-card style) -->
+  <rect x="0" y="632" width="1280" height="8" fill="url(#cyan)"/>
 
-  <!-- value stats (GitHub-stat row style) -->
-  <g>
-    <text x="92"  y="562" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="42" font-weight="700" fill="#1F2328">56</text>
-    <text x="92"  y="596" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="22" font-weight="400" fill="#57606A">Skills</text>
-
-    <text x="240" y="562" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="42" font-weight="700" fill="#1F2328">6</text>
-    <text x="240" y="596" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="22" font-weight="400" fill="#57606A">Product areas</text>
-
-    <text x="492" y="562" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="42" font-weight="700" fill="#1F2328">5</text>
-    <text x="492" y="596" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="22" font-weight="400" fill="#57606A">Agent hosts</text>
-
-    <text x="700" y="562" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="42" font-weight="700" fill="#1F2328">MIT</text>
-    <text x="700" y="596" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="22" font-weight="400" fill="#57606A">Licensed</text>
+  <!-- faint grid dots -->
+  <g fill="#50E6FF" fill-opacity="0.05">
+    <circle cx="980" cy="120" r="2.5"/><circle cx="1040" cy="120" r="2.5"/><circle cx="1100" cy="120" r="2.5"/><circle cx="1160" cy="120" r="2.5"/>
+    <circle cx="980" cy="180" r="2.5"/><circle cx="1040" cy="180" r="2.5"/><circle cx="1100" cy="180" r="2.5"/><circle cx="1160" cy="180" r="2.5"/>
   </g>
 
-  <!-- Microsoft-style four-square mark (top right) -->
-  <g transform="translate(1052, 96)">
-    <rect x="0"  y="0"  width="86" height="86" fill="#F25022"/>
-    <rect x="94" y="0"  width="86" height="86" fill="#7FBA00"/>
-    <rect x="0"  y="94" width="86" height="86" fill="#00A4EF"/>
-    <rect x="94" y="94" width="86" height="86" fill="#FFB900"/>
+  <!-- four-square mark + owner/repo line -->
+  <g transform="translate(96, 110)">
+    <rect x="0"  y="0"  width="30" height="30" rx="3" fill="#50E6FF"/>
+    <rect x="36" y="0"  width="30" height="30" rx="3" fill="#9FE9F7"/>
+    <rect x="0"  y="36" width="30" height="30" rx="3" fill="#3BA9CC"/>
+    <rect x="36" y="36" width="30" height="30" rx="3" fill="#6FD6EC"/>
+    <text x="88" y="48" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="30" font-weight="400" fill="#9FB4CC">vinayaklatthe<tspan font-weight="700" fill="#E8F4FA"> / microsoft-security-skills</tspan></text>
   </g>
 
-  <!-- GitHub mark (bottom right) -->
-  <g transform="translate(1186, 556)" fill="#1F2328">
-    <path d="M24 0C10.7 0 0 10.7 0 24c0 10.6 6.9 19.6 16.4 22.8 1.2.2 1.6-.5 1.6-1.1v-4c-6.7 1.5-8.1-2.8-8.1-2.8-1.1-2.8-2.7-3.5-2.7-3.5-2.2-1.5.2-1.5.2-1.5 2.4.2 3.7 2.5 3.7 2.5 2.2 3.7 5.7 2.6 7.1 2 .2-1.6.8-2.6 1.5-3.2-5.3-.6-10.9-2.7-10.9-11.9 0-2.6.9-4.8 2.5-6.5-.2-.6-1.1-3 .2-6.3 0 0 2-.6 6.6 2.5 1.9-.5 4-.8 6-.8s4.1.3 6 .8c4.6-3.1 6.6-2.5 6.6-2.5 1.3 3.3.5 5.7.2 6.3 1.5 1.7 2.5 3.9 2.5 6.5 0 9.2-5.6 11.3-11 11.9.9.7 1.6 2.2 1.6 4.4v6.5c0 .6.4 1.4 1.7 1.1C41.1 43.6 48 34.6 48 24 48 10.7 37.3 0 24 0z"/>
+  <!-- headline -->
+  <text x="96" y="290" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="78" font-weight="700" fill="#FFFFFF">Security Skills for</text>
+  <text x="96" y="380" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="78" font-weight="700" fill="#FFFFFF">AI Agents</text>
+
+  <!-- subtitle -->
+  <text x="96" y="440" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="30" font-weight="400" fill="#9FB4CC">56 curated skills - decision trees, workflows, guardrails - grounded in Microsoft Learn</text>
+
+  <!-- chips -->
+  <g font-family="Segoe UI, Inter, Arial, sans-serif" font-size="24" font-weight="600">
+    <rect x="96"  y="486" width="150" height="50" rx="25" fill="#50E6FF" fill-opacity="0.12" stroke="#50E6FF" stroke-opacity="0.5"/>
+    <text x="171" y="519" fill="#50E6FF" text-anchor="middle">56 Skills</text>
+
+    <rect x="262" y="486" width="296" height="50" rx="25" fill="#0A2540" stroke="#50E6FF" stroke-opacity="0.35"/>
+    <text x="410" y="519" fill="#CFE9F5" text-anchor="middle">Defender . Sentinel . Entra</text>
+
+    <rect x="574" y="486" width="296" height="50" rx="25" fill="#0A2540" stroke="#50E6FF" stroke-opacity="0.35"/>
+    <text x="722" y="519" fill="#CFE9F5" text-anchor="middle">Purview . Intune . Copilot</text>
+
+    <rect x="886" y="486" width="160" height="50" rx="25" fill="#0A2540" stroke="#50E6FF" stroke-opacity="0.35"/>
+    <text x="966" y="519" fill="#CFE9F5" text-anchor="middle">Zero Trust</text>
   </g>
+
+  <!-- shield glyph -->
+  <g transform="translate(1000, 96)">
+    <path d="M104 6 L192 36 V108 C192 170 152 206 104 222 C56 206 16 170 16 108 V36 Z"
+          fill="#0A2540" stroke="#50E6FF" stroke-width="3.5" stroke-opacity="0.85"/>
+    <path d="M64 110 L94 140 L148 78" fill="none" stroke="#50E6FF" stroke-width="11"
+          stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- watermark -->
+  <text x="1184" y="600" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="20" fill="#5C7A99" text-anchor="end">Vinayak Latthe . MIT licensed</text>
 </svg>
