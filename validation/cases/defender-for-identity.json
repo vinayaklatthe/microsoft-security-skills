@@ -1,26 +1,29 @@
 {
   "cases": [
     {
-      "prompt": "Deploy Defender for Identity sensors on domain controllers and AD CS/AD FS.",
+      "prompt": "Deploy Defender for Identity across our domain controllers, AD CS, AD FS, and Entra Connect.",
       "expect": [
-        {
-          "label": "Use a group Managed Service Account (gMSA) for the Directory Service Account.",
-          "any": [
-            "group managed"
-          ]
-        },
-        {
-          "label": "Ensure sensors are deployed on every DC — gaps create blind spots for lateral m...",
-          "any": [
-            "every"
-          ]
-        },
-        {
-          "label": "Use honeytoken accounts to catch reconnaissance.",
-          "any": [
-            "honeytoken accounts"
-          ]
-        }
+        { "label": "deploy sensors on every DC plus AD CS, AD FS, Entra Connect", "any": ["every dc", "all dcs", "all sensors"] },
+        { "label": "use a gMSA for the Directory Service Account", "any": ["gmsa", "group managed service account"] },
+        { "label": "AD CS sensor catches ESC1-ESC8 abuse paths", "any": ["esc1", "ad cs sensor", "certificate-based privilege"] },
+        { "label": "deploy in waves to baseline before tuning", "any": ["wave", "baseline"] }
+      ]
+    },
+    {
+      "prompt": "Which Defender for Identity detections cover Kerberoasting, DCSync, and Golden Ticket?",
+      "expect": [
+        { "label": "Kerberoasting detection via DC sensor", "any": ["kerberoasting"] },
+        { "label": "DCSync / domain dominance detection", "any": ["dcsync", "domain dominance"] },
+        { "label": "Golden Ticket / forged Kerberos detection", "any": ["golden", "silver ticket", "forged"] },
+        { "label": "deploy honeytoken accounts for high-confidence reconnaissance signal", "any": ["honeytoken"] }
+      ]
+    },
+    {
+      "prompt": "Which identity posture issues should I fix first in MDI?",
+      "expect": [
+        { "label": "work the Identity Security Posture Assessments", "any": ["identity security posture", "ispm", "posture assessment"] },
+        { "label": "legacy protocols and unsecure account attributes are the highest-impact fixes", "any": ["legacy protocol", "unsecure account"] },
+        { "label": "posture issues are pre-attack signals - fix them before they enable an incident", "any": ["pre-attack", "before they enable", "weak link"] }
       ]
     }
   ]

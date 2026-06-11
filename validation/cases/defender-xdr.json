@@ -1,19 +1,28 @@
 {
   "cases": [
     {
-      "prompt": "Walk me through investigating a multi-stage attack across endpoint and identity.",
+      "prompt": "Walk me through investigating a multi-stage attack across endpoint and identity in Defender XDR.",
       "expect": [
-        { "label": "investigate by incident, not by individual alert", "any": ["incident"] },
-        { "label": "signals are correlated across workloads into the attack story", "any": ["correlate", "correlates"] },
+        { "label": "investigate by incident, not by individual alert", "any": ["incident", "incidents queue"] },
+        { "label": "the attack graph shows the kill chain across workloads", "any": ["attack graph", "kill chain"] },
         { "label": "use advanced hunting KQL over the shared schema", "any": ["advanced hunting", "kql"] },
         { "label": "automatic attack disruption can contain a high-confidence active attack", "any": ["attack disruption"] }
       ]
     },
     {
-      "prompt": "What should I configure before enabling Defender XDR broadly?",
+      "prompt": "Which Defender workloads must I onboard before I can claim Defender XDR coverage?",
       "expect": [
-        { "label": "configure unified role-based access (RBAC) first", "any": ["rbac"] },
-        { "label": "review attack disruption scope and exclusions in a controlled rollout", "any": ["exclusion", "scope"] }
+        { "label": "MDE + MDI + Entra ID Protection at minimum", "any": ["mde", "mdi", "entra id protection"] },
+        { "label": "rule of thumb a real incident touches at least two workloads", "any": ["at least two", "1 alert, 1 entity", "workload is missing"] },
+        { "label": "MDO and MDA add email and SaaS coverage", "any": ["mdo", "mda", "defender for office", "defender for cloud apps"] }
+      ]
+    },
+    {
+      "prompt": "Roll out unified RBAC and automatic attack disruption safely in Defender XDR.",
+      "expect": [
+        { "label": "unified RBAC configured first, before broad enablement", "any": ["unified rbac", "rbac first"] },
+        { "label": "run attack disruption in report-only mode for ~14 days first", "any": ["report-only", "14 days"] },
+        { "label": "custom detection rules need entity mappings to correlate into incidents", "any": ["entity mapping"] }
       ]
     }
   ]

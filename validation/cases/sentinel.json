@@ -4,16 +4,26 @@
       "prompt": "How do I design a Microsoft Sentinel workspace and control ingestion cost?",
       "expect": [
         { "label": "prefer a single central Log Analytics workspace", "any": ["single", "central", "log analytics workspace"] },
-        { "label": "route low-value logs to Auxiliary/Basic or ADX", "any": ["auxiliary", "basic logs", "azure data explorer"] },
-        { "label": "use commitment tiers once volume is predictable", "any": ["commitment tier"] },
-        { "label": "onboard connectors via Content Hub", "any": ["content hub", "connector"] }
+        { "label": "route low-value logs to Auxiliary/Basic or ADX archive", "any": ["auxiliary", "basic logs", "azure data explorer", "adx"] },
+        { "label": "commitment tier only after PAYG baseline", "any": ["commitment tier", "payg"] },
+        { "label": "use table-level RBAC rather than splitting workspaces", "any": ["table-level rbac", "resource-context"] }
       ]
     },
     {
-      "prompt": "Automate incident response in Sentinel.",
+      "prompt": "Move DNS and proxy logs from Analytics to Auxiliary - what's the trade-off and what breaks?",
       "expect": [
-        { "label": "use automation rules and Logic Apps playbooks", "any": ["automation rule", "playbook"] },
-        { "label": "map detections to MITRE ATT&CK", "any": ["MITRE", "ATT&CK"] }
+        { "label": "Auxiliary logs do not drive scheduled analytics rules", "any": ["auxiliary logs cannot", "do not drive", "search-only"] },
+        { "label": "Auxiliary cuts cost roughly an order of magnitude vs Analytics", "any": ["1/8", "1/5", "fraction", "cheaper"] },
+        { "label": "rule of thumb high-volume low-fidelity logs leave Analytics tier", "any": ["high-volume", "low-fidelity", "50 gb"] }
+      ]
+    },
+    {
+      "prompt": "Plan first-week connectors and analytics rule rollout for a new M365 tenant Sentinel deployment.",
+      "expect": [
+        { "label": "prioritise Entra ID, Office 365, Defender XDR, Azure Activity connectors", "any": ["entra id", "office 365", "defender xdr"] },
+        { "label": "enable solutions from Content Hub rather than raw rules", "any": ["content hub"] },
+        { "label": "tune analytics rules in the first week instead of disabling them", "any": ["tune", "do not disable", "don't disable"] },
+        { "label": "map detections to MITRE ATT&CK for coverage reporting", "any": ["mitre", "att&ck"] }
       ]
     }
   ]

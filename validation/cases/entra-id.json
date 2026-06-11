@@ -3,17 +3,27 @@
     {
       "prompt": "Design the identity foundation for a new Entra ID tenant.",
       "expect": [
-        { "label": "move to phishing-resistant, passwordless authentication", "any": ["passwordless", "phishing-resistant"] },
+        { "label": "move to phishing-resistant, passwordless authentication (passkeys/FIDO2/WHfB)", "any": ["passwordless", "phishing-resistant", "passkey", "fido2"] },
         { "label": "block legacy authentication", "any": ["legacy authentication"] },
-        { "label": "protect break-glass / emergency access accounts", "any": ["break-glass", "emergency access"] },
-        { "label": "govern app consent to prevent illicit consent grants", "any": ["consent"] }
+        { "label": "create two cloud-only break-glass accounts with FIDO2 hardware keys", "any": ["break-glass", "emergency access"] },
+        { "label": "govern app consent via the admin consent workflow", "any": ["admin consent", "illicit consent"] }
       ]
     },
     {
-      "prompt": "Set up hybrid identity with our on-premises Active Directory.",
+      "prompt": "Set up hybrid identity for our on-premises Active Directory in 2026 - Entra Connect or Cloud Sync?",
       "expect": [
-        { "label": "use Entra Connect or Cloud Sync", "any": ["entra connect", "cloud sync"] },
-        { "label": "password hash sync is the recommended baseline sign-in method", "any": ["password hash sync"] }
+        { "label": "prefer Entra Cloud Sync for new builds", "any": ["cloud sync", "preferred", "lighter"] },
+        { "label": "avoid new AD FS deployments", "any": ["avoid new ad fs", "avoid new adfs", "no new ad fs"] },
+        { "label": "password hash sync as baseline sign-in", "any": ["password hash sync", "phs"] }
+      ]
+    },
+    {
+      "prompt": "Plan a rollout from passwords to passkeys for 5,000 users.",
+      "expect": [
+        { "label": "manage via the Authentication methods policy, not legacy MFA policy", "any": ["authentication methods policy"] },
+        { "label": "rollout order Authenticator then WHfB then FIDO2 passkeys", "any": ["authenticator", "windows hello"] },
+        { "label": "disable SMS as a primary MFA method", "any": ["sms"] },
+        { "label": "target > 90% of users on phishing-resistant methods", "any": ["90%", "phishing-resistant", "user registration"] }
       ]
     }
   ]

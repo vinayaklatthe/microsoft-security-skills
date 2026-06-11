@@ -1,26 +1,28 @@
 {
   "cases": [
     {
-      "prompt": "Apply Standard or Strict preset security policies in Defender for Office 365.",
+      "prompt": "Apply MDO preset security policies - Standard to everyone, Strict to executives and finance.",
       "expect": [
-        {
-          "label": "Preset policies take precedence over custom policies — understand ordering befo...",
-          "any": [
-            "preset policies"
-          ]
-        },
-        {
-          "label": "Maintain tenant allow/block lists carefully; broad allows weaken protection.",
-          "any": [
-            "maintain tenant"
-          ]
-        },
-        {
-          "label": "Validate Safe Links doesn't break legitimate automated links via configuration,...",
-          "any": [
-            "validate safe"
-          ]
-        }
+        { "label": "presets auto-update to Microsoft recommendations; custom policies do not", "any": ["preset", "auto-update"] },
+        { "label": "rule of thumb Standard floor for all, Strict ceiling for high-risk groups", "any": ["standard preset to all", "strict preset to", "floor", "ceiling"] },
+        { "label": "use configuration analyzer monthly to detect drift", "any": ["configuration analyzer", "drift"] }
+      ]
+    },
+    {
+      "prompt": "Configure DMARC for our domain and move from p=none to p=reject in 90 days.",
+      "expect": [
+        { "label": "DMARC reject is the goal, not p=none", "any": ["reject is the goal", "p=reject"] },
+        { "label": "publish SPF and DKIM as the foundation", "any": ["spf", "dkim"] },
+        { "label": "stage p=none then quarantine then reject", "any": ["p=none", "quarantine"] }
+      ]
+    },
+    {
+      "prompt": "Operate MDO day-to-day - user-reported phish, tenant allow/block lists, third-party SEG in front.",
+      "expect": [
+        { "label": "triage user-reported phish via the Submissions portal so AIR fires", "any": ["submissions portal", "submissions"] },
+        { "label": "TABL allow entries are temporary - 30-day max, review weekly", "any": ["30-day", "temporary", "allow entries"] },
+        { "label": "with third-party SEG enable Enhanced Filtering for Connectors", "any": ["enhanced filtering"] },
+        { "label": "impersonation protection limited to 5-15 named users, not everyone", "any": ["5-15", "5 to 15", "named users", "small specific", "small specific list"] }
       ]
     }
   ]

@@ -1,19 +1,29 @@
 {
   "cases": [
     {
-      "prompt": "Onboard endpoints to Defender for Endpoint and roll out ASR safely.",
+      "prompt": "Onboard 5,000 Intune-managed Windows 11 devices to MDE and roll out ASR safely.",
       "expect": [
-        { "label": "pilot ASR rules in audit mode before moving to block", "any": ["audit"] },
-        { "label": "enable tamper protection everywhere", "any": ["tamper protection"] },
-        { "label": "use device groups and RBAC to scope response actions", "any": ["device groups"] },
-        { "label": "enable EDR in block mode", "any": ["block mode"] }
+        { "label": "prefer Intune Security Settings Management for cloud-managed estates", "any": ["intune", "security settings management"] },
+        { "label": "enable tamper protection before any other policy", "any": ["tamper protection"] },
+        { "label": "pilot ASR rules in audit mode for ~14 days before moving to block", "any": ["audit", "14 days"] },
+        { "label": "enable EDR in block mode (mandatory with third-party AV)", "any": ["edr in block mode", "block mode"] }
       ]
     },
     {
-      "prompt": "How do I respond to a compromised device and reduce future exposure?",
+      "prompt": "Plan MDE Plan 1 vs Plan 2 for our M365 E3 tenant - what do we lose without P2?",
       "expect": [
-        { "label": "isolate the device as a scoped response action", "any": ["isolate"] },
-        { "label": "use threat & vulnerability management to prioritise remediation", "any": ["vulnerability"] }
+        { "label": "Plan 2 adds EDR, AIR, advanced hunting, threat & vuln management", "any": ["edr", "advanced hunting", "vulnerability management"] },
+        { "label": "Plan 1 is bundled with M365 E3", "any": ["plan 1", "bundled"] },
+        { "label": "server endpoints flow through Defender for Cloud / MDE for Servers", "any": ["defender for cloud", "mde for servers"] }
+      ]
+    },
+    {
+      "prompt": "Design device groups and RBAC for tier-0 admin workstations, regular workstations, and servers.",
+      "expect": [
+        { "label": "device groups by risk tier, not by department", "any": ["risk tier", "not by department"] },
+        { "label": "scope Live Response narrowly with audit logging", "any": ["live response"] },
+        { "label": "AIR full on workstations, semi on servers", "any": ["air", "full", "semi"] },
+        { "label": "controlled folder access on workstations only - breaks servers", "any": ["controlled folder access", "cfa"] }
       ]
     }
   ]
