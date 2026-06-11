@@ -1,0 +1,27 @@
+{
+  "cases": [
+    {
+      "prompt": "What are the first Defender XDR controls I should enable for a new Microsoft 365 tenant?",
+      "expect": [
+        {
+          "label": "Configure role-based access (unified RBAC) before broad enablement.",
+          "any": [
+            "role-based access"
+          ]
+        },
+        {
+          "label": "Review automatic attack disruption scope and exclusions in a controlled rollout.",
+          "any": [
+            "automatic attack"
+          ]
+        },
+        {
+          "label": "Tune custom detection rules to limit alert fatigue.",
+          "any": [
+            "custom detection"
+          ]
+        }
+      ]
+    }
+  ]
+}

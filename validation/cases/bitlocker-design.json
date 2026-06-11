@@ -1,0 +1,27 @@
+{
+  "cases": [
+    {
+      "prompt": "Design a BitLocker policy with silent enablement via Intune.",
+      "expect": [
+        {
+          "label": "Verify recovery key escrow is working before broad rollout — un-escrowed keys r...",
+          "any": [
+            "before"
+          ]
+        },
+        {
+          "label": "Pilot pre-boot authentication choices; they affect user experience and automati...",
+          "any": [
+            "pre-boot authentication"
+          ]
+        },
+        {
+          "label": "Removable-drive encryption (BitLocker To Go) is a separate policy decision.",
+          "any": [
+            "removable-drive encryption"
+          ]
+        }
+      ]
+    }
+  ]
+}

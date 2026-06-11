@@ -1,0 +1,21 @@
+{
+  "cases": [
+    {
+      "prompt": "Design a Zero Trust security architecture aligned to MCRA.",
+      "expect": [
+        {
+          "label": "Architecture must be driven by business risk and data sensitivity, not product...",
+          "any": [
+            "architecture must"
+          ]
+        },
+        {
+          "label": "Validate identity is the primary control plane before investing heavily elsewhe...",
+          "any": [
+            "validate identity"
+          ]
+        }
+      ]
+    }
+  ]
+}

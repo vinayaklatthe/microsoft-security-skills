@@ -1,0 +1,27 @@
+{
+  "cases": [
+    {
+      "prompt": "Set up Microsoft Priva to manage subject rights requests (DSARs).",
+      "expect": [
+        {
+          "label": "Priva depends on accurate personal-data classification — invest in SITs/classif...",
+          "any": [
+            "priva depends"
+          ]
+        },
+        {
+          "label": "Coordinate with legal/privacy office on request handling and retention of reque...",
+          "any": [
+            "coordinate"
+          ]
+        },
+        {
+          "label": "Apply least-privilege roles; SRR content is highly sensitive.",
+          "any": [
+            "least-privilege roles"
+          ]
+        }
+      ]
+    }
+  ]
+}

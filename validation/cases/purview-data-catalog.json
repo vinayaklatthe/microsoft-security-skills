@@ -1,0 +1,27 @@
+{
+  "cases": [
+    {
+      "prompt": "Set up the Purview unified catalog with governance domains and data products.",
+      "expect": [
+        {
+          "label": "Start with a few high-value domains and data products; broad rollout without ow...",
+          "any": [
+            "high-value domains"
+          ]
+        },
+        {
+          "label": "Curation is a continuous program, not a one-time load.",
+          "any": [
+            "curation"
+          ]
+        },
+        {
+          "label": "Align catalog access with the Data Map collection permissions.",
+          "any": [
+            "align catalog"
+          ]
+        }
+      ]
+    }
+  ]
+}

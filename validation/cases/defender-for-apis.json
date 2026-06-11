@@ -1,0 +1,27 @@
+{
+  "cases": [
+    {
+      "prompt": "Onboard APIs in API Management to Microsoft Defender for APIs.",
+      "expect": [
+        {
+          "label": "Defender for APIs currently focuses on APIs published through Azure API Managem...",
+          "any": [
+            "defender"
+          ]
+        },
+        {
+          "label": "Pair detection with preventive APIM controls (auth, throttling, validation) — d...",
+          "any": [
+            "pair detection"
+          ]
+        },
+        {
+          "label": "Prioritise externally exposed, sensitive-data, and unauthenticated APIs first.",
+          "any": [
+            "prioritise externally"
+          ]
+        }
+      ]
+    }
+  ]
+}

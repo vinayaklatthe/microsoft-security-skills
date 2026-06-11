@@ -1,0 +1,27 @@
+{
+  "cases": [
+    {
+      "prompt": "Design a PKI with root and issuing CAs and a certificate lifecycle.",
+      "expect": [
+        {
+          "label": "Protect the root and issuing CA keys (HSM / Managed HSM); a compromised CA unde...",
+          "any": [
+            "protect"
+          ]
+        },
+        {
+          "label": "Never let certificates silently expire — monitor and automate renewal (outages...",
+          "any": [
+            "certificates silently"
+          ]
+        },
+        {
+          "label": "Plan revocation and CRL/OCSP availability before relying on certificates for ac...",
+          "any": [
+            "revocation"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "cases": [
+    {
+      "prompt": "Which Microsoft Purview solution should I use for my scenario?",
+      "expect": [
+        {
+          "label": "Don't deploy enforcement (DLP block, auto-labelling) before classification matu...",
+          "any": [
+            "don't deploy"
+          ]
+        },
+        {
+          "label": "Scope by data sensitivity and regulatory drivers, not by feature availability.",
+          "any": [
+            "data sensitivity"
+          ]
+        }
+      ]
+    }
+  ]
+}

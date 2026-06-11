@@ -1,0 +1,27 @@
+{
+  "cases": [
+    {
+      "prompt": "Onboard devices to Microsoft Defender for Endpoint and confirm Plan 1 vs Plan 2.",
+      "expect": [
+        {
+          "label": "Always pilot ASR rules in audit mode; some rules can break line-of-business app...",
+          "any": [
+            "rules"
+          ]
+        },
+        {
+          "label": "Enable tamper protection to prevent attackers disabling protection.",
+          "any": [
+            "tamper protection"
+          ]
+        },
+        {
+          "label": "Use device groups and RBAC to scope response actions (isolate, restrict, live r...",
+          "any": [
+            "device groups"
+          ]
+        }
+      ]
+    }
+  ]
+}

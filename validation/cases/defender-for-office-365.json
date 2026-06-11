@@ -1,0 +1,27 @@
+{
+  "cases": [
+    {
+      "prompt": "Apply Standard or Strict preset security policies in Defender for Office 365.",
+      "expect": [
+        {
+          "label": "Preset policies take precedence over custom policies — understand ordering befo...",
+          "any": [
+            "preset policies"
+          ]
+        },
+        {
+          "label": "Maintain tenant allow/block lists carefully; broad allows weaken protection.",
+          "any": [
+            "maintain tenant"
+          ]
+        },
+        {
+          "label": "Validate Safe Links doesn't break legitimate automated links via configuration,...",
+          "any": [
+            "validate safe"
+          ]
+        }
+      ]
+    }
+  ]
+}

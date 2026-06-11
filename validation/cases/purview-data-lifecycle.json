@@ -1,0 +1,27 @@
+{
+  "cases": [
+    {
+      "prompt": "Create retention policies and labels with adaptive scopes.",
+      "expect": [
+        {
+          "label": "Understand retention principle of precedence (retention wins over deletion; lon...",
+          "any": [
+            "principle of precedence"
+          ]
+        },
+        {
+          "label": "Regulatory records are immutable — apply only where truly required.",
+          "any": [
+            "regulatory records"
+          ]
+        },
+        {
+          "label": "Pilot auto-applied retention labels; review impact before broad rollout.",
+          "any": [
+            "auto-applied retention"
+          ]
+        }
+      ]
+    }
+  ]
+}

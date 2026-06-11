@@ -1,0 +1,27 @@
+{
+  "cases": [
+    {
+      "prompt": "Set up entitlement management with access packages for guest access.",
+      "expect": [
+        {
+          "label": "Prioritise leaver/deprovisioning automation — orphaned access is a common breac...",
+          "any": [
+            "prioritise leaver/deprovisioning"
+          ]
+        },
+        {
+          "label": "Use access packages for guests to enforce expiration and sponsorship.",
+          "any": [
+            "access packages"
+          ]
+        },
+        {
+          "label": "Set review reviewers and fallback actions carefully so \"no response\" doesn't au...",
+          "any": [
+            "reviewers"
+          ]
+        }
+      ]
+    }
+  ]
+}

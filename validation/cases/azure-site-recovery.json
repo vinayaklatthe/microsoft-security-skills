@@ -1,0 +1,27 @@
+{
+  "cases": [
+    {
+      "prompt": "Design a disaster recovery plan with Azure Site Recovery and clear RPO/RTO.",
+      "expect": [
+        {
+          "label": "DR is not backup — pair ASR with Azure Backup for point-in-time restore and ran...",
+          "any": [
+            "azure backup"
+          ]
+        },
+        {
+          "label": "Test failover on a schedule; an untested DR plan is an assumption, not a capabi...",
+          "any": [
+            "test failover"
+          ]
+        },
+        {
+          "label": "Account for dependencies (identity, DNS, networking, Key Vault) in the recovery...",
+          "any": [
+            "account"
+          ]
+        }
+      ]
+    }
+  ]
+}

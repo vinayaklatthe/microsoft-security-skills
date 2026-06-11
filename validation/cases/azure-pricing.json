@@ -1,0 +1,27 @@
+{
+  "cases": [
+    {
+      "prompt": "Estimate the cost of Microsoft Sentinel and Defender for Cloud for my environment.",
+      "expect": [
+        {
+          "label": "Pricing changes — always verify against the live pricing page and your agreemen...",
+          "any": [
+            "pricing changes"
+          ]
+        },
+        {
+          "label": "Sentinel ingestion is the most common cost surprise — plan log tiering up front.",
+          "any": [
+            "sentinel ingestion"
+          ]
+        },
+        {
+          "label": "Don't disable needed protection purely for cost; optimise scope instead.",
+          "any": [
+            "don't disable"
+          ]
+        }
+      ]
+    }
+  ]
+}

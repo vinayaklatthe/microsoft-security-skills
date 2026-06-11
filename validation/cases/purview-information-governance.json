@@ -1,0 +1,27 @@
+{
+  "cases": [
+    {
+      "prompt": "Sequence a Microsoft Purview information protection rollout.",
+      "expect": [
+        {
+          "label": "Don't start with enforcement — classification maturity must precede DLP blockin...",
+          "any": [
+            "don't start"
+          ]
+        },
+        {
+          "label": "Govern by data sensitivity and regulation, not by what's licensed.",
+          "any": [
+            "govern"
+          ]
+        },
+        {
+          "label": "Treat it as a program with owners and change management, not a one-off configur...",
+          "any": [
+            "program"
+          ]
+        }
+      ]
+    }
+  ]
+}

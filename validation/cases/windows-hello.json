@@ -1,0 +1,27 @@
+{
+  "cases": [
+    {
+      "prompt": "Deploy Windows Hello for Business with cloud Kerberos trust.",
+      "expect": [
+        {
+          "label": "Cloud Kerberos trust requires Microsoft Entra Kerberos for on-prem resource acc...",
+          "any": [
+            "cloud kerberos"
+          ]
+        },
+        {
+          "label": "The PIN is device-bound and never leaves the device — it is not a password, so...",
+          "any": [
+            "device-bound"
+          ]
+        },
+        {
+          "label": "Plan credential recovery (PIN reset) and shared-device scenarios.",
+          "any": [
+            "credential recovery"
+          ]
+        }
+      ]
+    }
+  ]
+}

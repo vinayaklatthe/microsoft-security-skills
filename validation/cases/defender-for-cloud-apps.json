@@ -1,0 +1,27 @@
+{
+  "cases": [
+    {
+      "prompt": "Discover shadow IT and sanction or unsanction cloud apps.",
+      "expect": [
+        {
+          "label": "Cloud Discovery data can include user activity — set anonymisation per privacy...",
+          "any": [
+            "cloud discovery"
+          ]
+        },
+        {
+          "label": "Pilot session policies; reverse-proxy session control can affect app behaviour.",
+          "any": [
+            "session policies"
+          ]
+        },
+        {
+          "label": "Prioritise app governance for apps with broad Microsoft Graph permissions.",
+          "any": [
+            "prioritise app"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "cases": [
+    {
+      "prompt": "Onboard on-premises servers to Azure with Arc and extend Defender for Cloud to them.",
+      "expect": [
+        {
+          "label": "Secure the Connected Machine agent and its outbound connectivity; scope its man...",
+          "any": [
+            "secure"
+          ]
+        },
+        {
+          "label": "Plan network/proxy and firewall requirements before broad onboarding.",
+          "any": [
+            "network/proxy"
+          ]
+        },
+        {
+          "label": "Use Arc to unify security posture — don't leave hybrid servers outside Defender...",
+          "any": [
+            "unify security"
+          ]
+        }
+      ]
+    }
+  ]
+}

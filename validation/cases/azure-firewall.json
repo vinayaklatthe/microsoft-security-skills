@@ -1,0 +1,21 @@
+{
+  "cases": [
+    {
+      "prompt": "Design Azure Firewall egress filtering with FQDN and application rules.",
+      "expect": [
+        {
+          "label": "Azure Firewall complements, not replaces, NSGs (subnet/NIC microsegmentation) a...",
+          "any": [
+            "azure firewall"
+          ]
+        },
+        {
+          "label": "Plan capacity and availability zones for resilient hub deployments.",
+          "any": [
+            "capacity"
+          ]
+        }
+      ]
+    }
+  ]
+}

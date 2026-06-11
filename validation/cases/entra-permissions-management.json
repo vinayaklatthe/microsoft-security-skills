@@ -1,0 +1,27 @@
+{
+  "cases": [
+    {
+      "prompt": "Right-size cloud permissions using the Permission Creep Index.",
+      "expect": [
+        {
+          "label": "Validate activity baselines cover a representative period before aggressively r...",
+          "any": [
+            "validate activity"
+          ]
+        },
+        {
+          "label": "Coordinate remediation with workload owners to avoid breaking automation/servic...",
+          "any": [
+            "coordinate remediation"
+          ]
+        },
+        {
+          "label": "Treat machine/workload identities explicitly — they often hold the largest unus...",
+          "any": [
+            "machine/workload identities"
+          ]
+        }
+      ]
+    }
+  ]
+}

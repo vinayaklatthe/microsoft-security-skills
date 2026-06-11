@@ -1,0 +1,27 @@
+{
+  "cases": [
+    {
+      "prompt": "Set up Microsoft Security Copilot and provision SCUs.",
+      "expect": [
+        {
+          "label": "Treat AI output as assistive — analysts must validate findings before acting.",
+          "any": [
+            "assistive"
+          ]
+        },
+        {
+          "label": "Apply least-privilege plugin access; Copilot respects the underlying product RB...",
+          "any": [
+            "least-privilege plugin"
+          ]
+        },
+        {
+          "label": "Monitor SCU consumption to control cost; tune capacity to demand.",
+          "any": [
+            "consumption"
+          ]
+        }
+      ]
+    }
+  ]
+}

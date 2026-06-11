@@ -1,0 +1,27 @@
+{
+  "cases": [
+    {
+      "prompt": "Improve my Azure Secure Score in Defender for Cloud.",
+      "expect": [
+        {
+          "label": "Start with foundational CSPM everywhere; enable paid plans where workload risk...",
+          "any": [
+            "foundational cspm"
+          ]
+        },
+        {
+          "label": "Use attack path analysis to focus effort — Secure Score alone can mislead prior...",
+          "any": [
+            "attack path"
+          ]
+        },
+        {
+          "label": "Tag critical assets so the cloud security graph weights them appropriately.",
+          "any": [
+            "critical assets"
+          ]
+        }
+      ]
+    }
+  ]
+}

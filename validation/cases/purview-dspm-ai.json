@@ -1,0 +1,27 @@
+{
+  "cases": [
+    {
+      "prompt": "Use DSPM for AI to monitor what sensitive data users send to Copilot.",
+      "expect": [
+        {
+          "label": "DSPM for AI surfaces risk but depends on classification and label maturity to a...",
+          "any": [
+            "dspm"
+          ]
+        },
+        {
+          "label": "Address oversharing before broad Copilot rollout, not after.",
+          "any": [
+            "before"
+          ]
+        },
+        {
+          "label": "Apply privacy controls when monitoring user prompts; communicate policy to user...",
+          "any": [
+            "privacy controls"
+          ]
+        }
+      ]
+    }
+  ]
+}

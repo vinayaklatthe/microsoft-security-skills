@@ -1,0 +1,27 @@
+{
+  "cases": [
+    {
+      "prompt": "Create an Azure Policy initiative to enforce a security baseline.",
+      "expect": [
+        {
+          "label": "Test Deny policies in audit first — a broad Deny can block legitimate deploymen...",
+          "any": [
+            "test deny"
+          ]
+        },
+        {
+          "label": "Use parameters to make policies reusable across environments.",
+          "any": [
+            "parameters"
+          ]
+        },
+        {
+          "label": "Don't over-exclude; each exclusion weakens the guardrail and should be justifie...",
+          "any": [
+            "don't over-exclude"
+          ]
+        }
+      ]
+    }
+  ]
+}

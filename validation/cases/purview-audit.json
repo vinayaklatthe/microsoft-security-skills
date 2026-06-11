@@ -1,0 +1,27 @@
+{
+  "cases": [
+    {
+      "prompt": "Search the Microsoft 365 audit log to investigate user activity.",
+      "expect": [
+        {
+          "label": "Validate retention meets regulatory requirements before an incident — default r...",
+          "any": [
+            "before"
+          ]
+        },
+        {
+          "label": "Premium-only events (e.g., MailItemsAccessed) are critical for breach investiga...",
+          "any": [
+            "premium-only events"
+          ]
+        },
+        {
+          "label": "Audit search has latency; design investigations accordingly.",
+          "any": [
+            "audit search"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "cases": [
+    {
+      "prompt": "We believe an attacker has Global Admin in our tenant — what are the immediate steps?",
+      "expect": [
+        {
+          "label": "Engage qualified incident responders (e.g., Microsoft Incident Response) for ma...",
+          "any": [
+            "engage qualified"
+          ]
+        },
+        {
+          "label": "Sequence eviction carefully — partial eviction warns the adversary and invites...",
+          "any": [
+            "sequence eviction"
+          ]
+        },
+        {
+          "label": "Preserve forensic evidence before remediating where investigation is required.",
+          "any": [
+            "preserve forensic"
+          ]
+        }
+      ]
+    }
+  ]
+}

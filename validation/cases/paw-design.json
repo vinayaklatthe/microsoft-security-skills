@@ -1,0 +1,27 @@
+{
+  "cases": [
+    {
+      "prompt": "Design a privileged access workstation (PAW) strategy with the enterprise access model.",
+      "expect": [
+        {
+          "label": "A PAW must not be used for productivity tasks (email/web) — that defeats its pu...",
+          "any": [
+            "must"
+          ]
+        },
+        {
+          "label": "Protect the management and provisioning chain (clean source) — Intune/imaging m...",
+          "any": [
+            "protect"
+          ]
+        },
+        {
+          "label": "Pair PAW with PIM, phishing-resistant MFA, and dedicated admin accounts.",
+          "any": [
+            "pair paw"
+          ]
+        }
+      ]
+    }
+  ]
+}

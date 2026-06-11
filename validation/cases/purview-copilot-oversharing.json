@@ -1,0 +1,27 @@
+{
+  "cases": [
+    {
+      "prompt": "Make SharePoint Copilot-ready by remediating oversharing.",
+      "expect": [
+        {
+          "label": "Remediate oversharing before broad Copilot enablement; a pilot can proceed on a...",
+          "any": [
+            "before"
+          ]
+        },
+        {
+          "label": "Sensitivity-label encryption is the strongest control — Copilot can't use conte...",
+          "any": [
+            "sensitivity-label encryption"
+          ]
+        },
+        {
+          "label": "Oversharing control is ongoing governance, not a one-time cleanup.",
+          "any": [
+            "oversharing control"
+          ]
+        }
+      ]
+    }
+  ]
+}

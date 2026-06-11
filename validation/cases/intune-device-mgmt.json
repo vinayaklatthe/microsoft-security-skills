@@ -1,0 +1,27 @@
+{
+  "cases": [
+    {
+      "prompt": "Plan device enrollment with Autopilot and Apple/Android methods.",
+      "expect": [
+        {
+          "label": "Pilot configuration and compliance with rings; avoid org-wide day-one enforceme...",
+          "any": [
+            "configuration"
+          ]
+        },
+        {
+          "label": "Set a compliance grace period and clear user remediation guidance to avoid lock...",
+          "any": [
+            "grace period"
+          ]
+        },
+        {
+          "label": "Use filters to target policies precisely across device types.",
+          "any": [
+            "filters"
+          ]
+        }
+      ]
+    }
+  ]
+}

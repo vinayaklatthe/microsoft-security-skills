@@ -1,0 +1,27 @@
+{
+  "cases": [
+    {
+      "prompt": "How do I design a hybrid identity model with Entra Connect and password hash sync?",
+      "expect": [
+        {
+          "label": "Protect break-glass / emergency access accounts (cloud-only, excluded from CA,...",
+          "any": [
+            "protect break-glass"
+          ]
+        },
+        {
+          "label": "Avoid legacy authentication; block it with Conditional Access.",
+          "any": [
+            "legacy authentication"
+          ]
+        },
+        {
+          "label": "Govern app consent to prevent illicit consent grants.",
+          "any": [
+            "govern app"
+          ]
+        }
+      ]
+    }
+  ]
+}

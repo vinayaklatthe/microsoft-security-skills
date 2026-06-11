@@ -1,0 +1,27 @@
+{
+  "cases": [
+    {
+      "prompt": "Harden an Azure App Service web app with Easy Auth, managed identity, and TLS.",
+      "expect": [
+        {
+          "label": "Remove public inbound exposure with private endpoints for sensitive apps; pair...",
+          "any": [
+            "remove public"
+          ]
+        },
+        {
+          "label": "Use managed identity + Key Vault references to eliminate secrets in config.",
+          "any": [
+            "managed identity"
+          ]
+        },
+        {
+          "label": "Enforce HTTPS-only and modern TLS; disable legacy protocols and FTP.",
+          "any": [
+            "enforce https-only"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "cases": [
+    {
+      "prompt": "Set up Azure Key Vault with RBAC, purge protection, and a private endpoint.",
+      "expect": [
+        {
+          "label": "One vault per app per environment limits blast radius and simplifies access con...",
+          "any": [
+            "vault per"
+          ]
+        },
+        {
+          "label": "Purge protection is irreversible once on — required for CMK and many compliance...",
+          "any": [
+            "purge protection"
+          ]
+        },
+        {
+          "label": "Never store secrets in source/config; use managed identity + Key Vault referenc...",
+          "any": [
+            "secrets"
+          ]
+        }
+      ]
+    }
+  ]
+}

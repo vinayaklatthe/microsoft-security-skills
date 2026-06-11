@@ -1,0 +1,27 @@
+{
+  "cases": [
+    {
+      "prompt": "Which built-in Azure role gives least-privilege access to read blob data?",
+      "expect": [
+        {
+          "label": "Owner includes the ability to grant access — restrict tightly and prefer User A...",
+          "any": [
+            "owner includes"
+          ]
+        },
+        {
+          "label": "Control-plane roles (Reader/Contributor) do not automatically grant data-plane...",
+          "any": [
+            "not"
+          ]
+        },
+        {
+          "label": "Review and remove unused assignments; pair high-privilege roles with PIM.",
+          "any": [
+            "remove unused"
+          ]
+        }
+      ]
+    }
+  ]
+}

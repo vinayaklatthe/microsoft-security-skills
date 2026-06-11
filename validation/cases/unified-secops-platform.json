@@ -1,0 +1,21 @@
+{
+  "cases": [
+    {
+      "prompt": "Onboard a Sentinel workspace to the Defender portal for a single SOC pane.",
+      "expect": [
+        {
+          "label": "Some Sentinel features behave differently once onboarded to the Defender portal...",
+          "any": [
+            "some sentinel"
+          ]
+        },
+        {
+          "label": "Validate RBAC mapping: Defender portal unified RBAC governs access to merged ex...",
+          "any": [
+            "validate rbac"
+          ]
+        }
+      ]
+    }
+  ]
+}

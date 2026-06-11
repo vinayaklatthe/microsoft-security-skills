@@ -1,0 +1,27 @@
+{
+  "cases": [
+    {
+      "prompt": "Harden our Microsoft 365 SaaS settings and review posture recommendations.",
+      "expect": [
+        {
+          "label": "Posture management is preventive; pair with threat detection (CWPP, MDA threat...",
+          "any": [
+            "posture management"
+          ]
+        },
+        {
+          "label": "Don't chase score for its own sake — fix exploitable, high-impact issues first.",
+          "any": [
+            "don't chase"
+          ]
+        },
+        {
+          "label": "Coordinate remediation with app/workload owners to avoid breakage.",
+          "any": [
+            "coordinate remediation"
+          ]
+        }
+      ]
+    }
+  ]
+}

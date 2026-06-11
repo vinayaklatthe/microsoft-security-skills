@@ -1,0 +1,27 @@
+{
+  "cases": [
+    {
+      "prompt": "Deploy the Phishing Triage agent in Security Copilot.",
+      "expect": [
+        {
+          "label": "Keep humans in the loop for consequential actions; start in a supervised/recomm...",
+          "any": [
+            "humans"
+          ]
+        },
+        {
+          "label": "Govern agent identities like any privileged identity — least privilege, monitor...",
+          "any": [
+            "govern agent"
+          ]
+        },
+        {
+          "label": "Review agent activity logs regularly.",
+          "any": [
+            "agent activity"
+          ]
+        }
+      ]
+    }
+  ]
+}

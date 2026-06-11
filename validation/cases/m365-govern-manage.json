@@ -1,0 +1,27 @@
+{
+  "cases": [
+    {
+      "prompt": "Control Microsoft 365 group and Teams sprawl with lifecycle policies.",
+      "expect": [
+        {
+          "label": "Governance underpins Copilot readiness — uncontrolled sharing means Copilot ove...",
+          "any": [
+            "governance underpins"
+          ]
+        },
+        {
+          "label": "Balance control with productivity; over-restriction drives shadow IT.",
+          "any": [
+            "balance control"
+          ]
+        },
+        {
+          "label": "Use access reviews to remove stale guest and broad access continuously.",
+          "any": [
+            "access reviews"
+          ]
+        }
+      ]
+    }
+  ]
+}

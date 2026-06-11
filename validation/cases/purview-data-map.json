@@ -1,0 +1,27 @@
+{
+  "cases": [
+    {
+      "prompt": "Register and scan data sources in the Purview Data Map.",
+      "expect": [
+        {
+          "label": "Scope and schedule scans to manage cost and source load; avoid scanning everyth...",
+          "any": [
+            "schedule scans"
+          ]
+        },
+        {
+          "label": "Secure the self-hosted integration runtime host as sensitive infrastructure.",
+          "any": [
+            "secure"
+          ]
+        },
+        {
+          "label": "Validate classification accuracy before relying on it for downstream protection.",
+          "any": [
+            "validate classification"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "cases": [
+    {
+      "prompt": "Map my Azure controls to the Microsoft Cloud Security Benchmark (MCSB).",
+      "expect": [
+        {
+          "label": "MCSB is a baseline, not a substitute for workload-specific threat modelling.",
+          "any": [
+            "mcsb"
+          ]
+        },
+        {
+          "label": "Secure Score is directional — validate that recommended fixes suit each workloa...",
+          "any": [
+            "secure score"
+          ]
+        }
+      ]
+    }
+  ]
+}

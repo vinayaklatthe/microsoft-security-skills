@@ -1,0 +1,27 @@
+{
+  "cases": [
+    {
+      "prompt": "Deploy Defender for Identity sensors on domain controllers and AD CS/AD FS.",
+      "expect": [
+        {
+          "label": "Use a group Managed Service Account (gMSA) for the Directory Service Account.",
+          "any": [
+            "group managed"
+          ]
+        },
+        {
+          "label": "Ensure sensors are deployed on every DC — gaps create blind spots for lateral m...",
+          "any": [
+            "every"
+          ]
+        },
+        {
+          "label": "Use honeytoken accounts to catch reconnaissance.",
+          "any": [
+            "honeytoken accounts"
+          ]
+        }
+      ]
+    }
+  ]
+}

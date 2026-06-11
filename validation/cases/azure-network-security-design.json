@@ -1,0 +1,27 @@
+{
+  "cases": [
+    {
+      "prompt": "Design a hub-and-spoke network with segmentation and private endpoints.",
+      "expect": [
+        {
+          "label": "Prefer private endpoints over service endpoints for sensitive PaaS data planes.",
+          "any": [
+            "private endpoints"
+          ]
+        },
+        {
+          "label": "Default-deny NSGs; document every allow rule's purpose.",
+          "any": [
+            "default-deny nsgs"
+          ]
+        },
+        {
+          "label": "Don't expose management ports (RDP/SSH) to the internet — use Bastion / just-in...",
+          "any": [
+            "don't expose"
+          ]
+        }
+      ]
+    }
+  ]
+}

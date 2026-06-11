@@ -1,0 +1,27 @@
+{
+  "cases": [
+    {
+      "prompt": "Remove standing Global Admin and require just-in-time PIM activation.",
+      "expect": [
+        {
+          "label": "Keep at least two break-glass accounts with permanent access, excluded from jus...",
+          "any": [
+            "break-glass"
+          ]
+        },
+        {
+          "label": "Require approval and phishing-resistant MFA for the most privileged roles (e.g....",
+          "any": [
+            "approval"
+          ]
+        },
+        {
+          "label": "Aim to remove standing access for all high-privilege roles.",
+          "any": [
+            "remove standing"
+          ]
+        }
+      ]
+    }
+  ]
+}

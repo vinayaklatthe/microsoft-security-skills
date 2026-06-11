@@ -1,0 +1,27 @@
+{
+  "cases": [
+    {
+      "prompt": "Design a secure API on Azure API Management aligned to the OWASP API Security Top 10.",
+      "expect": [
+        {
+          "label": "BOLA/BFLA are the top API risks — authorization must be enforced server-side pe...",
+          "any": [
+            "bola/bfla"
+          ]
+        },
+        {
+          "label": "Don't rely on the gateway alone; defence in depth across gateway + backend.",
+          "any": [
+            "don't rely"
+          ]
+        },
+        {
+          "label": "Validate input against a schema; reject unexpected fields and oversized payload...",
+          "any": [
+            "validate input"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "cases": [
+    {
+      "prompt": "Create an Intune app protection policy for BYOD without enrollment (MAM-WE).",
+      "expect": [
+        {
+          "label": "MAM-WE protects data in supported apps only — confirm the app supports the Intu...",
+          "any": [
+            "mam-we protects"
+          ]
+        },
+        {
+          "label": "Communicate the user experience (PIN, restrictions) before rollout to reduce fr...",
+          "any": [
+            "communicate"
+          ]
+        },
+        {
+          "label": "Combine with Conditional Access for enforcement; APP alone doesn't gate sign-in.",
+          "any": [
+            "conditional access"
+          ]
+        }
+      ]
+    }
+  ]
+}

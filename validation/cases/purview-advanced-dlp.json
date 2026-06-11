@@ -1,0 +1,27 @@
+{
+  "cases": [
+    {
+      "prompt": "Configure risk-based DLP driven by Insider Risk Adaptive Protection.",
+      "expect": [
+        {
+          "label": "Adaptive Protection requires Insider Risk Management configured and consented —...",
+          "any": [
+            "adaptive protection"
+          ]
+        },
+        {
+          "label": "EDM requires schema definition, a hashed data upload, and a dedicated upload ro...",
+          "any": [
+            "schema definition"
+          ]
+        },
+        {
+          "label": "Validate dynamic enforcement in audit/simulation before enabling block actions.",
+          "any": [
+            "validate dynamic"
+          ]
+        }
+      ]
+    }
+  ]
+}

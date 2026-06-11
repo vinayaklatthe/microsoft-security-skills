@@ -1,0 +1,27 @@
+{
+  "cases": [
+    {
+      "prompt": "Design a sensitivity label taxonomy with auto-labeling.",
+      "expect": [
+        {
+          "label": "Tune SIT confidence levels and run auto-labeling in simulation to control false...",
+          "any": [
+            "simulation"
+          ]
+        },
+        {
+          "label": "Plan label encryption carefully — it affects external sharing, co-authoring, an...",
+          "any": [
+            "label encryption"
+          ]
+        },
+        {
+          "label": "Train users; mandatory labelling without guidance causes friction and mislabell...",
+          "any": [
+            "train users"
+          ]
+        }
+      ]
+    }
+  ]
+}

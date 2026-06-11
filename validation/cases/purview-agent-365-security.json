@@ -1,0 +1,27 @@
+{
+  "cases": [
+    {
+      "prompt": "Secure and govern Copilot agents with Microsoft Purview.",
+      "expect": [
+        {
+          "label": "Agent governance depends on classification, labelling, and oversharing remediat...",
+          "any": [
+            "agent governance"
+          ]
+        },
+        {
+          "label": "Address oversharing and access scope before granting agents broad data access.",
+          "any": [
+            "before"
+          ]
+        },
+        {
+          "label": "Apply privacy controls and least privilege to agent identities and the data the...",
+          "any": [
+            "privacy controls"
+          ]
+        }
+      ]
+    }
+  ]
+}

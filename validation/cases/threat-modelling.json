@@ -1,0 +1,27 @@
+{
+  "cases": [
+    {
+      "prompt": "Run a STRIDE threat model with a data flow diagram and trust boundaries.",
+      "expect": [
+        {
+          "label": "Threat modelling is iterative — revisit each major design change, not once.",
+          "any": [
+            "threat modelling"
+          ]
+        },
+        {
+          "label": "Capture assumptions and out-of-scope items explicitly.",
+          "any": [
+            "capture assumptions"
+          ]
+        },
+        {
+          "label": "Tie threats to actionable mitigations and owners, not abstract risks.",
+          "any": [
+            "actionable"
+          ]
+        }
+      ]
+    }
+  ]
+}

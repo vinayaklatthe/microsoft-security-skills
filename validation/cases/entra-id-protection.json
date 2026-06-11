@@ -1,0 +1,27 @@
+{
+  "cases": [
+    {
+      "prompt": "Configure sign-in and user risk policies in Entra ID Protection.",
+      "expect": [
+        {
+          "label": "Require registration for MFA and SSPR so self-remediation actually works.",
+          "any": [
+            "registration"
+          ]
+        },
+        {
+          "label": "Exclude break-glass accounts from risk policies.",
+          "any": [
+            "exclude break-glass"
+          ]
+        },
+        {
+          "label": "Start risk thresholds at High, then expand to medium once tuned.",
+          "any": [
+            "high"
+          ]
+        }
+      ]
+    }
+  ]
+}

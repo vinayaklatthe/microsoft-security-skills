@@ -1,0 +1,21 @@
+{
+  "cases": [
+    {
+      "prompt": "Protect SharePoint and Teams data with labels and DLP across Office.",
+      "expect": [
+        {
+          "label": "Each workload is a distinct DLP/retention location — selecting one does not cov...",
+          "any": [
+            "each workload"
+          ]
+        },
+        {
+          "label": "Teams DLP and retention are not retroactive for some message types — confirm sc...",
+          "any": [
+            "teams dlp"
+          ]
+        }
+      ]
+    }
+  ]
+}

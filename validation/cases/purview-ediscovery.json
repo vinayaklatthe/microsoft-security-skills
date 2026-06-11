@@ -1,0 +1,27 @@
+{
+  "cases": [
+    {
+      "prompt": "Create an eDiscovery case with legal hold to preserve content.",
+      "expect": [
+        {
+          "label": "Apply holds before searching/collecting to ensure defensibility.",
+          "any": [
+            "before"
+          ]
+        },
+        {
+          "label": "The current unified eDiscovery experience consolidates prior Standard/Premium —...",
+          "any": [
+            "current unified"
+          ]
+        },
+        {
+          "label": "Scope access tightly; eDiscovery can reach highly sensitive content.",
+          "any": [
+            "access tightly"
+          ]
+        }
+      ]
+    }
+  ]
+}
