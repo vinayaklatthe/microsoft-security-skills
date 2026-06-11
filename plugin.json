@@ -3,11 +3,11 @@
   "description": "Structured Microsoft Security skills for AI agents: practical guidance across Security, Identity and Management, Compliance and Privacy, plus Azure platform security. Covers Defender, Sentinel, Entra, Intune, Purview, Priva, and Security Copilot, grounded in public Microsoft Learn documentation and usable across major agent platforms.",
   "version": "0.1.0",
   "author": {
-    "name": "Microsoft",
-    "url": "https://www.microsoft.com"
+    "name": "Vinayak Latthe",
+    "url": "https://github.com/vinayaklatthe"
   },
-  "homepage": "https://github.com/microsoft/microsoft-security-skills",
-  "repository": "https://github.com/microsoft/microsoft-security-skills",
+  "homepage": "https://github.com/vinayaklatthe/microsoft-security-skills",
+  "repository": "https://github.com/vinayaklatthe/microsoft-security-skills",
   "license": "MIT",
   "keywords": [
     "security",

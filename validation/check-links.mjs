@@ -18,7 +18,7 @@ const BASE_DELAY_MS = 250; // polite pacing between requests per worker
 const RETRY_STATUSES = new Set([408, 425, 429, 500, 502, 503, 504]);
 const THROTTLE_STATUS = 429;
 const USER_AGENT =
-  "Mozilla/5.0 (compatible; microsoft-security-skills-linkcheck/1.0; +https://github.com/microsoft/microsoft-security-skills)";
+  "Mozilla/5.0 (compatible; microsoft-security-skills-linkcheck/1.0; +https://github.com/vinayaklatthe/microsoft-security-skills)";
 
 // Collect URL -> set of skills that reference it.
 const urlToSkills = new Map();

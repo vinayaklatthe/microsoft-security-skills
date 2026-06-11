@@ -8,8 +8,8 @@ description: Curated Microsoft Security skills for AI agents. Practical guidance
 # Regenerate with `apm pack` (https://github.com/microsoft/apm).
 marketplace:
   owner:
-    name: Microsoft
-    url: https://www.microsoft.com
+    name: Vinayak Latthe
+    url: https://github.com/vinayaklatthe
   packages:
     - name: microsoft-security
       description: Curated Microsoft Security skills for AI agents covering threat
@@ -17,4 +17,4 @@ marketplace:
         decision trees, workflows, and guardrails grounded in public Microsoft
         Learn documentation.
       source: ./
-      homepage: https://github.com/microsoft/microsoft-security-skills
+      homepage: https://github.com/vinayaklatthe/microsoft-security-skills

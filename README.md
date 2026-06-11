@@ -101,7 +101,7 @@ The Microsoft Security Skills Plugin supports [APM](https://github.com/microsoft
 command installs it across GitHub Copilot, Claude Code, Cursor, OpenCode, Codex, and Gemini:
 
 ```bash
-apm install microsoft/microsoft-security-skills
+apm install vinayaklatthe/microsoft-security-skills
 ```
 
 ### Universal install (all hosts)
@@ -109,23 +109,23 @@ apm install microsoft/microsoft-security-skills
 Clone the repository and point your agent at the `skills/` directory:
 
 ```bash
-git clone https://github.com/microsoft/microsoft-security-skills.git
+git clone https://github.com/vinayaklatthe/microsoft-security-skills.git
 ```
 
 Or use the skills CLI to install globally for a specific host:
 
 ```bash
 # GitHub Copilot (VS Code, Copilot CLI)
-npx skills add https://github.com/microsoft/microsoft-security-skills/tree/main/skills -a github-copilot -g -y
+npx skills add https://github.com/vinayaklatthe/microsoft-security-skills/tree/main/skills -a github-copilot -g -y
 
 # Claude Code
-npx skills add https://github.com/microsoft/microsoft-security-skills/tree/main/skills -a claude -g -y
+npx skills add https://github.com/vinayaklatthe/microsoft-security-skills/tree/main/skills -a claude -g -y
 
 # Cursor
-npx skills add https://github.com/microsoft/microsoft-security-skills/tree/main/skills -a cursor -g -y
+npx skills add https://github.com/vinayaklatthe/microsoft-security-skills/tree/main/skills -a cursor -g -y
 
 # Codex CLI
-npx skills add https://github.com/microsoft/microsoft-security-skills/tree/main/skills -a codex -g -y
+npx skills add https://github.com/vinayaklatthe/microsoft-security-skills/tree/main/skills -a codex -g -y
 ```
 
 ### Gemini CLI
@@ -133,7 +133,7 @@ npx skills add https://github.com/microsoft/microsoft-security-skills/tree/main/
 **Install the extension**:
 
 ```bash
-gemini extensions install https://github.com/microsoft/microsoft-security-skills
+gemini extensions install https://github.com/vinayaklatthe/microsoft-security-skills
 ```
 
 ## Verify the installation
