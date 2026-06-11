@@ -1,0 +1,50 @@
+Here is how to set up Azure Key Vault so an application can read secrets securely, with managed identity as the recommended pattern.
+
+1. Create the Key Vault
+- az keyvault create --name <vault-name> --resource-group <rg> --location <region>
+- Choose the RBAC authorization model (recommended) over the older vault access policies:
+  --enable-rbac-authorization true
+- Enable soft-delete (on by default) and purge protection for production.
+
+2. Store your secret
+- az keyvault secret set --vault-name <vault-name> --name "DbConnectionString" --value "<value>"
+- Reference secrets by URI: https://<vault-name>.vault.azure.net/secrets/DbConnectionString
+
+3. Give the app an identity (no secrets in code)
+- Prefer a managed identity so there is no credential to store or rotate.
+- System-assigned (tied to one resource) or user-assigned (shared across resources):
+  az webapp identity assign --name <app> --resource-group <rg>
+- This gives the app a service principal in Entra ID automatically.
+
+4. Grant least-privilege access with RBAC
+- Assign the "Key Vault Secrets User" role (read secrets only) to the app's identity, scoped to the vault:
+  az role assignment create --assignee <identity-principal-id> --role "Key Vault Secrets User" --scope <vault-resource-id>
+- Do not give the app management-plane roles like Contributor on the vault; it only needs data-plane read.
+
+5. Read secrets from the app code
+- Use the Azure SDK with DefaultAzureCredential, which picks up the managed identity at runtime:
+
+  // .NET
+  var client = new SecretClient(new Uri("https://<vault>.vault.azure.net/"), new DefaultAzureCredential());
+  KeyVaultSecret secret = await client.GetSecretAsync("DbConnectionString");
+
+  # Python
+  from azure.identity import DefaultAzureCredential
+  from azure.keyvault.secrets import SecretClient
+  client = SecretClient("https://<vault>.vault.azure.net/", DefaultAzureCredential())
+  secret = client.get_secret("DbConnectionString")
+
+- DefaultAzureCredential uses the managed identity in Azure and your developer login locally, so the same code works everywhere with no secrets in config.
+
+6. Optional: App Service / Container Apps Key Vault references
+- For App Service / Functions you can reference a secret directly in app settings without code:
+  @Microsoft.KeyVault(SecretUri=https://<vault>.vault.azure.net/secrets/DbConnectionString/)
+- The platform resolves it using the app's managed identity.
+
+7. Harden the network and operations
+- Restrict access: disable public network access and use a private endpoint, or limit to selected VNets/IPs.
+- Turn on diagnostic logging (send to Log Analytics) to audit who read which secret.
+- Use separate vaults per environment (dev/test/prod) and per trust boundary.
+- Cache secrets in the app and refresh periodically rather than calling the vault on every request.
+
+The key principles: managed identity instead of stored credentials, RBAC least privilege (Secrets User, scoped to the vault), private networking, and audit logging.

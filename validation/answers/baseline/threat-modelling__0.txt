@@ -1,0 +1,44 @@
+Running a threat model for a new system design is a structured way to find security weaknesses before you build. I would use the classic four-question framing with STRIDE. Here is the process.
+
+The four questions (the backbone)
+1. What are we building? (Understand the system.)
+2. What can go wrong? (Identify threats.)
+3. What are we going to do about it? (Mitigate.)
+4. Did we do a good job? (Validate.)
+
+Step 1: Model the system
+- Gather the architecture: components, users, data stores, external dependencies, and the technologies used.
+- Draw a data flow diagram (DFD) showing processes, data stores, external entities, and the data flows between them.
+- Mark trust boundaries - the lines where data crosses between different levels of trust (e.g. internet to web tier, app to database, tenant to tenant). Threats concentrate at these boundaries.
+- Identify your assets and what you are protecting (sensitive data, credentials, availability).
+
+Step 2: Identify threats with STRIDE
+Walk each element and data flow (especially those crossing trust boundaries) through STRIDE:
+- Spoofing - impersonating a user or system. (Counter: authentication.)
+- Tampering - unauthorised modification of data or code. (Counter: integrity - signing, hashing, access control.)
+- Repudiation - denying an action with no proof. (Counter: logging, audit trails, non-repudiation.)
+- Information Disclosure - exposing data to those not authorised. (Counter: encryption, access control.)
+- Denial of Service - making the system unavailable. (Counter: throttling, quotas, scaling, resilience.)
+- Elevation of Privilege - gaining capabilities you should not have. (Counter: authorisation, least privilege, input validation.)
+
+For each component/flow, ask which STRIDE categories apply and enumerate concrete threats.
+
+Step 3: Rate and prioritise
+- Assess each threat by likelihood and impact (e.g. DREAD or a simple risk matrix).
+- Prioritise the high-risk items; you cannot fix everything equally.
+
+Step 4: Decide mitigations
+- For each significant threat, choose a response: mitigate (add a control), eliminate (remove the feature/asset), transfer (e.g. to a managed service), or accept (with sign-off).
+- Map mitigations to the relevant security controls and turn them into work items/requirements for the design.
+
+Step 5: Validate
+- Confirm the mitigations actually address the threats.
+- Re-review when the design changes; a threat model is a living document, not a one-off.
+- Feed the findings into security requirements, tests, and code review.
+
+Practical tips
+- Do it early, at design time, and keep it lightweight enough to repeat.
+- Involve developers, architects, and security together.
+- Tools like the Microsoft Threat Modeling Tool or Threat Dragon can help draw DFDs and auto-suggest STRIDE threats, but the value is in the discussion.
+
+Output: a diagram with trust boundaries, a prioritised list of STRIDE threats, and a set of agreed mitigations tracked to completion.

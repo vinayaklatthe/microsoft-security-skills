@@ -1,0 +1,52 @@
+Responding to a compromised device with Microsoft Defender for Endpoint, then reducing future exposure, breaks into containment/eradication and then hardening. Here is the flow.
+
+Responding to the compromised device
+
+1. Triage from the incident
+- Open the incident/alert in the Microsoft Defender portal and review the device timeline: process tree, command lines, network connections, files, and registry changes.
+- Identify the malicious process, persistence, and any credentials or accounts involved.
+
+2. Contain the device fast
+- Isolate the device from the network (Device isolation) so the attacker loses access while leaving the EDR agent connected for investigation.
+- If needed, restrict app execution to allow only Microsoft-signed binaries.
+
+3. Eradicate the threat
+- Stop and quarantine the malicious file(s) across the estate.
+- Run an antivirus scan.
+- Remove persistence (scheduled tasks, services, run keys, startup items).
+- Use Live Response to collect artefacts, pull files, and run remediation scripts on the device.
+- Block the indicators (file hashes, IPs, URLs, certs) so they cannot reappear elsewhere.
+
+4. Handle identity exposure
+- If credentials were on the device (e.g. LSASS access), reset the affected user/service account passwords and revoke their sessions/tokens.
+- Check for and remove any attacker-registered MFA or mailbox rules tied to those accounts.
+
+5. Hunt for scope
+- Use advanced hunting to pivot on the indicators (hashes, IPs, accounts, command lines) and find every other affected device. Do not assume it is just one machine.
+
+6. Recover
+- Release the device from isolation only once it is clean, or reimage it if integrity is in doubt.
+- Confirm the indicators are gone and monitor for re-entry.
+- Document the timeline and root cause (initial access vector).
+
+Reducing future exposure
+
+1. Turn on the protective stack
+- Tamper protection, cloud-delivered protection, EDR in block mode, network protection, controlled folder access, and automatic sample submission.
+
+2. Roll out Attack Surface Reduction (ASR) rules
+- Deploy ASR rules (audit first, then enforce) - especially block credential theft from LSASS, block executable content from email/webmail, and block Office child processes. These shut down the techniques most attacks rely on.
+
+3. Reduce the attack surface
+- Use Threat & Vulnerability Management to prioritise and patch the vulnerabilities and misconfigurations on your devices, especially ones with active exploits.
+- Remove local admin rights where possible and enforce least privilege.
+
+4. Strengthen identity and access
+- Require phishing-resistant MFA, block legacy auth, and require device compliance (via Intune) for access to corporate resources.
+
+5. Improve detection and response
+- Tune automated investigation and response (AIR) so future incidents are remediated faster.
+- Create custom detection rules from your hunting queries.
+- Ensure device groups, RBAC, and notifications route incidents to the right responders.
+
+The pattern: isolate -> eradicate -> reset exposed credentials -> hunt for scope -> recover, then close the door with the full protection stack, ASR rules, vulnerability remediation, least privilege, and device-compliance Conditional Access so the same technique does not work next time.

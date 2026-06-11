@@ -1,0 +1,49 @@
+Onboarding endpoints to Microsoft Defender for Endpoint and rolling out Attack Surface Reduction (ASR) rules safely is a two-part exercise: get the agent reporting cleanly, then introduce ASR in audit mode before enforcing. Here is how.
+
+Part 1: Onboard endpoints
+
+1. Confirm licensing and set up the portal
+- Ensure you have Defender for Endpoint P1/P2 (or M365 E5/E5 Security).
+- Initialise the environment in the Microsoft Defender portal (security.microsoft.com) and set data retention/region.
+
+2. Choose an onboarding method
+- Intune (recommended for managed Windows/macOS/iOS/Android) - connect Defender for Endpoint to Intune, then deploy the onboarding/EDR policy.
+- Group Policy or a configuration script for domain-joined Windows.
+- Microsoft Defender for Cloud for servers, or the onboarding package for Windows Server / Linux.
+- Configuration Manager for co-managed estates.
+
+3. Prepare the endpoints
+- For Windows, ensure Microsoft Defender Antivirus is running (or in passive mode if a third-party AV is present) so EDR works.
+- Enable EDR in block mode, cloud-delivered protection, tamper protection, network protection, and automatic sample submission.
+- Turn on tamper protection so attackers/users cannot disable the agent.
+
+4. Roll out in rings and verify
+- Deploy to a pilot ring first, confirm devices appear in the device inventory and show "Active".
+- Validate with the detection test (run the simulation) to confirm EDR is reporting.
+- Then expand to broader rings.
+
+5. Configure device groups and RBAC
+- Create device groups (by region/role) with appropriate automation levels and assign RBAC so the right teams see the right devices.
+
+Part 2: Roll out ASR rules safely
+
+1. Understand ASR
+- ASR rules block common malware/exploitation behaviours (e.g. Office creating child processes, credential theft from LSASS, executable content from email, script obfuscation, etc.). They can break legitimate apps if enforced blindly.
+
+2. Start in audit mode
+- Deploy all candidate ASR rules in Audit mode first. This logs what would have been blocked without impacting users.
+- Deploy via Intune (Attack Surface Reduction policy) or GPO/PowerShell.
+
+3. Measure and tune
+- Use advanced hunting (DeviceEvents with ActionType ASR*) and the reports to see what each rule would block.
+- Identify false positives and create per-rule exclusions for legitimate line-of-business apps.
+
+4. Move to enforce gradually
+- Flip rules to Block one ring and one rule (or small batch) at a time, starting with the high-value, low-noise rules (e.g. block credential stealing from LSASS, block executable content from email/webmail).
+- Monitor for user impact after each change before widening.
+
+5. Maintain
+- Keep exclusions tight and documented.
+- Re-review periodically as apps change, and add new ASR rules as Microsoft releases them (again, audit first).
+
+Key principle: never enforce ASR cold. Onboard with tamper protection and EDR verified, then audit ASR, tune exclusions, and enforce rule-by-ring-by-rule. That gives you the protection without surprise breakage.

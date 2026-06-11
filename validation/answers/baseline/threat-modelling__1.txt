@@ -1,0 +1,19 @@
+In STRIDE, the E stands for Elevation of Privilege.
+
+What it covers
+- Elevation of Privilege is when an attacker (or a user) gains capabilities or permissions they are not supposed to have - for example, a standard user gaining administrator rights, a process running with higher privileges than intended, or someone bypassing authorisation checks to perform actions reserved for another role.
+- It is the violation of the authorisation property: the system fails to correctly enforce "who is allowed to do what".
+- Typical examples: exploiting a code vulnerability (buffer overflow, injection) to run code with system privileges; abusing a misconfigured role or over-permissive IAM policy; bypassing access-control checks (insecure direct object references); privilege escalation through a vulnerable service; container or VM escape; or tampering with tokens/claims to assume a higher role.
+
+How it is mitigated
+- Authorisation as the primary defence: enforce strong, server-side access control on every sensitive operation. Never rely on the client/UI to hide functionality.
+- Least privilege: grant users, services, and processes the minimum permissions needed. Use just-in-time elevation (e.g. PIM) instead of standing admin rights.
+- Role-based / attribute-based access control (RBAC/ABAC) with clear separation of duties.
+- Input validation and safe coding to prevent injection and memory-corruption bugs that lead to code execution at higher privilege. Use memory-safe languages/practices where possible.
+- Run processes with the lowest privilege; drop privileges after start-up; sandbox/isolate components; use separate service accounts.
+- Keep systems patched - many EoP attacks exploit known vulnerabilities in the OS or libraries.
+- Validate tokens and claims properly (signature, audience, issuer, expiry) so an attacker cannot forge or replace them.
+- Defence in depth: trust boundaries, network segmentation, and monitoring so that even if one control fails, escalation is contained and detected.
+- Audit and alert on privilege changes and use of high-privilege roles.
+
+In short: Elevation of Privilege is gaining rights you should not have, and the countermeasures are robust authorisation, least privilege / JIT access, input validation and patching to close escalation paths, and monitoring to detect privilege misuse.

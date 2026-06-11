@@ -1,0 +1,50 @@
+If an attacker has Global Admin in your tenant right now, treat this as an active compromise and move fast. The goal is to evict them, regain exclusive control, and preserve evidence. Here is how I would walk through it.
+
+1. Stand up an out-of-band response channel
+- Do not discuss the incident on the compromised tenant's email/Teams. The attacker may be reading it.
+- Use phones, a separate tenant, or a secure conferencing bridge.
+- Identify a small response team and a single decision-maker.
+
+2. Establish a clean, trusted admin identity
+- Create or use a break-glass / emergency access account that the attacker does not control.
+- Make sure it uses a strong, newly-generated password and phishing-resistant MFA (FIDO2 key or certificate), and is excluded from any Conditional Access policy that could lock you out.
+- Confirm you can actually sign in with it before you start kicking people out, or you risk locking yourself out too.
+
+3. Find every account and identity the attacker controls
+- Review the membership of Global Administrator and other highly privileged roles (Privileged Role Administrator, Security Administrator, Exchange Admin, Application Administrator, Cloud Application Administrator).
+- Look in both Entra ID role assignments and PIM eligible/active assignments.
+- Check for newly created users, guests, and service principals/app registrations with high privilege or credentials added.
+- Review Entra ID sign-in logs and audit logs for the attacker's activity and source IPs.
+
+4. Evict the attacker
+- Remove the attacker from all privileged roles (and PIM eligibility).
+- Disable or delete the malicious accounts they created.
+- Force password reset and revoke sessions/refresh tokens for every account they touched (Revoke-MgUserSignInSession or the portal "Revoke sessions").
+- Reset credentials for legitimate admin accounts that may have been compromised.
+- Re-register MFA for affected accounts; remove any attacker-registered MFA methods or security keys.
+
+5. Clean up persistence
+- This is where most responders stop too early. A Global Admin can plant persistence that survives a password reset:
+  - Malicious or consented OAuth applications and service principals (check app registrations, enterprise apps, added client secrets/certificates).
+  - Added federated domains or modified federation settings (a backdoor that lets them mint tokens).
+  - Changed or added authentication methods / pass-through agents.
+  - Mailbox forwarding rules, inbox rules, delegate access.
+  - Conditional Access policy changes or named-location allowlists.
+  - Partner/delegated admin (GDAP) relationships.
+- Remove malicious app credentials, revoke consent, and remove any rogue federated domains.
+
+6. Reset the keys to the kingdom
+- Rotate credentials for high-value service accounts and any secrets that may have been exposed (Key Vault, app secrets).
+- Consider rotating the on-prem AD Connect / sync account if hybrid, and check seamless SSO / Kerberos (the AZUREADSSOACC account).
+- If on-prem AD is involved and you suspect a golden ticket scenario, you may need to rotate the krbtgt account twice.
+
+7. Verify you have exclusive control
+- Re-check privileged role membership, app credentials, and federation settings to confirm nothing was re-added.
+- Confirm break-glass accounts work and are monitored.
+
+8. Preserve evidence and notify
+- Export sign-in logs, audit logs, Unified Audit Log, and any Defender/Sentinel data before retention windows expire.
+- Engage Microsoft support / DART if the scope is large.
+- Notify legal, leadership, and meet any regulatory breach-reporting obligations.
+
+After eviction, immediately move to hardening so they cannot walk back in (separate question), and run a full investigation to understand initial access and blast radius.

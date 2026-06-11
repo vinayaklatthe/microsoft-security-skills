@@ -305,6 +305,15 @@ answers. To prove a skill *changes behaviour*, capture a `baseline` (answers fro
 session with no skill loaded) and compare the scores - see
 `validation/answers/README.md`.
 
+```bash
+npm run eval:compare          # baseline vs with-skill, lift summary
+npm run eval:compare:report   # per-case comparison table
+```
+
+Measured on the 10 high-risk skills: baseline (no skill) scored 51/61, with the skill
+loaded 61/61 - a +10-outcome lift with zero regressions, concentrated on the
+high-consequence operational details a generic answer tends to skip.
+
 
 All three checks run automatically on every pull request and weekly (link-rot sweep) via
 GitHub Actions - see `.github/workflows/validate.yml`.

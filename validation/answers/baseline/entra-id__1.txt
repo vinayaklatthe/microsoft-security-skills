@@ -1,0 +1,42 @@
+Setting up hybrid identity connects your on-premises Active Directory to Entra ID so users have one identity across on-prem and cloud. Here is the approach.
+
+1. Choose the sync tool
+- Entra Connect Sync (the classic agent installed on a Windows server) - full-featured, supports complex topologies and filtering.
+- Entra Cloud Sync (lightweight agents, managed from the cloud) - simpler, good for smaller or multi-forest scenarios, increasingly the default. You can run both for different domains.
+
+2. Choose the authentication method
+- Password Hash Synchronization (PHS) - a hash of the password hash is synced to Entra ID. Recommended for most: resilient (works if on-prem is down), enables leaked-credential detection, simplest to operate.
+- Pass-through Authentication (PTA) - passwords validated against on-prem AD in real time via agents; no password hashes in cloud, but depends on on-prem availability.
+- Federation (AD FS) - use only if you have a specific requirement (e.g. third-party MFA, smart cards, certain compliance needs). It adds significant infrastructure and is a high-value attack target.
+- Even with PTA/federation, enable PHS as a backup so you can fail over and get leaked-credential detection.
+
+3. Prepare AD
+- Clean up the directory: remove duplicate/invalid UPNs, ensure UPNs are routable (match a verified domain), and resolve any UPN/email mismatches.
+- Run IdFix to find and fix attribute problems before syncing.
+- Verify your custom domains in Entra ID.
+
+4. Plan scope and filtering
+- Decide which OUs / groups sync to the cloud. Do not sync service accounts, privileged on-prem admin accounts, or objects that have no cloud need.
+- Critically, do NOT sync on-prem privileged accounts to be cloud admins - keep cloud admin accounts cloud-only and separate.
+
+5. Install and configure
+- Stand up the sync server (Entra Connect) or deploy provisioning agents (Cloud Sync). Treat the sync server as a Tier 0 asset - harden it, restrict logon, and limit who can administer it.
+- Configure the sync account with least privilege.
+- Enable Seamless SSO if desired (note this creates the AZUREADSSOACC computer object - protect and periodically roll its key).
+
+6. Enable security features
+- Turn on Password Hash Sync (even as backup).
+- Enable self-service password reset with password writeback if you want SSPR to update on-prem AD.
+- Enable Entra ID Protection leaked-credential detection (works with PHS).
+- Deploy Defender for Identity sensors on domain controllers and the sync/AD FS servers to detect identity attacks.
+
+7. Conditional Access and devices
+- Decide device join type: Hybrid Entra join (for existing domain-joined devices) or move toward Entra join for new devices.
+- Apply Conditional Access (MFA, block legacy auth, device compliance) consistently across hybrid users.
+
+8. Validate and operate
+- Run an initial sync, verify objects appear correctly, and test sign-in with synced accounts.
+- Monitor Entra Connect Health, sync errors, and agent status.
+- Keep the sync tooling patched and have a documented failover/auth-method-switch plan.
+
+Key cautions: harden the sync server as Tier 0, keep cloud admins cloud-only (never synced privileged accounts), prefer PHS for resilience and leaked-credential detection, and clean up AD attributes before you start. That avoids the most common hybrid identity pitfalls.

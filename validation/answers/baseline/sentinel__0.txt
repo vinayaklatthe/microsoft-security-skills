@@ -1,0 +1,47 @@
+Designing a Microsoft Sentinel workspace and controlling ingestion cost go hand in hand, because Sentinel bills primarily on the volume of data ingested and retained in the underlying Log Analytics workspace. Here is how I would approach it.
+
+Workspace design
+
+1. Workspace strategy
+- Prefer a single, centralised Log Analytics workspace with Sentinel enabled where possible - it simplifies correlation, hunting, and analytics rules across all data.
+- Use multiple workspaces only when you have hard requirements: data residency/sovereignty (different regions), strict data-isolation or RBAC boundaries, separate cost ownership, or MSSP/multi-tenant scenarios. For multiple workspaces, use Sentinel's multi-workspace view / Azure Lighthouse.
+- Choose the region carefully for residency and to avoid cross-region egress.
+
+2. RBAC and access
+- Use Sentinel-specific roles (Reader, Responder, Contributor) and Log Analytics roles, plus resource-context / table-level RBAC if different teams should only see their data.
+
+3. Data connectors
+- Connect the sources you need: Entra ID logs, Microsoft 365 / Defender XDR, Azure activity, sign-in/audit logs, firewalls, endpoints, etc.
+- Many Microsoft 365 / Defender connectors are free to ingest into Sentinel - prefer those.
+
+4. Analytics, automation, and content
+- Enable analytics rules (from the templates/content hub), set up workbooks for visibility, and use automation rules + playbooks (Logic Apps) for response.
+- Use UEBA and threat intelligence where licensed.
+
+Controlling ingestion cost
+
+1. Choose the right pricing model
+- Use Commitment Tiers (capacity reservations) once you have predictable daily volume - they are significantly cheaper per GB than pay-as-you-go above a certain threshold. Review your daily ingest and pick the tier that matches.
+
+2. Ingest only what has security value
+- The biggest lever is filtering at source. Do not blindly ingest everything.
+- Filter and transform with Data Collection Rules (DCRs) and ingestion-time transformations: drop noisy columns/rows, parse, and reduce before data lands.
+- Send high-volume, low-value verbose logs (e.g. raw firewall allow traffic, debug logs) to cheaper destinations.
+
+3. Use the right table tier
+- Analytics logs (full cost) for data you alert/hunt on interactively.
+- Basic / Auxiliary logs (much cheaper ingest) for high-volume logs you only need for occasional search/investigation, not real-time analytics.
+- Archive tier for long-term retention you rarely query.
+
+4. Tune retention
+- Set interactive retention to what you actually query frequently (note the first 90 days are included free for Sentinel-enabled workspaces), then use long-term/archive retention for compliance at a lower cost. Per-table retention overrides let you keep cheap-but-required logs long and expensive logs short.
+
+5. Take advantage of free data
+- Microsoft 365 and several Defender/Azure activity logs are free to ingest - lean on those.
+
+6. Monitor and alert on cost
+- Use the Usage and Estimated Costs / Workspace Usage workbook to see which tables drive cost.
+- Set a daily cap (carefully - it can stop ingestion and create blind spots, so use as a safety net, not a primary control) and budget alerts.
+- Regularly review top tables by volume and prune or re-tier the noisy ones.
+
+The cost playbook in one line: filter and transform at ingestion, route high-volume/low-value logs to Basic/Auxiliary/Archive tiers, use commitment tiers for predictable volume, tune per-table retention, lean on free Microsoft data, and continuously monitor the top-cost tables.

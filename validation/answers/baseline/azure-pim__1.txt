@@ -1,0 +1,28 @@
+For privileged roles in Entra ID PIM, the activation controls are configured per role under Role settings. Here is what I would set and why.
+
+Core activation controls
+- Require multi-factor authentication on activation. For the highest-impact roles (Global Admin, Privileged Role Admin, Security Admin), require phishing-resistant MFA (FIDO2/Windows Hello/certificate), not SMS.
+- Require justification. The admin must enter a reason, which lands in the audit log.
+- Require approval to activate for the most sensitive roles. Assign specific approvers (not the requester) so there is a second pair of eyes. Lower-risk roles may be self-activation with MFA.
+- Require ticket / change information if you integrate with an ITSM tool, so each activation maps to a change record.
+
+Time controls
+- Set a short maximum activation duration - typically 1 to 4 hours. Long enough to do the work, short enough to limit exposure. Avoid 8+ hour windows.
+- Make eligible assignments time-bound (e.g. expire after a set period) rather than permanent eligibility, and require renewal.
+- Use just-in-time eligibility, not active/standing assignment, so no privilege exists between activations.
+
+Notifications and oversight
+- Enable notifications on role activation, on new assignments, and to approvers when approval is required.
+- Send alerts to the security team for activation of the most sensitive roles.
+
+Surrounding governance (not strictly "activation" but essential)
+- Configure access reviews on each privileged role (e.g. quarterly) to remove stale eligibility.
+- Keep 2 break-glass accounts outside this flow, excluded from Conditional Access, with monitoring/alerting on their use.
+- Pair PIM with a Conditional Access policy that requires phishing-resistant MFA and (optionally) compliant/managed devices for admins.
+
+Suggested tiering
+- Global Admin / Privileged Role Admin: approval required, phishing-resistant MFA, 1-2 hour max, justification, notifications on.
+- Other admin roles (Exchange, SharePoint, Intune, etc.): MFA + justification, maybe no approval, 2-4 hour max.
+- Reader/auditor-style roles: MFA + justification, longer window acceptable.
+
+The principles are: prove identity strongly at activation, require a reason (and often an approver), keep the window short and time-bound, and log/notify on everything so privileged use is visible and reviewable. PIM requires Entra ID P2.

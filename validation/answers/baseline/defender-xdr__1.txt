@@ -1,0 +1,42 @@
+Before enabling Microsoft Defender XDR broadly, do some groundwork so the data is complete, the correlation works, and you are not flooded with noise. Here is my checklist.
+
+1. Confirm licensing and entitlements
+- Defender XDR is an umbrella over Defender for Endpoint, Defender for Identity, Defender for Office 365, and Defender for Cloud Apps. Confirm you have the licences for the workloads you intend to use (typically Microsoft 365 E5 / E5 Security, or standalone equivalents).
+
+2. Onboard the underlying workloads first
+- Defender for Endpoint: onboard devices (Intune, GPO, script, or Defender for Cloud) and confirm they report in.
+- Defender for Identity: deploy sensors on domain controllers / AD FS / Entra Connect servers, and configure the directory service account.
+- Defender for Office 365: configure policies (Safe Links, Safe Attachments, anti-phishing).
+- Defender for Cloud Apps: connect apps and enable the relevant connectors.
+- XDR's correlation is only as good as the signals feeding it, so connectors and sensors need to be healthy first.
+
+3. Set roles and access (RBAC)
+- Plan who needs access to the unified Defender portal and at what level.
+- Use Entra ID roles and Defender XDR unified RBAC to grant least privilege to SOC analysts, responders, and admins.
+- Decide who can take response actions (isolate device, disable user) vs read-only investigators.
+
+4. Decide on automation level
+- Configure automated investigation and response (AIR) and choose the automation level (full, semi, or none) per device group.
+- Start more conservative in sensitive environments, then increase automation as you trust it.
+
+5. Tune and prepare for noise
+- Plan for an initial spike in alerts/incidents. Set up alert tuning, suppression rules, and a triage process.
+- Review default alert policies and severity, and align with your SOC runbooks.
+
+6. Integrations and data flow
+- Decide whether to stream Defender XDR incidents/alerts into Microsoft Sentinel (unified SecOps) for SIEM correlation and long-term retention.
+- Configure the Sentinel connector and align incident handling so you do not duplicate effort.
+
+7. Notifications and ownership
+- Configure email/alert notifications and assign incident ownership.
+- Define escalation paths and response runbooks before go-live.
+
+8. Pilot before broad rollout
+- Roll out to a pilot group / set of device groups first.
+- Validate that endpoint, identity, email, and cloud-app signals correlate into single incidents and that response actions work as expected.
+- Then expand coverage to the full estate.
+
+9. Data residency, retention, and privacy
+- Confirm data location, retention periods, and any compliance/privacy requirements for the telemetry.
+
+In short: license and onboard the four workloads, get connectors/sensors healthy, set RBAC and automation level, plan for alert tuning, decide on Sentinel integration, and pilot before going wide. That sequencing gives you complete signal, controlled noise, and clear ownership.

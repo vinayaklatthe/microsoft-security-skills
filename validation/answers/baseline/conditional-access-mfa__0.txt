@@ -1,0 +1,44 @@
+Designing a Conditional Access (CA) baseline and rolling it out without locking users out is about having the right set of policies, structured well, and deploying them carefully. Here is how I would do it.
+
+The baseline policy set
+A solid starting baseline (these align with Microsoft's recommended/"baseline" policies):
+1. Require MFA for all users (all cloud apps).
+2. Require MFA for admins / privileged roles - and prefer phishing-resistant methods for them.
+3. Block legacy authentication - legacy protocols (IMAP, POP, SMTP auth, older Office) bypass MFA, so block them.
+4. Require MFA for Azure management (the Azure portal / ARM / CLI).
+5. Require compliant or hybrid-joined devices for access to sensitive resources (needs Intune).
+6. Risk-based policies (if you have Entra ID P2 / Identity Protection):
+   - Require MFA (or password change) on sign-in risk.
+   - Require secure password change on user risk.
+7. Require MFA for device registration/join.
+8. Optionally, block access from unsupported platforms or untrusted locations, and session controls (e.g. sign-in frequency, no persistent browser) for sensitive apps.
+
+Design principles
+- Build named, well-structured policies with clear naming (e.g. "CA01 - Require MFA - All users").
+- Use security groups for include/exclude rather than per-user assignments.
+- Define personas (all users, admins, guests, service accounts) and apply policies per persona.
+- Decide what counts as trusted (named locations, compliant devices).
+
+Avoiding lockout (the critical part)
+- Exclude break-glass / emergency access accounts from every CA policy. Have 2, cloud-only, with FIDO2 keys, monitored. This is the single most important safeguard.
+- Use report-only mode first. Deploy each new policy in report-only, then review the CA insights / sign-in logs to see who would have been blocked and why, before enforcing.
+- Roll out in rings: pilot group -> early adopters -> broader population -> everyone. Validate at each ring.
+- Watch for service accounts and unattended/automation identities that cannot do MFA - identify them, move them to workload identities/managed identities where possible, or scope policies to exclude them deliberately (with compensating controls), not by accident.
+- Plan for guests and external users separately.
+- Confirm users are registered for MFA before enforcing the MFA requirement (run combined registration / a registration campaign first), otherwise they get stuck.
+
+Rollout sequence
+1. Set up break-glass accounts and exclude them.
+2. Ensure MFA registration is complete (registration campaign).
+3. Create policies in report-only mode.
+4. Analyse impact in the sign-in logs / What If tool.
+5. Enable per ring, starting with a pilot, monitoring after each step.
+6. Block legacy auth once you confirm nothing legitimate depends on it.
+7. Expand to all users, then layer in device-compliance and risk-based policies.
+
+Operate it
+- Use the What If tool to test policy outcomes for a given user/app.
+- Monitor sign-in logs and CA insights, and alert on break-glass usage.
+- Review and tidy policies periodically; avoid overlapping/conflicting policies.
+
+The safety net is: break-glass exclusions, report-only first, prior MFA registration, and ringed rollout. That lets you get to a strong baseline (MFA everywhere, no legacy auth, device compliance, risk-based) without locking anyone - including yourself - out.

@@ -12,6 +12,8 @@
     "eval:report": "node validation/run-evals.mjs --report",
     "eval:answers": "node validation/run-evals.mjs --answers --dir validation/answers/with-skill",
     "eval:answers:report": "node validation/run-evals.mjs --answers --dir validation/answers/with-skill --report",
+    "eval:compare": "node validation/compare-evals.mjs",
+    "eval:compare:report": "node validation/compare-evals.mjs --report",
     "validate": "npm run check:structure && npm run eval && npm run check:links"
   }
 }

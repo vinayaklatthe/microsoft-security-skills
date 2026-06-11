@@ -1,0 +1,42 @@
+Investigating a multi-stage attack across endpoint and identity is exactly the scenario Microsoft Defender XDR is built for. It correlates signals from Defender for Endpoint, Defender for Identity, Defender for Office 365, and Defender for Cloud Apps into a single incident. Here is how I would walk through it.
+
+1. Start at the incident, not the alert
+- Open Microsoft Defender portal (security.microsoft.com) > Incidents & alerts > Incidents.
+- Defender XDR already groups related alerts across endpoints, identities, mailboxes, and cloud apps into one incident with a correlated attack story. Start there rather than chasing individual alerts.
+- Review the incident graph: affected assets (devices, users, mailboxes, apps), the alerts, and how they connect.
+
+2. Build the timeline / attack story
+- Use the incident's attack story / timeline to see the sequence: e.g. phishing email (Office 365) -> credential theft on endpoint (Defender for Endpoint) -> lateral movement and suspicious authentication (Defender for Identity) -> data access in a cloud app (Defender for Cloud Apps).
+- Identify the entry point (initial access), what executed, and where the attacker moved.
+
+3. Investigate the endpoint side (Defender for Endpoint)
+- Examine the device timeline: processes, command lines, scripts, network connections, registry/file changes.
+- Look for the malicious process tree, persistence (scheduled tasks, services, run keys), and any dropped tools.
+- Pull the list of other devices showing the same indicators.
+
+4. Investigate the identity side (Defender for Identity / Entra ID Protection)
+- Review the user's authentication activity, lateral movement paths, and any suspicious actions (Pass-the-Hash, Pass-the-Ticket, DCSync, abnormal sign-ins).
+- Check Entra ID sign-in and audit logs and Identity Protection risk for the user.
+- Determine which accounts the attacker compromised and what they could reach.
+
+5. Hunt for the full scope with advanced hunting
+- Use KQL advanced hunting across the unified schema (DeviceEvents, DeviceProcessEvents, IdentityLogonEvents, EmailEvents, CloudAppEvents, AlertEvidence, etc.).
+- Pivot on indicators (file hashes, IPs, accounts, command lines) to find every affected asset, not just the ones that alerted.
+- Example pivots: same hash across devices, same sign-in IP across users, same sender across mailboxes.
+
+6. Contain
+- Isolate compromised devices, run AV scans, stop and quarantine malicious files, restrict app execution.
+- Disable or force password reset on compromised accounts and revoke their sessions/tokens; remove attacker-added MFA.
+- Soft-delete malicious emails across mailboxes (Office 365) and remove malicious inbox rules.
+- Revoke malicious OAuth app consents (Cloud Apps).
+
+7. Remediate and recover
+- Remove persistence, rebuild devices if needed, and reset affected credentials.
+- Use automated investigation and response (AIR) where available to speed up remediation.
+- Confirm the indicators are gone and monitor for re-entry.
+
+8. Close the loop
+- Document the timeline, root cause (initial access vector), and gaps.
+- Update detections, add custom detection rules from your hunting queries, and harden the entry point (e.g. phishing-resistant MFA, ASR rules).
+
+The core idea: let Defender XDR correlate the cross-domain signals into one incident, read the attack story end to end, use advanced hunting to find the true scope, then contain identity and endpoint together so the attacker cannot pivot back.

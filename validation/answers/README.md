@@ -38,3 +38,42 @@ context. To prove the skill *changes behaviour*, capture a baseline:
 A higher with-skill score than baseline is the evidence that the skill works.
 Ideally generate both sets with a *different* model from the one that authored
 the skills, to avoid the author also grading its own work.
+
+## Compare the two side by side
+
+```bash
+npm run eval:compare          # baseline vs with-skill, lift summary
+npm run eval:compare:report   # markdown table, per case
+```
+
+## Measured result (10 high-risk skills, 20 cases, 61 assertions)
+
+Baseline answers were captured in a separate window with no skill loaded; the
+with-skill answers were generated with the relevant SKILL.md in context.
+
+| Condition | Score |
+|---|---|
+| Baseline (no skill) | 51/61 (84%) |
+| With skill loaded | 61/61 (100%) |
+| **Lift from skills** | **+10 outcomes, zero regressions** |
+
+Per-skill improvement:
+
+| Skill | Baseline | With skill |
+|---|---|---|
+| compromise-recovery | 3/7 | 7/7 |
+| defender-xdr | 4/6 | 6/6 |
+| threat-modelling | 4/6 | 6/6 |
+| purview-dlp-policy | 5/6 | 6/6 |
+| sentinel | 5/6 | 6/6 |
+
+The gains cluster on high-consequence operational details a generic answer
+tends to skip (coordinated eviction and forensic preservation in incident
+response, attack-disruption scope in Defender XDR, endpoint DLP licensing,
+MITRE mapping in Sentinel). The skill adds the guardrails and gotchas, not the
+basics.
+
+Caveat: scoring is substring presence, so a "Hit" confirms the point was
+mentioned, not that it was correct or well-explained. The lift is therefore a
+floor, not a ceiling, on the skills' real value.
+
