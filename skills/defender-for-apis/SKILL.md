@@ -35,6 +35,12 @@ Management.
   isn't protection.
 - Prioritise externally exposed, sensitive-data, and unauthenticated APIs first.
 
+## Example prompts
+- `Onboard APIs in API Management to Microsoft Defender for APIs.`
+- `How do I detect API abuse and sensitive data exposure in my APIs?`
+- `Review API security posture and prioritise findings.`
+- `Set up API attack detection and alerting.`
+
 ## Microsoft Learn
 - Overview: https://learn.microsoft.com/azure/defender-for-cloud/defender-for-apis-introduction
 - Deploy/onboard: https://learn.microsoft.com/azure/defender-for-cloud/defender-for-apis-deploy

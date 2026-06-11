@@ -37,6 +37,12 @@ each workload's behaviours.
 - Teams DLP and retention are not retroactive for some message types — confirm scope.
 - Container (site/team) labels and item labels serve different purposes — design both.
 
+## Example prompts
+- `Protect SharePoint and Teams data with labels and DLP across Office.`
+- `Set up retention for Exchange and OneDrive governance.`
+- `How do I apply Microsoft 365 data protection end to end?`
+- `Secure Teams data with sensitivity labels.`
+
 ## Microsoft Learn
 - Information protection: https://learn.microsoft.com/purview/information-protection
 - DLP across M365: https://learn.microsoft.com/purview/dlp-learn-about-dlp

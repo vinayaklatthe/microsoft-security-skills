@@ -17,7 +17,7 @@ Android, and Linux.
 Managing corporate and BYOD device fleets and producing device **compliance** signal that
 Conditional Access uses for access decisions.
 
-## Design approach
+## Approach
 1. **Enrollment** — Choose per-platform methods: Windows **Autopilot** / Entra join, Apple
    Automated Device Enrollment (ABM), Android Enterprise (fully managed / work profile). Decide
    corporate vs personal (BYOD) enrollment scenarios.
@@ -34,6 +34,12 @@ Conditional Access uses for access decisions.
 - Pilot configuration and compliance with rings; avoid org-wide day-one enforcement.
 - Set a compliance **grace period** and clear user remediation guidance to avoid lockouts.
 - Use filters to target policies precisely across device types.
+
+## Example prompts
+- `Plan device enrollment with Autopilot and Apple/Android methods.`
+- `Create compliance policies that feed Conditional Access.`
+- `Apply security baselines and configuration profiles in Intune.`
+- `How do I manage devices end-to-end with Microsoft Intune?`
 
 ## Microsoft Learn
 - Overview: https://learn.microsoft.com/mem/intune/fundamentals/what-is-intune

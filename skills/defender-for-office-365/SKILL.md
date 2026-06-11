@@ -17,7 +17,7 @@ detection, hunting, and attack simulation training.
 Securing Exchange Online mail flow and Microsoft 365 collaboration (Teams, SharePoint, OneDrive)
 and reducing user-reported phishing.
 
-## Design approach
+## Approach
 1. **Plan** — Confirm Plan 1 (Safe Links, Safe Attachments, anti-phishing) vs Plan 2 (adds
    Threat Explorer, automated investigation & response, attack simulation training).
 2. **Use preset security policies** — Apply **Standard** or **Strict** presets to get
@@ -34,6 +34,12 @@ and reducing user-reported phishing.
 - Preset policies take precedence over custom policies — understand ordering before mixing both.
 - Maintain tenant allow/block lists carefully; broad allows weaken protection.
 - Validate Safe Links doesn't break legitimate automated links via configuration, not blanket bypass.
+
+## Example prompts
+- `Apply Standard or Strict preset security policies in Defender for Office 365.`
+- `Configure Safe Links, Safe Attachments, and anti-phishing.`
+- `How do I run attack simulation training for users?`
+- `Plan MDO Plan 1 vs Plan 2 for email protection.`
 
 ## Microsoft Learn
 - Overview: https://learn.microsoft.com/defender-office-365/mdo-about

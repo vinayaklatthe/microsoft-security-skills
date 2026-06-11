@@ -33,6 +33,12 @@ SaaS applications.
 - Don't chase score for its own sake — fix exploitable, high-impact issues first.
 - Coordinate remediation with app/workload owners to avoid breakage.
 
+## Example prompts
+- `Harden our Microsoft 365 SaaS settings and review posture recommendations.`
+- `Find misconfigured Salesforce or ServiceNow settings with SSPM.`
+- `How do I improve SaaS security posture across multiple cloud apps?`
+- `Review and remediate SaaS app misconfigurations.`
+
 ## Microsoft Learn
 - Defender for Cloud CSPM: https://learn.microsoft.com/azure/defender-for-cloud/concept-cloud-security-posture-management
 - SaaS security posture (SSPM): https://learn.microsoft.com/defender-cloud-apps/security-saas

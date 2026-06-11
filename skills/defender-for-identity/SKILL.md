@@ -17,7 +17,7 @@ detect reconnaissance, credential theft, lateral movement, and domain dominance.
 Detecting identity-based attacks against on-premises Active Directory (and hybrid identity
 infrastructure) and surfacing identity posture recommendations.
 
-## Design approach
+## Approach
 1. **Plan sensors** — Deploy MDI sensors on all **domain controllers**, and on **AD CS**,
    **AD FS**, and **Entra Connect** servers for full coverage.
 2. **Prerequisites** — Validate connectivity to the cloud service, a Directory Service Account
@@ -32,6 +32,12 @@ infrastructure) and surfacing identity posture recommendations.
 - Use a group Managed Service Account (gMSA) for the Directory Service Account.
 - Ensure sensors are deployed on **every** DC — gaps create blind spots for lateral movement.
 - Use honeytoken accounts to catch reconnaissance.
+
+## Example prompts
+- `Deploy Defender for Identity sensors on domain controllers and AD CS/AD FS.`
+- `How do I detect lateral movement and Kerberoasting on-prem?`
+- `Review identity security posture recommendations from MDI.`
+- `Plan sensor coverage for full on-prem AD threat detection.`
 
 ## Microsoft Learn
 - Overview: https://learn.microsoft.com/defender-for-identity/what-is

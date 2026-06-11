@@ -37,6 +37,12 @@ Choosing the correct role for a user, group, service principal, or managed ident
   choose the data role explicitly.
 - Review and remove unused assignments; pair high-privilege roles with PIM.
 
+## Example prompts
+- `Which built-in Azure role gives least-privilege access to read blob data?`
+- `Should I use a built-in or custom role for this scenario?`
+- `Pick the minimal role for a managed identity to access a specific resource.`
+- `How do I scope a role assignment correctly for least privilege?`
+
 ## Microsoft Learn
 - RBAC overview: https://learn.microsoft.com/azure/role-based-access-control/overview
 - Built-in roles: https://learn.microsoft.com/azure/role-based-access-control/built-in-roles

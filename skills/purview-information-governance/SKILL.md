@@ -17,7 +17,7 @@ to the Zero Trust **Data** pillar.
 Planning a multi-workstream Purview rollout and sequencing capabilities into a defensible roadmap
 rather than deploying features in isolation.
 
-## Approach (sequence matters)
+## Approach
 1. **Know your data** — Deploy classification: SITs, trainable classifiers, and Content/Activity
    Explorer to understand what sensitive data exists and where.
 2. **Protect your data** — Roll out a **sensitivity label** taxonomy with marking/encryption, then
@@ -33,6 +33,12 @@ rather than deploying features in isolation.
   auto-labelling.
 - Govern by data sensitivity and regulation, not by what's licensed.
 - Treat it as a program with owners and change management, not a one-off configuration.
+
+## Example prompts
+- `Sequence a Microsoft Purview information protection rollout.`
+- `Design a data protection program for the Zero Trust data pillar.`
+- `How do I protect and govern data end to end with Purview?`
+- `Plan an MIP strategy across classify, protect, and govern.`
 
 ## Microsoft Learn
 - Protect & govern data (solutions): https://learn.microsoft.com/purview/purview

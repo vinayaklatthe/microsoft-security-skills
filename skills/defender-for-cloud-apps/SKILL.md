@@ -17,7 +17,7 @@ app governance, and SaaS security posture management (SSPM).
 Discovering shadow IT, governing OAuth apps, applying real-time session controls, and detecting
 threats across connected SaaS services.
 
-## Design approach
+## Approach
 1. **Cloud Discovery** — Identify shadow IT by ingesting logs (ideally via Defender for Endpoint
    integration for seamless, agentless discovery). Review the Cloud App Catalog risk scores and
    **sanction/unsanction** apps.
@@ -35,6 +35,12 @@ threats across connected SaaS services.
 - Cloud Discovery data can include user activity — set anonymisation per privacy requirements.
 - Pilot session policies; reverse-proxy session control can affect app behaviour.
 - Prioritise app governance for apps with broad Microsoft Graph permissions.
+
+## Example prompts
+- `Discover shadow IT and sanction or unsanction cloud apps.`
+- `Set up Conditional Access App Control session policies.`
+- `How do I assess OAuth app risk and govern cloud apps?`
+- `Review the Cloud App Catalog and block risky apps.`
 
 ## Microsoft Learn
 - Overview: https://learn.microsoft.com/defender-cloud-apps/what-is-defender-for-cloud-apps

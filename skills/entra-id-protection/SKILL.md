@@ -17,7 +17,7 @@ remediation of risky identities.
 Adding risk-based, adaptive protection on top of Entra ID and Conditional Access (requires
 Entra ID P2).
 
-## Design approach
+## Approach
 1. **Understand risk** — **Sign-in risk** (likelihood a request isn't the legitimate owner,
    e.g., anonymous IP, atypical travel, malware-linked IP) vs **user risk** (likelihood the
    identity is compromised, e.g., leaked credentials, threat intelligence).
@@ -34,6 +34,12 @@ Entra ID P2).
 - Require registration for MFA and SSPR so self-remediation actually works.
 - Exclude break-glass accounts from risk policies.
 - Start risk thresholds at **High**, then expand to medium once tuned.
+
+## Example prompts
+- `Configure sign-in and user risk policies in Entra ID Protection.`
+- `How do I alert on leaked credentials and force a password reset?`
+- `Set up risk-based Conditional Access for risky sign-ins.`
+- `Investigate and remediate a user flagged as risky.`
 
 ## Microsoft Learn
 - Overview: https://learn.microsoft.com/entra/id-protection/overview-identity-protection

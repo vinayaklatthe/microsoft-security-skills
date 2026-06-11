@@ -18,7 +18,7 @@ investigation and remediation.
 Protecting Windows, macOS, Linux, iOS, and Android endpoints and feeding endpoint signal into
 Defender XDR.
 
-## Design approach
+## Approach
 1. **Licensing/plan** — Confirm Plan 1 vs Plan 2 (P2 adds EDR, AIR, threat & vuln management,
    advanced hunting). Defender Vulnerability Management add-on extends posture features.
 2. **Onboard devices** — Use Microsoft Intune / Configuration Manager / Group Policy / scripts.
@@ -35,6 +35,12 @@ Defender XDR.
 - Always pilot ASR rules in audit mode; some rules can break line-of-business apps.
 - Enable tamper protection to prevent attackers disabling protection.
 - Use device groups and RBAC to scope response actions (isolate, restrict, live response).
+
+## Example prompts
+- `Onboard devices to Microsoft Defender for Endpoint and confirm Plan 1 vs Plan 2.`
+- `Configure attack surface reduction rules and next-gen antivirus policy.`
+- `How do I isolate a compromised device and run vulnerability management?`
+- `Enable EDR in block mode for my endpoints.`
 
 ## Microsoft Learn
 - Overview: https://learn.microsoft.com/defender-endpoint/microsoft-defender-endpoint

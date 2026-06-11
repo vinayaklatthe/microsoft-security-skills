@@ -35,6 +35,12 @@ groups (requires Entra ID P2).
 - Require approval and phishing-resistant MFA for the most privileged roles (e.g., Global Admin).
 - Aim to remove standing access for all high-privilege roles.
 
+## Example prompts
+- `Remove standing Global Admin and require just-in-time PIM activation.`
+- `Configure time-bound eligible role assignments with approval to activate.`
+- `Set up access reviews for privileged roles in Entra and Azure.`
+- `How do I give temporary admin access without permanent permissions?`
+
 ## Microsoft Learn
 - Overview: https://learn.microsoft.com/entra/id-governance/privileged-identity-management/pim-configure
 - Assign eligible roles: https://learn.microsoft.com/entra/id-governance/privileged-identity-management/pim-how-to-add-role-to-user

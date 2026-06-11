@@ -34,6 +34,12 @@ and oversharing.
 - Balance control with productivity; over-restriction drives shadow IT.
 - Use access reviews to remove stale guest and broad access continuously.
 
+## Example prompts
+- `Control Microsoft 365 group and Teams sprawl with lifecycle policies.`
+- `Govern guest access and external sharing across Microsoft 365.`
+- `Use SharePoint Advanced Management for site lifecycle governance.`
+- `How do I manage collaboration sprawl and container governance?`
+
 ## Microsoft Learn
 - Microsoft 365 group expiration: https://learn.microsoft.com/entra/identity/users/groups-lifecycle
 - External collaboration settings: https://learn.microsoft.com/entra/external-id/external-collaboration-settings-configure

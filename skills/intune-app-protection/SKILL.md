@@ -17,7 +17,7 @@ mobile scenarios.
 Protecting Microsoft 365 (and SDK-enabled) app data on mobile devices, especially unmanaged /
 personal devices, without full MDM enrollment (**MAM without enrollment**, MAM-WE).
 
-## Design approach
+## Approach
 1. **Choose the model** — MAM-WE for BYOD (no enrollment) vs app protection layered on managed
    devices. Policies apply per platform (iOS/iPadOS, Android).
 2. **Data protection** — Configure data relocation controls: restrict cut/copy/paste to managed
@@ -35,6 +35,12 @@ personal devices, without full MDM enrollment (**MAM without enrollment**, MAM-W
   on the approved list.
 - Communicate the user experience (PIN, restrictions) before rollout to reduce friction.
 - Combine with Conditional Access for enforcement; APP alone doesn't gate sign-in.
+
+## Example prompts
+- `Create an Intune app protection policy for BYOD without enrollment (MAM-WE).`
+- `How do I restrict copy/paste and enable selective wipe in mobile apps?`
+- `Set up app-based Conditional Access for managed apps.`
+- `Protect corporate data in mobile apps on personal devices.`
 
 ## Microsoft Learn
 - App protection overview: https://learn.microsoft.com/mem/intune/apps/app-protection-policy

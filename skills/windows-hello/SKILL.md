@@ -16,7 +16,7 @@ bound to the device and unlocked by a **PIN or biometric**.
 ## When to use
 Delivering passwordless sign-in on Windows as part of a Zero Trust identity strategy.
 
-## Design approach
+## Approach
 1. **Choose a deployment/trust model** — For hybrid environments, **cloud Kerberos trust** is the
    recommended, simplest model (uses Entra Kerberos for on-prem resource access). Other models:
    key trust and certificate trust. Cloud-only (Entra-joined) is straightforward.
@@ -34,6 +34,12 @@ Delivering passwordless sign-in on Windows as part of a Zero Trust identity stra
 - The PIN is **device-bound** and never leaves the device — it is not a password, so it is not
   replayable.
 - Plan credential recovery (PIN reset) and shared-device scenarios.
+
+## Example prompts
+- `Deploy Windows Hello for Business with cloud Kerberos trust.`
+- `How do I enable passwordless, phishing-resistant sign-in on Windows?`
+- `Plan biometric and PIN authentication to replace passwords.`
+- `Choose a WHfB trust/deployment model for a hybrid environment.`
 
 ## Microsoft Learn
 - Overview: https://learn.microsoft.com/windows/security/identity-protection/hello-for-business/

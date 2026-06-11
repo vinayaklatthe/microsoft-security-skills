@@ -36,6 +36,12 @@ controllers — "Tier 0" / control plane) from credential theft and supply-chain
 - Protect the management and provisioning chain (clean source) — Intune/imaging must be trusted.
 - Pair PAW with PIM, phishing-resistant MFA, and dedicated admin accounts.
 
+## Example prompts
+- `Design a privileged access workstation (PAW) strategy with the enterprise access model.`
+- `How do I isolate admins and protect Tier 0 with secured workstations?`
+- `Plan a clean-source PAW deployment for privileged roles.`
+- `Sequence a privileged access strategy rollout.`
+
 ## Microsoft Learn
 - Privileged access strategy: https://learn.microsoft.com/security/privileged-access-workstations/overview
 - Enterprise access model: https://learn.microsoft.com/security/privileged-access-workstations/privileged-access-access-model

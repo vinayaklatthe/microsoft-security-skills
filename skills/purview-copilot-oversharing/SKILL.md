@@ -36,6 +36,12 @@ Preparing a tenant for Microsoft 365 Copilot and continuously controlling what C
   decrypt/extract.
 - Oversharing control is ongoing governance, not a one-time cleanup.
 
+## Example prompts
+- `Make SharePoint Copilot-ready by remediating oversharing.`
+- `Use SharePoint Advanced Management to tighten site permissions before Copilot.`
+- `How do I stop Copilot surfacing files users should not see?`
+- `Run data access governance to limit Copilot content.`
+
 ## Microsoft Learn
 - Copilot data protection (Purview): https://learn.microsoft.com/purview/ai-microsoft-purview-considerations
 - SharePoint Advanced Management: https://learn.microsoft.com/sharepoint/advanced-management

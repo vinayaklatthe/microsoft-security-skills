@@ -35,6 +35,12 @@ reviewing an architecture for gaps.
 - Validate identity is the primary control plane before investing heavily elsewhere.
 - Ensure monitoring/response (SIEM/XDR) is designed in, not bolted on.
 
+## Example prompts
+- `Design a Zero Trust security architecture aligned to MCRA.`
+- `Apply the Cloud Adoption Framework secure methodology.`
+- `How do I build defense in depth across identity, network, and data?`
+- `Review my design against the Well-Architected security pillar.`
+
 ## Microsoft Learn
 - Zero Trust overview: https://learn.microsoft.com/security/zero-trust/zero-trust-overview
 - MCRA: https://learn.microsoft.com/security/adoption/mcra

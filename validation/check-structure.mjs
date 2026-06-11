@@ -10,11 +10,11 @@ import {
 const REQUIRED_FRONTMATTER = ["name", "description", "license"];
 const REQUIRED_METADATA = ["author", "version"];
 // Each required section is matched case-insensitively against the H2 headings.
-// A regex allows accepted heading variants (e.g. "Approach" or "Design approach").
 const REQUIRED_SECTIONS = [
   { label: "When to use", match: /^when to use$/i },
-  { label: "Approach (or Design approach)", match: /approach/i },
+  { label: "Approach", match: /^approach$/i },
   { label: "Guardrails", match: /^guardrails$/i },
+  { label: "Example prompts (or Common scenarios)", match: /^(example prompts|common scenarios)$/i },
   { label: "Microsoft Learn", match: /^microsoft learn$/i },
 ];
 

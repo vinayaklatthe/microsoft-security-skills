@@ -32,6 +32,12 @@ Securing and governing data interactions with AI as Copilot and genAI adoption g
 - Address oversharing **before** broad Copilot rollout, not after.
 - Apply privacy controls when monitoring user prompts; communicate policy to users.
 
+## Example prompts
+- `Use DSPM for AI to monitor what sensitive data users send to Copilot.`
+- `How do I detect sensitive data in AI prompts and responses?`
+- `Gain visibility into third-party AI usage like ChatGPT.`
+- `Assess and reduce AI data security risk.`
+
 ## Microsoft Learn
 - DSPM for AI: https://learn.microsoft.com/purview/dspm-for-ai
 - Considerations & setup: https://learn.microsoft.com/purview/dspm-for-ai-considerations

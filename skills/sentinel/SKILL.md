@@ -16,7 +16,7 @@ delivered through the Microsoft Defender portal as part of the unified SecOps pl
 Centralising security logs from Microsoft and third-party sources, building detections,
 hunting across data, and automating response.
 
-## Design approach
+## Approach
 1. **Workspace design** — Prefer a single, central Log Analytics workspace per tenant where
    possible; use Azure RBAC and resource-context / table-level RBAC for scoping. Co-locate the
    workspace in the region where most data is generated to reduce egress and latency.

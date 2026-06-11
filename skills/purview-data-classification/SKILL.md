@@ -35,6 +35,12 @@ and beyond.
 - Plan label encryption carefully — it affects external sharing, co-authoring, and search.
 - Train users; mandatory labelling without guidance causes friction and mislabelling.
 
+## Example prompts
+- `Design a sensitivity label taxonomy with auto-labeling.`
+- `Create sensitive information types (SITs) and trainable classifiers.`
+- `How do I use Exact Data Match (EDM) for precise classification?`
+- `Classify data before applying protection and DLP.`
+
 ## Microsoft Learn
 - Sensitivity labels: https://learn.microsoft.com/purview/sensitivity-labels
 - Sensitive information types: https://learn.microsoft.com/purview/sensitive-information-type-learn-about

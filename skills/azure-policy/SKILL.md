@@ -35,6 +35,12 @@ management groups.
 - Use parameters to make policies reusable across environments.
 - Don't over-exclude; each exclusion weakens the guardrail and should be justified.
 
+## Example prompts
+- `Create an Azure Policy initiative to enforce a security baseline.`
+- `How do I deny non-compliant resources and auto-remediate with deployIfNotExists?`
+- `Apply governance guardrails at the management group scope.`
+- `Audit resource configuration before switching policies to deny.`
+
 ## Microsoft Learn
 - Overview: https://learn.microsoft.com/azure/governance/policy/overview
 - Effects: https://learn.microsoft.com/azure/governance/policy/concepts/effects

@@ -35,6 +35,12 @@ governance and security.
 - Plan network/proxy and firewall requirements before broad onboarding.
 - Use Arc to unify security posture — don't leave hybrid servers outside Defender for Cloud.
 
+## Example prompts
+- `Onboard on-premises servers to Azure with Arc and extend Defender for Cloud to them.`
+- `How do I govern multicloud machines from Azure using Azure Arc?`
+- `Deploy the Azure Arc agent and apply security policy to hybrid servers.`
+- `Bring Arc-enabled Kubernetes clusters under central governance.`
+
 ## Microsoft Learn
 - Azure Arc overview: https://learn.microsoft.com/azure/azure-arc/overview
 - Arc-enabled servers: https://learn.microsoft.com/azure/azure-arc/servers/overview

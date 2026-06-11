@@ -17,7 +17,7 @@ for Zero Trust.
 Establishing the identity foundation: tenants, users/groups, authentication, SSO for apps, and
 hybrid identity with on-premises Active Directory.
 
-## Design approach
+## Approach
 1. **Tenant & identity model** — Define users, groups (assigned vs dynamic), and administrative
    units. Use cloud-only identities where possible; otherwise plan hybrid.
 2. **Hybrid identity** — Use **Microsoft Entra Connect** (or Cloud Sync) with the right sign-in

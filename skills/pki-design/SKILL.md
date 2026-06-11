@@ -36,6 +36,12 @@ certificate-based auth), TLS/mTLS, code signing, and device identity.
   failures stem from expiry).
 - Plan revocation and CRL/OCSP availability before relying on certificates for access.
 
+## Example prompts
+- `Design a PKI with root and issuing CAs and a certificate lifecycle.`
+- `Use Azure Key Vault to issue, rotate, and manage certificates.`
+- `Set up certificate-based authentication (CBA) for Entra.`
+- `Plan mTLS certificate issuance and rotation.`
+
 ## Microsoft Learn
 - Key Vault certificates: https://learn.microsoft.com/azure/key-vault/certificates/about-certificates
 - Entra certificate-based auth: https://learn.microsoft.com/entra/identity/authentication/concept-certificate-based-authentication

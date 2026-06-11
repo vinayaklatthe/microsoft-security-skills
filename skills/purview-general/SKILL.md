@@ -40,6 +40,12 @@ prerequisites.
 - Don't deploy enforcement (DLP block, auto-labelling) before classification maturity exists.
 - Scope by data sensitivity and regulatory drivers, not by feature availability.
 
+## Example prompts
+- `Which Microsoft Purview solution should I use for my scenario?`
+- `Give me an orientation to the Purview portal and licensing.`
+- `Explain data governance vs data security vs compliance in Purview.`
+- `Where do I start with Microsoft Purview?`
+
 ## Microsoft Learn
 - Purview overview: https://learn.microsoft.com/purview/purview
 - Purview portal: https://learn.microsoft.com/purview/purview-portal

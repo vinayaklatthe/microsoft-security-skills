@@ -33,6 +33,12 @@ preservation and production.
   availability against your licensing (Premium features require E5/add-on).
 - Scope access tightly; eDiscovery can reach highly sensitive content.
 
+## Example prompts
+- `Create an eDiscovery case with legal hold to preserve content.`
+- `Collect and review content for litigation in a review set.`
+- `How do I export evidence and manage custodians?`
+- `Run search and hold across Microsoft 365 for an investigation.`
+
 ## Microsoft Learn
 - eDiscovery overview: https://learn.microsoft.com/purview/edisc
 - Get started: https://learn.microsoft.com/purview/ediscovery-standard-get-started

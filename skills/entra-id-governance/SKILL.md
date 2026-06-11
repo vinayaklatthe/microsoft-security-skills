@@ -34,6 +34,12 @@ lifecycle.
 - Set review reviewers and fallback actions carefully so "no response" doesn't auto-remove
   critical access unintentionally.
 
+## Example prompts
+- `Set up entitlement management with access packages for guest access.`
+- `Configure access reviews to certify access periodically.`
+- `Automate joiner/mover/leaver with lifecycle workflows.`
+- `Enforce separation of duties on access packages.`
+
 ## Microsoft Learn
 - ID Governance overview: https://learn.microsoft.com/entra/id-governance/identity-governance-overview
 - Entitlement management: https://learn.microsoft.com/entra/id-governance/entitlement-management-overview

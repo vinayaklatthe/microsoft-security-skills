@@ -36,6 +36,12 @@ capability.
 - Test failover on a schedule; an untested DR plan is an assumption, not a capability.
 - Account for dependencies (identity, DNS, networking, Key Vault) in the recovery region.
 
+## Example prompts
+- `Design a disaster recovery plan with Azure Site Recovery and clear RPO/RTO.`
+- `How do I run a test failover without affecting production?`
+- `Set up region-to-region replication and a recovery plan.`
+- `Plan DR for ransomware resilience with Site Recovery.`
+
 ## Microsoft Learn
 - Overview: https://learn.microsoft.com/azure/site-recovery/site-recovery-overview
 - Azure-to-Azure DR: https://learn.microsoft.com/azure/site-recovery/azure-to-azure-tutorial-enable-replication

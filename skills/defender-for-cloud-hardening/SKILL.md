@@ -33,6 +33,12 @@ multicloud estate.
 - Use attack path analysis to focus effort — Secure Score alone can mislead prioritisation.
 - Tag critical assets so the cloud security graph weights them appropriately.
 
+## Example prompts
+- `Improve my Azure Secure Score in Defender for Cloud.`
+- `Which Defender plans should I enable to protect VMs and containers?`
+- `Use attack path analysis to prioritise remediation.`
+- `Extend CSPM across AWS and GCP with Defender for Cloud.`
+
 ## Microsoft Learn
 - Overview: https://learn.microsoft.com/azure/defender-for-cloud/defender-for-cloud-introduction
 - Secure Score: https://learn.microsoft.com/azure/defender-for-cloud/secure-score-security-controls

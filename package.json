@@ -9,6 +9,7 @@
     "check:structure": "node validation/check-structure.mjs",
     "check:links": "node validation/check-links.mjs",
     "eval": "node validation/run-evals.mjs",
+    "eval:report": "node validation/run-evals.mjs --report",
     "eval:answers": "node validation/run-evals.mjs --answers --dir ./answers",
     "validate": "npm run check:structure && npm run eval && npm run check:links"
   }

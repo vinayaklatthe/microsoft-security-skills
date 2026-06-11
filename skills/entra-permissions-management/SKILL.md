@@ -17,7 +17,7 @@ resources across **Microsoft Azure, AWS, and Google Cloud**.
 Discovering and reducing excessive, unused, and over-privileged cloud permissions in a
 multicloud estate, driving toward least privilege.
 
-## Design approach
+## Approach
 1. **Onboard clouds** — Connect Azure subscriptions, AWS accounts, and GCP projects so
    Permissions Management can collect entitlement and activity data.
 2. **Measure with PCI** — Use the **Permission Creep Index (PCI)** to quantify the gap between
@@ -32,6 +32,12 @@ multicloud estate, driving toward least privilege.
 - Validate activity baselines cover a representative period before aggressively right-sizing.
 - Coordinate remediation with workload owners to avoid breaking automation/service identities.
 - Treat machine/workload identities explicitly — they often hold the largest unused permissions.
+
+## Example prompts
+- `Right-size cloud permissions using the Permission Creep Index.`
+- `How do I find and remove unused permissions across AWS, GCP, and Azure?`
+- `Onboard my clouds to Entra Permissions Management (CIEM).`
+- `Drive toward least privilege across a multicloud estate.`
 
 ## Microsoft Learn
 - Overview: https://learn.microsoft.com/entra/permissions-management/overview

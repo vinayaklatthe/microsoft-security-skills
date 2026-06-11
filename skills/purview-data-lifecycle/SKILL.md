@@ -35,6 +35,12 @@ managing formal records.
 - Regulatory records are immutable — apply only where truly required.
 - Pilot auto-applied retention labels; review impact before broad rollout.
 
+## Example prompts
+- `Create retention policies and labels with adaptive scopes.`
+- `Set up records management with disposition review.`
+- `How do I declare records and meet regulatory retention?`
+- `Build a file plan to retain and delete content correctly.`
+
 ## Microsoft Learn
 - Data lifecycle management: https://learn.microsoft.com/purview/data-lifecycle-management
 - Retention policies & labels: https://learn.microsoft.com/purview/retention

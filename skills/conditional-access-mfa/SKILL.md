@@ -17,7 +17,7 @@ grant, block, or grant **with controls** such as MFA or a compliant device.
 Enforcing adaptive, identity-centric access controls across Microsoft 365 and any Entra-
 integrated application.
 
-## Design approach
+## Approach
 1. **Establish a baseline** — Start from Microsoft's recommended policies / security defaults,
    then build named policies. Cover: require MFA for **all users**, require MFA for **admins**,
    **block legacy authentication**, require **compliant or hybrid-joined device**, and risk-based

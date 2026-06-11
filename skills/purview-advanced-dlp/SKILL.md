@@ -35,6 +35,12 @@ mature data security programs.
 - EDM requires schema definition, a hashed data upload, and a dedicated upload role.
 - Validate dynamic enforcement in audit/simulation before enabling block actions.
 
+## Example prompts
+- `Configure risk-based DLP driven by Insider Risk Adaptive Protection.`
+- `Set up Exact Data Match (EDM) for precise DLP detection.`
+- `How do I add contextual conditions to advanced Endpoint DLP?`
+- `Validate dynamic DLP enforcement in simulation before blocking.`
+
 ## Microsoft Learn
 - Adaptive Protection: https://learn.microsoft.com/purview/insider-risk-management-adaptive-protection
 - Exact Data Match: https://learn.microsoft.com/purview/sit-learn-about-exact-data-match-based-sits

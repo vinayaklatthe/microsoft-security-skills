@@ -34,6 +34,12 @@ Managing application secrets, encryption keys (incl. customer-managed keys), and
 - Purge protection is irreversible once on — required for CMK and many compliance scenarios.
 - Never store secrets in source/config; use managed identity + Key Vault references.
 
+## Example prompts
+- `Set up Azure Key Vault with RBAC, purge protection, and a private endpoint.`
+- `How do I rotate secrets and let a managed identity read them securely?`
+- `When should I use Managed HSM instead of standard Key Vault?`
+- `Review my Key Vault access model for least privilege.`
+
 ## Microsoft Learn
 - Overview: https://learn.microsoft.com/azure/key-vault/general/overview
 - Security: https://learn.microsoft.com/azure/key-vault/general/security-features

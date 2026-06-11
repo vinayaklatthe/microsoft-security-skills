@@ -36,6 +36,12 @@ security design review.
 - Capture assumptions and out-of-scope items explicitly.
 - Tie threats to **actionable** mitigations and owners, not abstract risks.
 
+## Example prompts
+- `Run a STRIDE threat model with a data flow diagram and trust boundaries.`
+- `Use the Microsoft Threat Modeling Tool for a design review.`
+- `How do I identify threats and map mitigations for a system?`
+- `Conduct an SDL threat modelling session.`
+
 ## Microsoft Learn
 - Threat modelling (SDL): https://learn.microsoft.com/azure/security/develop/threat-modeling-tool
 - Microsoft SDL: https://www.microsoft.com/securityengineering/sdl

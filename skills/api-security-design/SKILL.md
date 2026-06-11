@@ -34,6 +34,12 @@ Designing or reviewing the security of APIs, especially external-facing or sensi
 - Don't rely on the gateway alone; defence in depth across gateway + backend.
 - Validate input against a schema; reject unexpected fields and oversized payloads.
 
+## Example prompts
+- `Design a secure API on Azure API Management aligned to the OWASP API Security Top 10.`
+- `How do I validate JWTs at the gateway instead of relying on static API keys?`
+- `Configure rate limiting and payload validation to protect a backend API.`
+- `Review my API authentication and authorization design for least privilege.`
+
 ## Microsoft Learn
 - API Management security baseline: https://learn.microsoft.com/azure/api-management/security-baseline
 - Protect backend with Entra ID: https://learn.microsoft.com/azure/api-management/api-management-howto-protect-backend-with-aad

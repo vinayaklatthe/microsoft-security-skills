@@ -17,7 +17,7 @@ language, grounded in your security data and Microsoft threat intelligence.
 Accelerating SOC investigation, reporting, and analyst productivity across Microsoft and
 third-party security data.
 
-## Design approach
+## Approach
 1. **Provision capacity** — Set up **Security Compute Units (SCUs)** (provisioned capacity) in
    Azure, assign the Azure subscription/resource group, and plan overage settings.
 2. **Roles & access** — Configure Security Copilot owner/contributor roles and align to
@@ -34,6 +34,12 @@ third-party security data.
 - Treat AI output as **assistive** — analysts must validate findings before acting.
 - Apply least-privilege plugin access; Copilot respects the underlying product RBAC of the user.
 - Monitor SCU consumption to control cost; tune capacity to demand.
+
+## Example prompts
+- `Set up Microsoft Security Copilot and provision SCUs.`
+- `Use promptbooks to summarise an incident for a stakeholder.`
+- `How do I use AI to speed up incident investigation in my SOC?`
+- `Explain a KQL query with Security Copilot.`
 
 ## Microsoft Learn
 - Overview: https://learn.microsoft.com/security-copilot/microsoft-security-copilot

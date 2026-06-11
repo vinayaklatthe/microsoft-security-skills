@@ -23,7 +23,7 @@ Running coordinated detection and response across the Microsoft 365 estate from 
 - **Defender for Office 365** — email and collaboration
 - **Defender for Cloud Apps** — SaaS / cloud app activity and posture
 
-## Design approach
+## Approach
 1. **Onboard each workload** so signals flow into the unified incident queue.
 2. **Investigate by incident**, not by alert — incidents group related alerts, assets, and
    evidence with an attack graph and timeline.

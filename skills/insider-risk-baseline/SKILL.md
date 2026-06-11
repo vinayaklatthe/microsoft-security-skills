@@ -34,6 +34,12 @@ security-policy violations.
 - Use pseudonymisation and least-privilege reviewers by default.
 - Tune indicator thresholds to avoid alert overload; start with a focused scope.
 
+## Example prompts
+- `Stand up an Insider Risk Management policy for departing-employee data theft.`
+- `How do I configure pseudonymisation and least-privilege reviewers in IRM?`
+- `Connect HR data so resignation/termination events trigger IRM signals.`
+- `Feed IRM risk levels into Adaptive Protection.`
+
 ## Microsoft Learn
 - IRM overview: https://learn.microsoft.com/purview/insider-risk-management
 - Plan & configure: https://learn.microsoft.com/purview/insider-risk-management-configure

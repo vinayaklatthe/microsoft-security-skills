@@ -28,6 +28,7 @@ const here = dirname(fileURLToPath(import.meta.url));
 const casesDir = join(here, "cases");
 const args = process.argv.slice(2);
 const MODE = args.includes("--answers") ? "answers" : "coverage";
+const REPORT = args.includes("--report");
 const answersDir = (() => {
   const i = args.indexOf("--dir");
   return i !== -1 && args[i + 1] ? args[i + 1] : null;
@@ -67,6 +68,7 @@ if (suites.length === 0) {
 let totalAssertions = 0;
 let totalMet = 0;
 const failures = [];
+const reportBlocks = [];
 
 for (const { skill, cases } of suites) {
   const body = skillBodies.get(skill);
@@ -93,6 +95,21 @@ for (const { skill, cases } of suites) {
     totalAssertions += results.length;
     totalMet += met;
 
+    if (REPORT) {
+      const col = MODE === "coverage" ? "In skill" : "With skill";
+      const lines = [];
+      lines.push(`#### ${skill} - "${c.prompt}"`);
+      lines.push("");
+      lines.push(`| Expected outcome | ${col} |`);
+      lines.push("|---|---|");
+      for (const r of results) {
+        lines.push(`| ${r.label} | ${r.met ? "Hit" : "Miss"} |`);
+      }
+      lines.push(`| **Score** | **${met}/${results.length}** |`);
+      lines.push("");
+      reportBlocks.push(lines.join("\n"));
+    }
+
     if (met < results.length) {
       const missed = results.filter((r) => !r.met).map((r) => r.label);
       failures.push(
@@ -100,6 +117,14 @@ for (const { skill, cases } of suites) {
       );
     }
   });
+}
+
+if (REPORT) {
+  const heading = MODE === "coverage" ? "Coverage report" : "Behavioural eval report";
+  console.log(`# ${heading}\n`);
+  console.log(`Total: ${totalMet}/${totalAssertions} expected outcomes met across ${suites.length} skill(s).\n`);
+  console.log(reportBlocks.join("\n"));
+  process.exit(failures.length === 0 ? 0 : 1);
 }
 
 const label = MODE === "coverage" ? "Coverage eval (knowledge grounded in skill)" : "Behavioural eval (scored answers)";

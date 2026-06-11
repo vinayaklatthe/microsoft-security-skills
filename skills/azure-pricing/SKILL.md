@@ -41,6 +41,12 @@ Producing a cost estimate or optimising spend for a security solution.
 - Sentinel ingestion is the most common cost surprise — plan log tiering up front.
 - Don't disable needed protection purely for cost; optimise scope instead.
 
+## Example prompts
+- `Estimate the cost of Microsoft Sentinel and Defender for Cloud for my environment.`
+- `What are the main cost drivers for Microsoft security services?`
+- `How do I optimise security spend across licensing and consumption?`
+- `Help me budget for security ingestion and per-resource Defender plans.`
+
 ## Microsoft Learn
 - Azure Pricing Calculator: https://azure.microsoft.com/pricing/calculator/
 - Sentinel pricing/billing: https://learn.microsoft.com/azure/sentinel/billing

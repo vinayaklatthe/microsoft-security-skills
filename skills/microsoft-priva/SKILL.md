@@ -37,6 +37,12 @@ responding to subject rights requests at scale.
 - Coordinate with legal/privacy office on request handling and retention of request artifacts.
 - Apply least-privilege roles; SRR content is highly sensitive.
 
+## Example prompts
+- `Set up Microsoft Priva to manage subject rights requests (DSARs).`
+- `Configure privacy risk policies for overexposed personal data.`
+- `How do I support GDPR fulfilment and data minimisation with Priva?`
+- `Automate DSAR collection and review with Priva.`
+
 ## Microsoft Learn
 - Priva overview: https://learn.microsoft.com/privacy/priva/priva-overview
 - Privacy Risk Management: https://learn.microsoft.com/privacy/priva/risk-management-policies

@@ -35,6 +35,12 @@ Encrypting Windows endpoints and centrally managing recovery keys and compliance
 - Pilot pre-boot authentication choices; they affect user experience and automation/imaging.
 - Removable-drive encryption (BitLocker To Go) is a separate policy decision.
 
+## Example prompts
+- `Design a BitLocker policy with silent enablement via Intune.`
+- `How do I escrow BitLocker recovery keys and run a help-desk recovery process?`
+- `Enforce disk encryption on Windows endpoints with TPM.`
+- `Plan BitLocker key management and recovery at scale.`
+
 ## Microsoft Learn
 - BitLocker overview: https://learn.microsoft.com/windows/security/operating-system-security/data-protection/bitlocker/
 - Manage with Intune: https://learn.microsoft.com/mem/intune/protect/encrypt-devices

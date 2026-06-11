@@ -34,6 +34,12 @@ Investigating incidents, supporting eDiscovery/compliance, and meeting logging r
   licensing.
 - Audit search has latency; design investigations accordingly.
 
+## Example prompts
+- `Search the Microsoft 365 audit log to investigate user activity.`
+- `Configure audit log retention and confirm Audit Premium events.`
+- `How do I export audit data via the Microsoft Graph audit API?`
+- `Set up forensic logging for crucial audit events.`
+
 ## Microsoft Learn
 - Audit overview: https://learn.microsoft.com/purview/audit-solutions-overview
 - Audit Standard vs Premium: https://learn.microsoft.com/purview/audit-premium

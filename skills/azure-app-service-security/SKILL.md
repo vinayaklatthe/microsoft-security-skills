@@ -36,6 +36,12 @@ Hardening web apps/APIs hosted on Azure App Service.
 - Use managed identity + Key Vault references to eliminate secrets in config.
 - Enforce HTTPS-only and modern TLS; disable legacy protocols and FTP.
 
+## Example prompts
+- `Harden an Azure App Service web app with Easy Auth, managed identity, and TLS.`
+- `How do I lock down App Service with private endpoints and VNet integration?`
+- `Use Key Vault references for App Service secrets instead of plain app settings.`
+- `Review my App Service network and authentication configuration for security gaps.`
+
 ## Microsoft Learn
 - App Service security: https://learn.microsoft.com/azure/app-service/overview-security
 - Authentication (Easy Auth): https://learn.microsoft.com/azure/app-service/overview-authentication-authorization

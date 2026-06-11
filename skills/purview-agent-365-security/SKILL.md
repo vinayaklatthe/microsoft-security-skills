@@ -34,6 +34,12 @@ Governing the data-security and compliance posture of AI agents before and durin
 - Address oversharing and access scope **before** granting agents broad data access.
 - Apply privacy controls and least privilege to agent identities and the data they touch.
 
+## Example prompts
+- `Secure and govern Copilot agents with Microsoft Purview.`
+- `Apply DLP and audit to AI agent interactions.`
+- `How do I prevent agent oversharing and meet compliance for agents?`
+- `Govern Copilot Studio agent data security.`
+
 ## Microsoft Learn
 - Secure & govern AI (Purview): https://learn.microsoft.com/purview/ai-microsoft-purview
 - DSPM for AI: https://learn.microsoft.com/purview/dspm-for-ai

@@ -24,7 +24,7 @@ Offloading repetitive, high-volume triage and remediation tasks while keeping hu
 - **Threat Intelligence Briefing** — generates tailored threat briefings.
 (Plus partner-built agents in the ecosystem.)
 
-## Design approach
+## Approach
 1. **Provision** — Agents consume Security Copilot capacity (SCUs); confirm capacity and the
    relevant product licensing.
 2. **Agent identity & permissions** — Each agent runs with an **agent identity**; grant
@@ -37,6 +37,12 @@ Offloading repetitive, high-volume triage and remediation tasks while keeping hu
 - Keep humans in the loop for consequential actions; start in a supervised/recommendation mode.
 - Govern agent identities like any privileged identity — least privilege, monitoring, lifecycle.
 - Review agent activity logs regularly.
+
+## Example prompts
+- `Deploy the Phishing Triage agent in Security Copilot.`
+- `How do I supervise an autonomous alert triage agent and set permissions?`
+- `Automate hands-off triage of high-volume alerts with agents.`
+- `Configure agent identity for an agentic SOC.`
 
 ## Microsoft Learn
 - Agents overview: https://learn.microsoft.com/copilot/security/agents-overview

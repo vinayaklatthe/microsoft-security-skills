@@ -34,6 +34,12 @@ Designing the network topology and controls for an Azure landing zone or workloa
 - Default-deny NSGs; document every allow rule's purpose.
 - Don't expose management ports (RDP/SSH) to the internet — use Bastion / just-in-time access.
 
+## Example prompts
+- `Design a hub-and-spoke network with segmentation and private endpoints.`
+- `How do I apply Zero Trust principles to an Azure virtual network?`
+- `Plan NSG and ASG rules plus DDoS protection for a secure VNet.`
+- `Control egress traffic and private connectivity across spokes.`
+
 ## Microsoft Learn
 - Network security best practices: https://learn.microsoft.com/azure/security/fundamentals/network-best-practices
 - Hub-spoke topology: https://learn.microsoft.com/azure/architecture/networking/architecture/hub-spoke

@@ -18,7 +18,7 @@ Security Exposure Management into a single experience in the **Microsoft Defende
 Standardising the SOC on one portal, unifying the incident queue across SIEM and XDR signals,
 and reducing context-switching for analysts.
 
-## Design approach
+## Approach
 1. **Prerequisites** — A Microsoft Sentinel workspace, the required RBAC (Microsoft Entra and
    Sentinel roles), and Defender XDR onboarded.
 2. **Onboard Sentinel** — Connect the Log Analytics workspace to the Defender portal. Only one
@@ -33,6 +33,12 @@ and reducing context-switching for analysts.
 - Some Sentinel features behave differently once onboarded to the Defender portal — review the
   feature parity and "what's changed" guidance before migrating analysts off the Azure portal.
 - Validate RBAC mapping: Defender portal unified RBAC governs access to merged experiences.
+
+## Example prompts
+- `Onboard a Sentinel workspace to the Defender portal for a single SOC pane.`
+- `How do I merge Sentinel and Defender XDR into one unified incident queue?`
+- `Move off the Azure Sentinel portal to the unified platform.`
+- `Reduce analyst context-switching with exposure management in one portal.`
 
 ## Microsoft Learn
 - Unified SecOps overview: https://learn.microsoft.com/unified-secops-platform/overview-unified-security

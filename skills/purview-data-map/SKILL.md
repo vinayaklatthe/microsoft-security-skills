@@ -34,6 +34,12 @@ governance and security.
 - Secure the self-hosted integration runtime host as sensitive infrastructure.
 - Validate classification accuracy before relying on it for downstream protection.
 
+## Example prompts
+- `Register and scan data sources in the Purview Data Map.`
+- `Configure an integration runtime for multicloud data scanning.`
+- `How do I map enterprise data and run classification scans?`
+- `Plan data discovery across cloud and on-prem sources.`
+
 ## Microsoft Learn
 - Data Map overview: https://learn.microsoft.com/purview/concept-elastic-data-map
 - Register & scan sources: https://learn.microsoft.com/purview/scan-data-sources

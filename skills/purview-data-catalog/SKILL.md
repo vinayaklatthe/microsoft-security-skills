@@ -32,6 +32,12 @@ accountable ownership.
 - Curation is a continuous program, not a one-time load.
 - Align catalog access with the Data Map collection permissions.
 
+## Example prompts
+- `Set up the Purview unified catalog with governance domains and data products.`
+- `Build a business glossary and data quality rules.`
+- `How do analysts discover and curate data assets?`
+- `Establish data stewardship in the data catalog.`
+
 ## Microsoft Learn
 - Unified Catalog: https://learn.microsoft.com/purview/unified-catalog
 - Governance domains: https://learn.microsoft.com/purview/concept-governance-domain

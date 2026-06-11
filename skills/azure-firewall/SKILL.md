@@ -35,6 +35,12 @@ network estate.
 - TLS inspection (Premium) requires certificate/PKI planning.
 - Plan capacity and availability zones for resilient hub deployments.
 
+## Example prompts
+- `Design Azure Firewall egress filtering with FQDN and application rules.`
+- `When should I choose Firewall Premium with IDPS and TLS inspection?`
+- `Set up Firewall Policy and forced tunneling for centralised network control.`
+- `How do I protect Azure Virtual Desktop traffic with Azure Firewall?`
+
 ## Microsoft Learn
 - Overview: https://learn.microsoft.com/azure/firewall/overview
 - Firewall Policy: https://learn.microsoft.com/azure/firewall/policy-rule-sets

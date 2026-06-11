@@ -38,6 +38,12 @@ security, Backup & recovery, DevOps security, and Governance & strategy.
 - Map MCSB to your obligated frameworks rather than treating each separately.
 - Secure Score is directional — validate that recommended fixes suit each workload.
 
+## Example prompts
+- `Map my Azure controls to the Microsoft Cloud Security Benchmark (MCSB).`
+- `How does MCSB align to CIS and NIST controls?`
+- `Use the Defender for Cloud regulatory compliance dashboard against MCSB.`
+- `Which security baseline controls should I prioritise first?`
+
 ## Microsoft Learn
 - MCSB overview: https://learn.microsoft.com/security/benchmark/azure/overview
 - Introduction & controls: https://learn.microsoft.com/security/benchmark/azure/introduction
