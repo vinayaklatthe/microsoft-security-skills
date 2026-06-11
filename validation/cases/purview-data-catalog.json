@@ -4,22 +4,46 @@
       "prompt": "Set up the Purview unified catalog with governance domains and data products.",
       "expect": [
         {
-          "label": "Start with a few high-value domains and data products; broad rollout without ow...",
-          "any": [
-            "high-value domains"
-          ]
+          "label": "Start with a few high-value governance domains and data products; broad rollout without ownership fails",
+          "any": ["high-value", "broad rollout", "ownership"]
         },
         {
-          "label": "Curation is a continuous program, not a one-time load.",
-          "any": [
-            "curation"
-          ]
+          "label": "Curation is a continuous programme, not a one-time load",
+          "any": ["curation", "continuous", "one-time"]
         },
         {
-          "label": "Align catalog access with the Data Map collection permissions.",
-          "any": [
-            "align catalog"
-          ]
+          "label": "Align catalog access with Data Map collection permissions (AND, not OR)",
+          "any": ["align catalog", "collection permissions", "data map"]
+        },
+        {
+          "label": "Rule of thumb: start with 2-3 domains and 5-10 data products",
+          "any": ["2-3", "5-10", "2-3 governance", "high-pain"]
+        }
+      ]
+    },
+    {
+      "prompt": "Which governance domains should I start with?",
+      "expect": [
+        {
+          "label": "Start with 2-3 high-pain business areas (Finance, Customer, HR), not the whole org chart",
+          "any": ["finance", "customer", "hr", "high-pain", "org chart"]
+        },
+        {
+          "label": "Each domain needs a named business owner with weekly time, not an IT proxy",
+          "any": ["named", "business owner", "weekly", "it proxy"]
+        }
+      ]
+    },
+    {
+      "prompt": "How many data products should one steward own?",
+      "expect": [
+        {
+          "label": "Cap at ~10 products per steward; more becomes a queue, not stewardship",
+          "any": ["10", "steward", "cap"]
+        },
+        {
+          "label": "Stewardship workload less than 4 hours per week or it stops happening",
+          "any": ["4 hours", "workload", "stops happening"]
         }
       ]
     }

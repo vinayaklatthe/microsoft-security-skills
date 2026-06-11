@@ -4,22 +4,46 @@
       "prompt": "Set up Microsoft Priva to manage subject rights requests (DSARs).",
       "expect": [
         {
-          "label": "Priva depends on accurate personal-data classification — invest in SITs/classif...",
-          "any": [
-            "priva depends"
-          ]
+          "label": "Priva depends on accurate classification - SITs first",
+          "any": ["priva depends", "classification prerequisite", "sits"]
         },
         {
-          "label": "Coordinate with legal/privacy office on request handling and retention of reque...",
-          "any": [
-            "coordinate"
-          ]
+          "label": "Coordinate with legal / privacy office before going live",
+          "any": ["coordinate", "legal", "privacy office"]
         },
         {
-          "label": "Apply least-privilege roles; SRR content is highly sensitive.",
-          "any": [
-            "least-privilege roles"
-          ]
+          "label": "Apply least-privilege roles; SRR content is highly sensitive",
+          "any": ["least-privilege", "least privilege", "privacy management"]
+        },
+        {
+          "label": "Test SRR workflow with a dry-run before publishing intake form",
+          "any": ["dry-run", "test", "reviewer"]
+        }
+      ]
+    },
+    {
+      "prompt": "Which Priva solution should I roll out first?",
+      "expect": [
+        {
+          "label": "Start with Privacy Risk Management overexposure before SRR",
+          "any": ["privacy risk management", "overexposure", "fix the leak first"]
+        },
+        {
+          "label": "Reason: leaks generate more SRRs than you can handle",
+          "any": ["more srrs", "leak first", "fix the leak"]
+        }
+      ]
+    },
+    {
+      "prompt": "What licence do I need for Priva Subject Rights Requests?",
+      "expect": [
+        {
+          "label": "Priva is a separate add-on SKU, not bundled in M365 E5 Compliance",
+          "any": ["separate add-on", "separate sku", "not bundled"]
+        },
+        {
+          "label": "SRR is licensed per request; Privacy Risk Management is per-user per-month",
+          "any": ["per request", "per-user per-month"]
         }
       ]
     }

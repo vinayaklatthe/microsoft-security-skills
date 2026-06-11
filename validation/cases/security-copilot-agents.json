@@ -4,22 +4,54 @@
       "prompt": "Deploy the Phishing Triage agent in Security Copilot.",
       "expect": [
         {
-          "label": "Keep humans in the loop for consequential actions; start in a supervised/recomm...",
-          "any": [
-            "humans"
-          ]
+          "label": "Humans in the loop for consequential actions; start in recommendation mode",
+          "any": ["human-in-the-loop", "humans in the loop", "recommendation mode"]
         },
         {
-          "label": "Govern agent identities like any privileged identity — least privilege, monitor...",
-          "any": [
-            "govern agent"
-          ]
+          "label": "Govern agent identities like privileged identities - least privilege, monitoring, lifecycle",
+          "any": ["govern agent", "privileged", "least privilege"]
         },
         {
-          "label": "Review agent activity logs regularly.",
-          "any": [
-            "agent activity"
-          ]
+          "label": "Review agent activity logs / measure agreement rate",
+          "any": ["activity log", "agreement rate", "audit"]
+        },
+        {
+          "label": "SCU capacity required; confirm licensing for owning product",
+          "any": ["scu", "capacity", "licensing"]
+        }
+      ]
+    },
+    {
+      "prompt": "How do I supervise an autonomous alert triage agent and set permissions?",
+      "expect": [
+        {
+          "label": "Start in Recommendation mode for 2-4 weeks, measure agreement rate",
+          "any": ["recommendation", "2-4 weeks", "agreement rate"]
+        },
+        {
+          "label": "Only graduate to autonomous when agreement >90%",
+          "any": ["90%", "agreement"]
+        },
+        {
+          "label": "Set supervision mode per action, not per agent (blocking/deleting needs approval)",
+          "any": ["per action", "approval", "autonomous"]
+        }
+      ]
+    },
+    {
+      "prompt": "What permissions does an agent identity need?",
+      "expect": [
+        {
+          "label": "Each agent has its own Entra Agent ID; do not consolidate identities",
+          "any": ["entra agent id", "agent identity", "workload identity"]
+        },
+        {
+          "label": "Scope to least privilege; remove permissions not needed",
+          "any": ["least privilege", "remove anything not needed", "least-privilege"]
+        },
+        {
+          "label": "Anti-pattern: do not use Global Admin for agent identity",
+          "any": ["global admin", "blast radius"]
         }
       ]
     }

@@ -4,22 +4,46 @@
       "prompt": "Onboard APIs in API Management to Microsoft Defender for APIs.",
       "expect": [
         {
-          "label": "Defender for APIs currently focuses on APIs published through Azure API Managem...",
-          "any": [
-            "defender"
-          ]
+          "label": "Defender for APIs only sees APIs fronted by Azure API Management",
+          "any": ["api management", "apim", "apim-only"]
         },
         {
-          "label": "Pair detection with preventive APIM controls (auth, throttling, validation) — d...",
-          "any": [
-            "pair detection"
-          ]
+          "label": "Detection is not protection - pair with APIM policies for auth/rate limiting/validation",
+          "any": ["detection is not protection", "detection alone", "apim policies"]
         },
         {
-          "label": "Prioritise externally exposed, sensitive-data, and unauthenticated APIs first.",
-          "any": [
-            "prioritise externally"
-          ]
+          "label": "Prioritise externally exposed, sensitive-data, and unauthenticated APIs first",
+          "any": ["prioritise externally", "externally exposed", "unauthenticated"]
+        }
+      ]
+    },
+    {
+      "prompt": "Which APIs should I protect first with Defender for APIs?",
+      "expect": [
+        {
+          "label": "P0 - externally exposed + unauthenticated, or externally exposed + sensitive data",
+          "any": ["externally exposed", "unauthenticated", "sensitive data"]
+        },
+        {
+          "label": "Decommission inactive / unused APIs >90 days",
+          "any": ["inactive", "unused", "decommission"]
+        },
+        {
+          "label": "Rule of thumb: filter to externally exposed + sensitive data first",
+          "any": ["rule of thumb", "5-15 apis", "80%"]
+        }
+      ]
+    },
+    {
+      "prompt": "Estimate the cost of Defender for APIs for high-traffic APIs.",
+      "expect": [
+        {
+          "label": "Pricing scales with API call volume",
+          "any": ["per million", "call volume", "scales with calls"]
+        },
+        {
+          "label": "Use Azure Pricing Calculator before scaling",
+          "any": ["pricing calculator", "cost-model", "cost model"]
         }
       ]
     }

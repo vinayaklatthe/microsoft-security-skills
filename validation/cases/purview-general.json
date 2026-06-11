@@ -4,16 +4,50 @@
       "prompt": "Which Microsoft Purview solution should I use for my scenario?",
       "expect": [
         {
-          "label": "Don't deploy enforcement (DLP block, auto-labelling) before classification matu...",
-          "any": [
-            "don't deploy"
-          ]
+          "label": "Don't deploy enforcement before classification maturity",
+          "any": ["don't deploy", "do not deploy", "never enable enforcement", "classification maturity"]
         },
         {
-          "label": "Scope by data sensitivity and regulatory drivers, not by feature availability.",
-          "any": [
-            "data sensitivity"
-          ]
+          "label": "Scope by data sensitivity and regulatory driver, not feature availability",
+          "any": ["data sensitivity", "regulatory driver"]
+        },
+        {
+          "label": "Map goal to specific Purview solution (DLP / classification / eDiscovery / IRM / lifecycle)",
+          "any": ["dlp", "classification", "ediscovery", "insider risk", "lifecycle"]
+        }
+      ]
+    },
+    {
+      "prompt": "Where do I start with Microsoft Purview for a new tenant?",
+      "expect": [
+        {
+          "label": "Start with classification / discovery before enforcement",
+          "any": ["start with classification", "discovery first", "content explorer"]
+        },
+        {
+          "label": "Sequence: classification → labels → DLP audit → DLP block → lifecycle → insider risk",
+          "any": ["sequence", "classification →", "audit-only", "audit mode"]
+        },
+        {
+          "label": "Run simulation / audit mode 7-14 days on pilot before tenant-wide",
+          "any": ["simulation", "7-14 days", "pilot"]
+        }
+      ]
+    },
+    {
+      "prompt": "What licence and roles do I need to roll out Purview features?",
+      "expect": [
+        {
+          "label": "Validate licensing before designing - advanced features need E5 / E5 Compliance",
+          "any": ["e5", "e5 compliance", "licensing"]
+        },
+        {
+          "label": "Use scoped Purview role groups, not Compliance Administrator / Org Management",
+          "any": ["compliance administrator", "organization management", "scoped role"]
+        },
+        {
+          "label": "Anti-pattern: Org Management for Purview admin team / over-assigning roles",
+          "any": ["org management", "over-assign", "organization management"]
         }
       ]
     }

@@ -4,22 +4,54 @@
       "prompt": "Control Microsoft 365 group and Teams sprawl with lifecycle policies.",
       "expect": [
         {
-          "label": "Governance underpins Copilot readiness — uncontrolled sharing means Copilot ove...",
-          "any": [
-            "governance underpins"
-          ]
+          "label": "Governance underpins Copilot readiness - uncontrolled sharing means Copilot oversharing",
+          "any": ["governance underpins", "copilot readiness", "copilot oversharing"]
         },
         {
-          "label": "Balance control with productivity; over-restriction drives shadow IT.",
-          "any": [
-            "balance control"
-          ]
+          "label": "Balance control with productivity; over-restriction drives shadow IT",
+          "any": ["balance control", "shadow it", "productivity"]
         },
         {
-          "label": "Use access reviews to remove stale guest and broad access continuously.",
-          "any": [
-            "access reviews"
-          ]
+          "label": "Use access reviews to remove stale guest and broad access continuously",
+          "any": ["access reviews", "guest", "stale"]
+        },
+        {
+          "label": "Tighten defaults (group creation, naming, expiration, default sharing link)",
+          "any": ["expiration", "naming", "default sharing", "creation restriction"]
+        }
+      ]
+    },
+    {
+      "prompt": "How do I prepare Microsoft 365 governance for a Copilot rollout?",
+      "expect": [
+        {
+          "label": "Discover first - run SAM Data Access Governance reports to quantify sprawl",
+          "any": ["data access governance", "sam", "sprawl", "oversharing"]
+        },
+        {
+          "label": "Tighten defaults before cleaning up so sprawl does not regrow",
+          "any": ["tighten defaults", "defaults", "regrow"]
+        },
+        {
+          "label": "Apply container sensitivity labels at site/team/group level",
+          "any": ["container label", "sensitivity label", "container labels"]
+        },
+        {
+          "label": "Anti-pattern: do not block all group creation - drives shadow IT",
+          "any": ["shadow it", "block all", "unmanaged tools"]
+        }
+      ]
+    },
+    {
+      "prompt": "What is the right default sharing link for a tenant?",
+      "expect": [
+        {
+          "label": "Default sharing link should be People in your organisation, not Anyone with the link",
+          "any": ["people in your organisation", "people in your organization", "not anyone"]
+        },
+        {
+          "label": "External sharing scoped to existing guests or new and existing guests, not Anyone",
+          "any": ["existing guests", "external sharing"]
         }
       ]
     }

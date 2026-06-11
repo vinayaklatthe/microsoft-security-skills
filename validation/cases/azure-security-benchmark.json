@@ -4,16 +4,50 @@
       "prompt": "Map my Azure controls to the Microsoft Cloud Security Benchmark (MCSB).",
       "expect": [
         {
-          "label": "MCSB is a baseline, not a substitute for workload-specific threat modelling.",
-          "any": [
-            "mcsb"
-          ]
+          "label": "MCSB is a baseline, not a substitute for workload-specific threat modelling",
+          "any": ["baseline", "threat modelling", "threat modeling"]
         },
         {
-          "label": "Secure Score is directional — validate that recommended fixes suit each workloa...",
-          "any": [
-            "secure score"
-          ]
+          "label": "Secure Score is directional - validate that recommended fixes suit each workload",
+          "any": ["secure score", "directional", "validate"]
+        },
+        {
+          "label": "Map MCSB to obligated frameworks (CIS / NIST / PCI / ISO) rather than separate workstreams",
+          "any": ["cis", "nist", "pci", "iso", "frameworks"]
+        }
+      ]
+    },
+    {
+      "prompt": "Which MCSB control domains should I prioritise first?",
+      "expect": [
+        {
+          "label": "Identity and Privileged Access are P0 - identity is the new perimeter",
+          "any": ["identity", "privileged access", "perimeter"]
+        },
+        {
+          "label": "Logging and Threat Detection P0 - cannot respond without visibility",
+          "any": ["logging", "threat detection", "visibility"]
+        },
+        {
+          "label": "Rule of thumb: realistic Secure Score target is 65-85%",
+          "any": ["65", "75%", "85%", "realistic"]
+        }
+      ]
+    },
+    {
+      "prompt": "Enforce MCSB controls with Azure Policy.",
+      "expect": [
+        {
+          "label": "Recommendations alone do not prevent regression - promote to policy in Audit then Deny",
+          "any": ["audit", "deny", "deployifnotexists", "prevent regression"]
+        },
+        {
+          "label": "Audit mode for 2 weeks before Deny or DeployIfNotExists",
+          "any": ["audit mode", "2 weeks", "deny"]
+        },
+        {
+          "label": "Anti-pattern: chasing 100% Secure Score - diminishing returns",
+          "any": ["100%", "diminishing", "chase"]
         }
       ]
     }
