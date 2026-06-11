@@ -35,6 +35,35 @@ data-leak risks in messaging.
 - Start narrow (specific risks/groups), then expand.
 - Reviewer access to message content is highly sensitive — audit it.
 
+## Common scenarios
+- **Regulatory supervision (financial services).** Supervise broker-dealer and advisor
+  communications for FINRA/SEC obligations: scope a policy to the regulated population, use the
+  regulatory-compliance template, detect off-channel comms and undisclosed promises, and route
+  matches to compliance reviewers with documented disposition for audit.
+- **Code-of-conduct / harassment detection.** Detect threats, harassment, and offensive language
+  across Teams and Viva Engage using the offensive-language trainable classifier; pseudonymise
+  usernames so reviewers triage behaviour, not identities, and escalate confirmed cases to HR.
+- **Sensitive-data oversharing in chat.** Catch credentials, PII, or financial data pasted into
+  Teams or email by combining sensitive info types (SITs) and labels as policy conditions, then
+  feed confirmed signals into Insider Risk Management.
+- **Risky AI / Copilot prompts.** Detect inappropriate or data-leaking prompts and responses in
+  AI interactions (including Microsoft 365 Copilot) so risky generative-AI usage is supervised
+  alongside human messaging.
+- **Connected third-party communications.** Extend supervision beyond Microsoft 365 by ingesting
+  data from connected platforms (for example Bloomberg, Slack, or other sources via data
+  connectors) so a single policy set covers regulated channels outside Exchange and Teams.
+- **Departing-employee leak watch.** Pair a sensitive-info policy with HR-driven scope (leavers)
+  to spot data being forwarded or shared externally before a departure date.
+
+## Example prompts
+- `Help me design a Communication Compliance policy for FINRA/SEC supervision of our advisors.`
+- `How do I detect harassment and offensive language in Teams while protecting reviewer privacy?`
+- `Set up pseudonymisation and scoped reviewer access for a Communication Compliance rollout.`
+- `Which template and conditions detect sensitive data shared in Teams messages?`
+- `How do I supervise risky Microsoft 365 Copilot prompts with Communication Compliance?`
+- `How do I bring third-party (e.g. Slack/Bloomberg) communications into Communication Compliance?`
+- `Build a triage and remediation workflow for Communication Compliance alerts that is auditable.`
+
 ## Microsoft Learn
 - Overview: https://learn.microsoft.com/purview/communication-compliance
 - Plan & configure: https://learn.microsoft.com/purview/communication-compliance-configure
