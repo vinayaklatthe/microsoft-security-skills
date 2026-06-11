@@ -1,0 +1,20 @@
+{
+  "cases": [
+    {
+      "prompt": "Design a Conditional Access baseline and roll it out safely without locking users out.",
+      "expect": [
+        { "label": "use report-only mode / What If before enforcing", "any": ["report-only", "what if"] },
+        { "label": "exclude break-glass / emergency access accounts", "any": ["break-glass", "emergency access", "excluded"] },
+        { "label": "block legacy authentication", "any": ["legacy auth"] },
+        { "label": "require MFA for all users and admins", "any": ["MFA"] }
+      ]
+    },
+    {
+      "prompt": "How do I require phishing-resistant MFA for all Global Admins?",
+      "expect": [
+        { "label": "use authentication strengths", "any": ["authentication strength"] },
+        { "label": "FIDO2 / passkeys / Windows Hello / CBA", "any": ["FIDO2", "passkey", "windows hello", "certificate-based"] }
+      ]
+    }
+  ]
+}

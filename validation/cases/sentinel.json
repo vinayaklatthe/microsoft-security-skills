@@ -1,0 +1,20 @@
+{
+  "cases": [
+    {
+      "prompt": "How do I design a Microsoft Sentinel workspace and control ingestion cost?",
+      "expect": [
+        { "label": "prefer a single central Log Analytics workspace", "any": ["single", "central", "log analytics workspace"] },
+        { "label": "route low-value logs to Auxiliary/Basic or ADX", "any": ["auxiliary", "basic logs", "azure data explorer"] },
+        { "label": "use commitment tiers once volume is predictable", "any": ["commitment tier"] },
+        { "label": "onboard connectors via Content Hub", "any": ["content hub", "connector"] }
+      ]
+    },
+    {
+      "prompt": "Automate incident response in Sentinel.",
+      "expect": [
+        { "label": "use automation rules and Logic Apps playbooks", "any": ["automation rule", "playbook"] },
+        { "label": "map detections to MITRE ATT&CK", "any": ["MITRE", "ATT&CK"] }
+      ]
+    }
+  ]
+}

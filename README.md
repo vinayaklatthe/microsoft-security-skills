@@ -241,6 +241,7 @@ The key pieces are:
 
 - `skills/` - the Microsoft Security skill definitions, one subfolder per skill
 - `plugin.json` - plugin metadata for agent harnesses
+- `validation/` - zero-dependency validation harness (structure, links, evals)
 - `README.md` - high-level overview and install guide
 
 ```
@@ -267,6 +268,39 @@ metadata:
 
 <concise, public-knowledge guidance, with Microsoft Learn links>
 ```
+
+## Validating the skills
+
+A zero-dependency validation harness (just Node 18+, no `npm install`) verifies the
+skills are well-formed, accurate, and actually drive the intended outcome.
+
+```bash
+npm run check:structure   # frontmatter, WHEN: triggers, required sections
+npm run eval              # desired-outcome coverage (see validation/cases/)
+npm run check:links       # every Microsoft Learn URL resolves (catches link rot)
+npm run validate          # all three
+```
+
+Three layers of checks:
+
+| Check | Answers | Script |
+|---|---|---|
+| Structural | Are skills well-formed and discoverable? | `validation/check-structure.mjs` |
+| Behavioural (coverage) | Does the skill contain the knowledge each desired outcome needs? | `validation/run-evals.mjs` |
+| Link rot | Do all documentation links still resolve? | `validation/check-links.mjs` |
+
+The behavioural eval reads assertion files in `validation/cases/<skill>.json`. Each case
+lists a prompt and the must-mention points a good answer should contain, grounded in the
+skill's Microsoft Learn references. The default `coverage` mode checks those points are
+present in the skill (runs anywhere, free). To score real model answers, generate one
+`<skill>__<index>.txt` per case with the skill loaded, then run:
+
+```bash
+node validation/run-evals.mjs --answers --dir ./answers
+```
+
+All three checks run automatically on every pull request and weekly (link-rot sweep) via
+GitHub Actions - see `.github/workflows/validate.yml`.
 
 ## Troubleshooting
 

@@ -1,0 +1,13 @@
+{
+  "cases": [
+    {
+      "prompt": "Detect data theft by employees who are about to leave.",
+      "expect": [
+        { "label": "connect HR data for resignation/termination signal", "any": ["HR connector", "resignation", "termination"] },
+        { "label": "use the data-theft-by-departing-users template", "any": ["departing"] },
+        { "label": "privacy by design: pseudonymisation + RBAC", "any": ["pseudonym", "RBAC", "least-privilege"] },
+        { "label": "feed risk into Adaptive Protection", "any": ["adaptive protection"] }
+      ]
+    }
+  ]
+}

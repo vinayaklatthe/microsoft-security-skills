@@ -1,0 +1,20 @@
+{
+  "cases": [
+    {
+      "prompt": "Help me build a Purview DLP policy to stop sensitive data leaving via email and endpoints.",
+      "expect": [
+        { "label": "run simulation mode first", "any": ["simulation"] },
+        { "label": "endpoint DLP needs onboarded devices / E5", "any": ["onboarded", "E5"] },
+        { "label": "severity-tiered actions (audit/warn/block)", "any": ["audit", "warn", "block"] },
+        { "label": "define exceptions before blocking", "any": ["exception", "override"] }
+      ]
+    },
+    {
+      "prompt": "How do I tune a DLP rule to reduce false positives on credit card numbers?",
+      "expect": [
+        { "label": "use SITs / content volume thresholds", "any": ["SIT", "threshold", "volume"] },
+        { "label": "review matches in Activity Explorer", "any": ["activity explorer", "matches"] }
+      ]
+    }
+  ]
+}

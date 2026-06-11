@@ -1,0 +1,15 @@
+{
+  "name": "microsoft-security-skills",
+  "version": "0.1.0",
+  "description": "Validation harness for the Microsoft Security skills repository.",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "check:structure": "node validation/check-structure.mjs",
+    "check:links": "node validation/check-links.mjs",
+    "eval": "node validation/run-evals.mjs",
+    "eval:answers": "node validation/run-evals.mjs --answers --dir ./answers",
+    "validate": "npm run check:structure && npm run eval && npm run check:links"
+  }
+}

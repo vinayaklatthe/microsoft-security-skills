@@ -1,0 +1,20 @@
+{
+  "cases": [
+    {
+      "prompt": "Set up message supervision for our financial advisors to meet FINRA obligations.",
+      "expect": [
+        { "label": "use the regulatory-compliance template", "any": ["regulatory"] },
+        { "label": "pseudonymise reviewers for privacy", "any": ["pseudonym"] },
+        { "label": "consult legal/HR before rollout", "any": ["legal", "HR", "works-council"] },
+        { "label": "scope to the regulated population", "any": ["scope", "regulated"] }
+      ]
+    },
+    {
+      "prompt": "Detect harassment and offensive language in Teams and Viva Engage.",
+      "expect": [
+        { "label": "use offensive-language / harassment classifier", "any": ["offensive", "harassment", "classifier"] },
+        { "label": "escalate confirmed cases to HR", "any": ["HR", "escalate"] }
+      ]
+    }
+  ]
+}
