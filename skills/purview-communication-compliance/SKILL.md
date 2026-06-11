@@ -68,4 +68,4 @@ data-leak risks in messaging.
 - Overview: https://learn.microsoft.com/purview/communication-compliance
 - Plan & configure: https://learn.microsoft.com/purview/communication-compliance-configure
 - Policies: https://learn.microsoft.com/purview/communication-compliance-policies
-- Privacy / pseudonymization: https://learn.microsoft.com/purview/communication-compliance-feature-reference
+- Plan & privacy / pseudonymization: https://learn.microsoft.com/purview/communication-compliance-plan
