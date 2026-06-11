@@ -35,6 +35,6 @@ preservation and production.
 
 ## Microsoft Learn
 - eDiscovery overview: https://learn.microsoft.com/purview/edisc
-- Get started: https://learn.microsoft.com/purview/ediscovery-get-started
+- Get started: https://learn.microsoft.com/purview/ediscovery-standard-get-started
 - Holds: https://learn.microsoft.com/purview/ediscovery-create-holds
-- Review sets: https://learn.microsoft.com/purview/ediscovery-conduct-review
+- Review sets: https://learn.microsoft.com/purview/ediscovery-managing-review-sets

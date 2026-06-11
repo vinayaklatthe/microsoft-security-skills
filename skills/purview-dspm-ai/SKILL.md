@@ -36,4 +36,4 @@ Securing and governing data interactions with AI as Copilot and genAI adoption g
 - DSPM for AI: https://learn.microsoft.com/purview/dspm-for-ai
 - Considerations & setup: https://learn.microsoft.com/purview/dspm-for-ai-considerations
 - Secure Copilot with Purview: https://learn.microsoft.com/purview/ai-microsoft-purview
-- Oversharing assessment: https://learn.microsoft.com/purview/sharepoint-advanced-management
+- Oversharing assessment: https://learn.microsoft.com/sharepoint/advanced-management

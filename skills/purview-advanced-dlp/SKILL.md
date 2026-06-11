@@ -38,5 +38,5 @@ mature data security programs.
 ## Microsoft Learn
 - Adaptive Protection: https://learn.microsoft.com/purview/insider-risk-management-adaptive-protection
 - Exact Data Match: https://learn.microsoft.com/purview/sit-learn-about-exact-data-match-based-sits
-- Endpoint DLP settings: https://learn.microsoft.com/purview/dlp-endpoint-dlp-learn-about
+- Endpoint DLP settings: https://learn.microsoft.com/purview/endpoint-dlp-learn-about
 - DLP policy reference: https://learn.microsoft.com/purview/dlp-policy-reference

@@ -39,4 +39,4 @@ Encrypting Windows endpoints and centrally managing recovery keys and compliance
 - BitLocker overview: https://learn.microsoft.com/windows/security/operating-system-security/data-protection/bitlocker/
 - Manage with Intune: https://learn.microsoft.com/mem/intune/protect/encrypt-devices
 - Disk encryption policy: https://learn.microsoft.com/mem/intune/protect/endpoint-security-disk-encryption-policy
-- Recovery keys in Entra: https://learn.microsoft.com/entra/identity/devices/device-management-azure-portal
+- Recovery keys in Entra: https://learn.microsoft.com/entra/identity/devices/manage-device-identities

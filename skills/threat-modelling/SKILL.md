@@ -37,7 +37,7 @@ security design review.
 - Tie threats to **actionable** mitigations and owners, not abstract risks.
 
 ## Microsoft Learn
-- Threat modelling (SDL): https://learn.microsoft.com/security/engineering/threat-modeling
-- Microsoft SDL: https://learn.microsoft.com/securityengineering/sdl/
+- Threat modelling (SDL): https://learn.microsoft.com/azure/security/develop/threat-modeling-tool
+- Microsoft SDL: https://www.microsoft.com/securityengineering/sdl
 - STRIDE / Threat Modeling Tool: https://learn.microsoft.com/azure/security/develop/threat-modeling-tool
 - Threat Modeling Tool threats: https://learn.microsoft.com/azure/security/develop/threat-modeling-tool-threats

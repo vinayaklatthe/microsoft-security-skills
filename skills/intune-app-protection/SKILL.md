@@ -40,4 +40,4 @@ personal devices, without full MDM enrollment (**MAM without enrollment**, MAM-W
 - App protection overview: https://learn.microsoft.com/mem/intune/apps/app-protection-policy
 - How APP protects data: https://learn.microsoft.com/mem/intune/apps/app-protection-policy-settings-ios
 - MAM without enrollment: https://learn.microsoft.com/mem/intune/apps/apps-supported-intune-apps
-- Require app protection (CA): https://learn.microsoft.com/entra/identity/conditional-access/policy-all-users-mam
+- App protection policy: https://learn.microsoft.com/intune/intune-service/apps/app-protection-policy

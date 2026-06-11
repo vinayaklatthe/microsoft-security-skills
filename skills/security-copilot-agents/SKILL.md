@@ -39,6 +39,6 @@ Offloading repetitive, high-volume triage and remediation tasks while keeping hu
 - Review agent activity logs regularly.
 
 ## Microsoft Learn
-- Agents overview: https://learn.microsoft.com/security-copilot/agents
+- Agents overview: https://learn.microsoft.com/copilot/security/agents-overview
 - Security Copilot: https://learn.microsoft.com/security-copilot/microsoft-security-copilot
 - Manage agent identities (Entra Agent ID): https://learn.microsoft.com/entra/identity/
