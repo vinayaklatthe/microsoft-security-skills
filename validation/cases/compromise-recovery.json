@@ -1,26 +1,20 @@
 {
   "cases": [
     {
-      "prompt": "We believe an attacker has Global Admin in our tenant — what are the immediate steps?",
+      "prompt": "An attacker has Global Admin in our tenant right now. Walk me through evicting them.",
       "expect": [
-        {
-          "label": "Engage qualified incident responders (e.g., Microsoft Incident Response) for ma...",
-          "any": [
-            "engage qualified"
-          ]
-        },
-        {
-          "label": "Sequence eviction carefully — partial eviction warns the adversary and invites...",
-          "any": [
-            "sequence eviction"
-          ]
-        },
-        {
-          "label": "Preserve forensic evidence before remediating where investigation is required.",
-          "any": [
-            "preserve forensic"
-          ]
-        }
+        { "label": "stand up a trusted foundation / PAW before responding from untrusted infra", "any": ["trusted foundation", "paw"] },
+        { "label": "evict in one coordinated action; partial eviction tips off the adversary", "any": ["coordinated", "tipping", "piecemeal"] },
+        { "label": "reset krbtgt and privileged/federation credentials", "any": ["krbtgt"] },
+        { "label": "preserve forensic evidence before remediating where investigation is required", "any": ["forensic"] }
+      ]
+    },
+    {
+      "prompt": "How do we harden the tenant after eviction so the attacker cannot return?",
+      "expect": [
+        { "label": "enforce phishing-resistant MFA", "any": ["phishing-resistant"] },
+        { "label": "least privilege / PIM for admin access", "any": ["pim", "least privilege"] },
+        { "label": "engage qualified incident responders for major incidents", "any": ["incident response", "incident responders"] }
       ]
     }
   ]

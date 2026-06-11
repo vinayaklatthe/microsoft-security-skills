@@ -1,26 +1,19 @@
 {
   "cases": [
     {
-      "prompt": "What are the first Defender XDR controls I should enable for a new Microsoft 365 tenant?",
+      "prompt": "Walk me through investigating a multi-stage attack across endpoint and identity.",
       "expect": [
-        {
-          "label": "Configure role-based access (unified RBAC) before broad enablement.",
-          "any": [
-            "role-based access"
-          ]
-        },
-        {
-          "label": "Review automatic attack disruption scope and exclusions in a controlled rollout.",
-          "any": [
-            "automatic attack"
-          ]
-        },
-        {
-          "label": "Tune custom detection rules to limit alert fatigue.",
-          "any": [
-            "custom detection"
-          ]
-        }
+        { "label": "investigate by incident, not by individual alert", "any": ["incident"] },
+        { "label": "signals are correlated across workloads into the attack story", "any": ["correlate", "correlates"] },
+        { "label": "use advanced hunting KQL over the shared schema", "any": ["advanced hunting", "kql"] },
+        { "label": "automatic attack disruption can contain a high-confidence active attack", "any": ["attack disruption"] }
+      ]
+    },
+    {
+      "prompt": "What should I configure before enabling Defender XDR broadly?",
+      "expect": [
+        { "label": "configure unified role-based access (RBAC) first", "any": ["rbac"] },
+        { "label": "review attack disruption scope and exclusions in a controlled rollout", "any": ["exclusion", "scope"] }
       ]
     }
   ]

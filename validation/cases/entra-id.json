@@ -1,26 +1,19 @@
 {
   "cases": [
     {
-      "prompt": "How do I design a hybrid identity model with Entra Connect and password hash sync?",
+      "prompt": "Design the identity foundation for a new Entra ID tenant.",
       "expect": [
-        {
-          "label": "Protect break-glass / emergency access accounts (cloud-only, excluded from CA,...",
-          "any": [
-            "protect break-glass"
-          ]
-        },
-        {
-          "label": "Avoid legacy authentication; block it with Conditional Access.",
-          "any": [
-            "legacy authentication"
-          ]
-        },
-        {
-          "label": "Govern app consent to prevent illicit consent grants.",
-          "any": [
-            "govern app"
-          ]
-        }
+        { "label": "move to phishing-resistant, passwordless authentication", "any": ["passwordless", "phishing-resistant"] },
+        { "label": "block legacy authentication", "any": ["legacy authentication"] },
+        { "label": "protect break-glass / emergency access accounts", "any": ["break-glass", "emergency access"] },
+        { "label": "govern app consent to prevent illicit consent grants", "any": ["consent"] }
+      ]
+    },
+    {
+      "prompt": "Set up hybrid identity with our on-premises Active Directory.",
+      "expect": [
+        { "label": "use Entra Connect or Cloud Sync", "any": ["entra connect", "cloud sync"] },
+        { "label": "password hash sync is the recommended baseline sign-in method", "any": ["password hash sync"] }
       ]
     }
   ]
