@@ -1,0 +1,9 @@
+Set activation controls proportionate to the sensitivity of the role - tighter for Global Admin and other high-impact roles.
+
+- Require approval: a designated approver must grant the elevation before it takes effect for the most privileged roles.
+- Require strong auth: require MFA or a specific authentication strength (phishing-resistant for the top roles) at the point of activation.
+- Require justification: make the admin enter a business justification.
+- Require ticket info: capture a ticket/change number so activations tie back to a work item.
+- Set a maximum activation duration: keep the window short (for example a few hours) so elevated access expires automatically.
+
+Combine these with recurring access reviews and PIM alerts so activations are both controlled at the moment of use and reviewed over time.

@@ -1,0 +1,8 @@
+Automate response in Sentinel with automation rules and playbooks, and keep your detections mapped to a framework so the automation is meaningful.
+
+1. Automation rules are the orchestration layer. They run on incident creation/update and can set severity, assign an owner, add tags, close known false positives, and trigger playbooks - centrally, across many analytics rules.
+2. Playbooks are Logic Apps. Use them for the actual actions: enrich an incident (geo-IP, threat intel, user/device lookup), post to Teams/ServiceNow, disable a user or isolate a device via the Defender connectors, or request approval before a destructive action.
+3. Map detections to MITRE ATT&CK. Tag analytics rules with tactics/techniques so your coverage and your automated responses line up with how attackers actually operate, and you can see gaps.
+4. Start with low-risk automation (enrichment, triage, false-positive closure) and add response actions (isolate, disable) behind approval steps once you trust them.
+
+This gives you consistent, fast SOC response without hard-coding logic into each individual rule.

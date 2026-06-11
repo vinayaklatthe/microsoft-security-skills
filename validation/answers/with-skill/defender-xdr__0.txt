@@ -1,0 +1,7 @@
+Defender XDR is built for exactly this - it correlates signals across endpoint, identity, email, and cloud apps so you investigate one incident instead of chasing isolated alerts.
+
+1. Start at the incident, not the alert. Defender XDR groups related alerts, assets, and evidence into a single incident with an attack graph and timeline. Open the incident and read the story end to end rather than triaging each alert separately.
+2. Follow the correlation. Because signals are correlated across workloads, an identity alert (suspicious sign-in from Defender for Identity) and a device alert (malicious process from Defender for Endpoint) will already be linked in the same incident - confirm the pivot points (user, device, IP, token).
+3. Go deeper with advanced hunting. Query the shared schema with KQL (DeviceEvents, IdentityLogonEvents, EmailEvents, CloudAppEvents) to find related activity the alerts did not surface, and promote useful hunts to custom detection rules.
+4. Check what was contained automatically. Automatic attack disruption may have already isolated a device or disabled the user for a high-confidence active attack; verify scope and confirm.
+5. Use AIR (automated investigation and remediation) output to speed the rest of the response.

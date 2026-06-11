@@ -1,0 +1,9 @@
+The goal is that the app holds no secret of its own and the vault is locked down.
+
+1. Access model: use Azure RBAC on the vault data plane rather than legacy access policies. Assign least-privilege roles such as Key Vault Secrets User, and assign them to a managed identity, not to a user account.
+2. App access: give the app a managed identity (system- or user-assigned) and have it fetch secrets at runtime - or use App Service/AKS Key Vault references or the Secrets Store CSI driver. There should be no secret in source or config.
+3. Data protection: enable soft delete and purge protection so secrets cannot be accidentally or maliciously destroyed, and set an appropriate retention period.
+4. Network isolation: for sensitive vaults, put a private endpoint in front, set the firewall to deny, and disable public network access.
+5. Monitoring: send vault logs to Log Analytics/Sentinel and turn on Defender for Key Vault.
+
+Note that purge protection is irreversible once enabled, and it is required for customer-managed keys and many compliance scenarios.

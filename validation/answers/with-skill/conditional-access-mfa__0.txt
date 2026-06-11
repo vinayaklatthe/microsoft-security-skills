@@ -1,0 +1,12 @@
+Roll out Conditional Access in stages so you never lock yourself or your users out.
+
+1. Start in report-only mode. Create the policies but set them to report-only and use the What If tool and the sign-in logs to see exactly who they would have hit, before any enforcement.
+2. Exclude break-glass / emergency access accounts from every policy. These are cloud-only, monitored accounts that guarantee you can still get in if a policy misfires.
+3. Build a baseline set:
+   - Require MFA for all users, and stronger controls for admins.
+   - Block legacy authentication (it bypasses MFA entirely).
+   - Require compliant or hybrid-joined devices for sensitive access.
+4. Enforce gradually. Move policies from report-only to on for a pilot group first, watch the impact, then expand to all users.
+5. Monitor continuously and keep named exclusions documented.
+
+The combination of report-only first and break-glass exclusions is what makes the rollout safe.

@@ -1,0 +1,9 @@
+Hardening after eviction is about removing the conditions that let the attacker in and making re-entry expensive. Focus on identity, which is the control plane.
+
+1. Authentication: enforce phishing-resistant MFA (FIDO2/passkeys, Windows Hello for Business, or certificate-based auth) for all admins, and ideally all users. Block legacy authentication, which bypasses MFA.
+2. Privileged access: eliminate standing admin rights. Move admin roles to eligible just-in-time activation with PIM, require approval and strong auth to elevate, and keep a small number of monitored break-glass accounts. Apply least privilege everywhere.
+3. Admin isolation: require privileged access workstations for all administrative work.
+4. Detection: deploy or expand Defender XDR and Sentinel monitoring so a repeat attempt is caught early, and tune alerts for the techniques used in this incident.
+5. Sustain: transition from incident response into a sustained security operations and continuous-improvement program rather than treating recovery as a one-off.
+
+For an incident of this severity, keep qualified incident responders engaged through the hardening phase so nothing is missed.

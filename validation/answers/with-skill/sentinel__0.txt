@@ -1,0 +1,14 @@
+Two decisions dominate a Sentinel design: workspace topology and how you control ingestion cost.
+
+Workspace design:
+- Prefer a single, central Log Analytics workspace where possible. It simplifies correlation, hunting, and RBAC, and avoids cross-workspace query overhead. Use resource-context or table-level RBAC for data segregation rather than splitting workspaces, unless data residency or strict isolation forces multiple.
+
+Cost control:
+- Tier your data. Send high-value security logs to the Analytics tier, and route high-volume, low-value logs (verbose firewall/proxy/NetFlow) to Auxiliary or Basic logs, or to Azure Data Explorer (ADX) for cheap long-term retention.
+- Once your ingestion volume is predictable, move to a commitment tier (capacity reservation) to cut the per-GB rate versus pay-as-you-go.
+- Filter at the source/collection layer so you never pay to ingest noise you will not query.
+
+Onboarding:
+- Bring in data connectors via the Content Hub, which packages connectors, analytics rules, workbooks, and playbooks together.
+
+Set retention per table so you are not paying Analytics-tier rates for data you only need for occasional lookback.

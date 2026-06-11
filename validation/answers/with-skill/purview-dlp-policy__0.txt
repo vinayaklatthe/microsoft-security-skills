@@ -1,0 +1,10 @@
+Build the DLP policy carefully and never start in blocking mode.
+
+1. Define what you are protecting. Pick the sensitive information types (SITs), sensitivity labels, or trainable classifiers that represent the data you care about (financial, PII, secrets).
+2. Choose locations: Exchange email and Endpoint for this scenario. Endpoint DLP requires devices onboarded to Defender for Endpoint and the right licensing (typically E5/compliance), so confirm that first.
+3. Run in simulation mode first. Simulation shows what the policy would have caught, with no user impact, so you can size false positives before enforcing.
+4. Use severity-tiered actions: audit low-confidence matches, warn/justify on medium, and block on high-confidence or high-volume matches. Layered actions avoid a blunt block-everything policy.
+5. Define exceptions and business-justified overrides before you switch blocking on, so legitimate work is not stopped.
+6. Move from simulation to enforce gradually, watching Activity Explorer and the DLP alerts.
+
+Tune continuously - DLP is iterative, not set-and-forget.

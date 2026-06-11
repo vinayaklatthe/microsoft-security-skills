@@ -1,0 +1,9 @@
+An attacker holding Global Admin is a tenant-wide compromise, so do not try to remediate piecemeal from your existing (possibly untrusted) infrastructure.
+
+1. Establish a trusted foundation first. Stand up out-of-band secure communications and clean privileged access workstations (PAW). Assume your current admin devices and channels may be monitored by the adversary.
+2. Preserve forensic evidence before you change anything that investigators will need - sign-in logs, audit logs, mailbox rules, token and app data. Snapshot before remediation where an investigation is required.
+3. Plan eviction as a single coordinated action. Partial or piecemeal eviction tips off the adversary and invites re-entrenchment. Build the full list of persistence first: rogue accounts, app registrations and OAuth consent grants, mailbox forwarding rules, scheduled tasks, forged/golden tickets.
+4. Execute: rotate all privileged credentials, reset the krbtgt account (twice), revoke sessions and refresh tokens, tighten Conditional Access, disable suspicious accounts, and remove the persistence inventory in one window.
+5. Re-establish trust in identity: reset federation/signing secrets as applicable.
+
+Engage qualified incident responders (for example Microsoft Incident Response) for an incident of this scale rather than going it alone.

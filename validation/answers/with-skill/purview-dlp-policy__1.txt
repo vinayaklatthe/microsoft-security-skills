@@ -1,0 +1,8 @@
+False positives on credit card numbers usually come from a too-loose match, so tighten the detection rather than relax the action.
+
+1. Tune the SIT match. The credit card SIT combines a pattern with checksum (Luhn) and supporting/corroborating evidence (keywords, proximity). Require higher confidence and adjust the confidence level on the rule so a bare 16-digit number without corroboration does not trigger.
+2. Use content volume thresholds. Set instance count thresholds (for example trigger only on 5+ cards) so a single incidental number does not fire, while bulk exfiltration still does.
+3. Review actual matches in Activity Explorer. Look at what is being detected, identify the recurring false-positive sources (test data, order IDs that look like cards), and refine the SIT, confidence, and thresholds based on real evidence.
+4. Consider an exact data match (EDM) SIT if you have a known set of real card numbers - it matches only those, near-eliminating false positives.
+
+Iterate in simulation mode, confirm the false-positive rate drops in Activity Explorer, then re-enforce.

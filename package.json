@@ -10,7 +10,8 @@
     "check:links": "node validation/check-links.mjs",
     "eval": "node validation/run-evals.mjs",
     "eval:report": "node validation/run-evals.mjs --report",
-    "eval:answers": "node validation/run-evals.mjs --answers --dir ./answers",
+    "eval:answers": "node validation/run-evals.mjs --answers --dir validation/answers/with-skill",
+    "eval:answers:report": "node validation/run-evals.mjs --answers --dir validation/answers/with-skill --report",
     "validate": "npm run check:structure && npm run eval && npm run check:links"
   }
 }

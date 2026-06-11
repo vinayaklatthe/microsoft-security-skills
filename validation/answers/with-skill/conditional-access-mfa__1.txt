@@ -1,0 +1,9 @@
+Do not just require "MFA" for admins - require phishing-resistant MFA, because push/OTP can be phished or fatigued.
+
+1. Use authentication strengths in Conditional Access. Create or use the built-in phishing-resistant authentication strength rather than the generic "require MFA" grant.
+2. That strength permits only phishing-resistant methods: FIDO2 security keys / passkeys, Windows Hello for Business, and certificate-based authentication. It excludes SMS, voice, and standard Authenticator push.
+3. Target the policy at the privileged roles - assign it to Global Administrator and other high-impact directory roles (ideally via role-based assignment so it follows the role, not a static group).
+4. Exclude break-glass accounts, and make sure those accounts themselves have a strong, monitored credential.
+5. Test in report-only first, then enforce.
+
+Pair this with PIM so those admins also activate the role just-in-time, not hold it permanently.

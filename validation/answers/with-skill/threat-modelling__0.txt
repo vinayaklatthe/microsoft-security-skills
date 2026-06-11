@@ -1,0 +1,15 @@
+Use STRIDE within the SDL, working from a diagram so threats are tied to real elements.
+
+1. Scope and diagram. Build a data-flow diagram (DFD): external entities, processes, data stores, data flows, and - critically - the trust boundaries where data crosses between differently trusted zones. Most interesting threats live on those boundaries.
+2. Enumerate threats with STRIDE for each element and flow:
+   - Spoofing -> authentication
+   - Tampering -> integrity
+   - Repudiation -> non-repudiation/logging
+   - Information disclosure -> confidentiality
+   - Denial of service -> availability
+   - Elevation of privilege -> authorization
+3. Rank and mitigate. Prioritise by risk and map every threat to a concrete, actionable mitigation with an owner (MFA, input validation, signing, encryption, rate limiting, least privilege) - not an abstract "improve security".
+4. Validate. Confirm the mitigations are actually implemented, and re-model when the design changes.
+5. Tooling. The Microsoft Threat Modeling Tool can generate STRIDE threats from your DFD.
+
+Capture assumptions and out-of-scope items explicitly, and remember threat modelling is iterative, not a one-time gate.

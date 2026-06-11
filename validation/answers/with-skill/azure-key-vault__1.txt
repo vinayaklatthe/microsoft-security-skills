@@ -1,0 +1,7 @@
+Two principles: isolate by blast radius, and never let a secret go stale silently.
+
+Isolation: use one vault per app per environment (dev/test/prod). This limits blast radius if a vault or identity is compromised and keeps access control simple - each managed identity only sees the secrets it needs. Do not share one mega-vault across unrelated apps.
+
+Freshness: automate rotation for keys and certificates rather than rotating by hand. Set an expiry on secrets and certificates, and monitor for near-expiry so nothing dies in production unexpectedly. Where you need single-tenant FIPS 140-3 Level 3 key control, use Managed HSM, but standard vaults with rotation cover most cases.
+
+Pair this with RBAC least privilege and Defender for Key Vault so that any unusual access to the isolated vaults is flagged.

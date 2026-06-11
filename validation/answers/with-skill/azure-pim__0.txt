@@ -1,0 +1,9 @@
+The aim is zero standing Global Admin - admins hold the role as eligible and activate just-in-time only when they need it.
+
+1. Convert assignments: change permanent (active) Global Admin assignments to eligible in PIM. The admin then activates the role for a limited, time-bound window when required.
+2. Activation controls: for Global Admin and other sensitive roles, require approval from a designated approver, require MFA or a specific authentication strength (phishing-resistant), and require justification and ticket information at activation. Set a sensible maximum activation duration.
+3. Break-glass: keep at least two break-glass (emergency access) accounts with permanent access, excluded from just-in-time and from Conditional Access, and heavily monitored - so a PIM or MFA outage cannot lock you out.
+4. Reviews: configure recurring access reviews of eligible and active assignments and remove anyone who no longer needs the role.
+5. Alert and audit: enable PIM alerts (too many admins, activation outside PIM) and stream the PIM audit log to Sentinel.
+
+This requires Entra ID P2.

@@ -1,0 +1,10 @@
+Onboard in waves and never push attack surface reduction straight to enforcement.
+
+1. Confirm licensing (Plan 1 vs Plan 2 - P2 adds EDR, automated investigation, and threat & vulnerability management) so you know which features you can use.
+2. Onboard devices, preferably via Intune for cloud-managed estates (Configuration Manager, GPO, or scripts also work). Verify devices report in before expanding.
+3. Configure next-gen antivirus: real-time and cloud-delivered protection, PUA blocking, and tamper protection enabled everywhere so attackers cannot switch protection off.
+4. Roll out ASR rules in audit mode first. Review the impact reports - some rules can break line-of-business apps - and only then move the safe ones to block.
+5. Use device groups and RBAC to scope who can take response actions (isolate, restrict app execution, live response).
+6. Enable EDR in block mode so EDR still remediates post-breach detections even where a non-Microsoft AV is primary.
+
+Pilot, measure, then expand - do not enforce ASR tenant-wide on day one.

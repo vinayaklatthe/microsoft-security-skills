@@ -1,0 +1,8 @@
+Before you turn Defender XDR on broadly, get the guardrails in place so you do not over-expose access or cause uncontrolled automated actions.
+
+1. Configure unified RBAC first. Define role-based access so analysts see and do only what their role needs before you onboard workloads and open up the portal.
+2. Review automatic attack disruption scope and exclusions. Attack disruption can disable a user or isolate a device on high-confidence detections - validate the scope and set exclusions for critical assets in a controlled rollout so it does not disrupt a business-critical system unexpectedly.
+3. Plan onboarding order. Onboard each workload (Defender for Endpoint, Identity, Office 365, Cloud Apps) so signals flow into the unified incident queue, but stage it.
+4. Tune custom detection rules to limit alert fatigue before scaling out.
+
+In short: RBAC and attack-disruption scope are the two things to settle before broad enablement.

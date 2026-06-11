@@ -1,0 +1,10 @@
+Treat Entra ID as your Zero Trust control plane and build the foundation deliberately.
+
+1. Identity and tenant model: define users and groups (assigned vs dynamic) and administrative units. Prefer cloud-only identities where you can.
+2. Authentication: move to phishing-resistant, passwordless methods - Windows Hello for Business, FIDO2/passkeys, or certificate-based auth - and manage them through the Authentication methods policy. Register all users for MFA.
+3. Block legacy authentication. Legacy protocols bypass MFA and Conditional Access, so block them with a Conditional Access policy from day one.
+4. Protect break-glass accounts: create at least two cloud-only emergency access accounts, exclude them from Conditional Access, and monitor them strongly so a policy or MFA outage cannot lock you out.
+5. Application access and consent: use enterprise applications/app registrations for SSO with least-privilege API permissions, and govern app consent (restrict user consent, require admin consent) to prevent illicit consent grants.
+6. Self-service: enable SSPR.
+
+Then layer Conditional Access, Identity Protection, and PIM on top.

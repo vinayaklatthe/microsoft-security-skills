@@ -296,8 +296,15 @@ present in the skill (runs anywhere, free). To score real model answers, generat
 `<skill>__<index>.txt` per case with the skill loaded, then run:
 
 ```bash
-node validation/run-evals.mjs --answers --dir ./answers
+npm run eval:answers          # score answers in validation/answers/with-skill
+npm run eval:answers:report   # same, as a Hit/Miss + Score table
 ```
+
+The 10 highest-risk skills ship with hand-authored assertions and a set of `with-skill`
+answers. To prove a skill *changes behaviour*, capture a `baseline` (answers from a clean
+session with no skill loaded) and compare the scores - see
+`validation/answers/README.md`.
+
 
 All three checks run automatically on every pull request and weekly (link-rot sweep) via
 GitHub Actions - see `.github/workflows/validate.yml`.

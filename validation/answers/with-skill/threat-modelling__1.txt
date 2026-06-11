@@ -1,0 +1,7 @@
+The E in STRIDE is Elevation of privilege.
+
+It is the threat where an actor gains capabilities they should not have - for example a standard user executing code as an administrator, or a process escaping its intended permission boundary to act with higher rights.
+
+The security property it violates is authorization. So mitigations are about enforcing authorization correctly: least-privilege design, robust access-control checks on every privileged operation (server-side, not just in the UI), sandboxing/isolation, avoiding running components with more rights than they need, and validating that lower-trust input cannot drive higher-trust actions.
+
+In a STRIDE pass you ask, for each element and each trust boundary crossing, "could someone use this path to gain rights they should not have?" and then map any such threat to a concrete authorization control.

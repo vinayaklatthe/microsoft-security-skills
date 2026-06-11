@@ -1,0 +1,13 @@
+Respond fast on the device, then reduce the exposure that allowed it.
+
+Immediate response:
+1. Isolate the device from the network through Defender for Endpoint so the attacker loses interactive access while you investigate. Use full isolation for active threats.
+2. Run an antivirus scan and, if needed, restrict app execution (only Microsoft-signed binaries) to stop further payloads.
+3. Collect the investigation package for forensics, and review the device timeline in the incident to understand entry point and lateral movement.
+4. Let automated investigation and remediation (AIR) act on what it can, and confirm remediation.
+
+Reduce future exposure:
+5. Use threat & vulnerability management to see which vulnerabilities and misconfigurations on that device (and similar devices) gave the attacker an opening, and prioritise remediation by exposure and active threat.
+6. Confirm tamper protection and EDR in block mode are on, and tighten the ASR rules relevant to the technique used.
+
+Scope all response actions with device groups and RBAC so the right team acts on the right machines.

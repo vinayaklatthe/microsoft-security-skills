@@ -1,0 +1,14 @@
+Use Microsoft Entra Connect (or the lighter Entra Cloud Sync) to synchronise identities from on-premises Active Directory to Entra ID.
+
+Choose a sign-in method:
+- Password hash sync (PHS) is the recommended baseline - it is resilient, simple, and supports leaked-credential detection. Start here unless you have a hard requirement otherwise.
+- Pass-through authentication (PTA) validates passwords against on-prem AD in real time if policy requires passwords never leave the building.
+- Federation (AD FS) only where a specific requirement demands it; it adds infrastructure and is a bigger attack surface.
+
+Steps:
+1. Plan which objects/OUs to sync and clean up the directory first (UPN matching, duplicates).
+2. Install Entra Connect, select PHS, and enable Seamless SSO.
+3. Enable password writeback so SSPR works for hybrid users.
+4. Validate sync health and sign-in, then register users for MFA and move toward passwordless over time.
+
+Keep break-glass cloud-only accounts outside the sync scope.

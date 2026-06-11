@@ -67,6 +67,7 @@ if (suites.length === 0) {
 
 let totalAssertions = 0;
 let totalMet = 0;
+let skipped = 0;
 const failures = [];
 const reportBlocks = [];
 
@@ -84,7 +85,9 @@ for (const { skill, cases } of suites) {
     } else {
       const answerFile = join(answersDir, `${skill}__${idx}.txt`);
       if (!existsSync(answerFile)) {
-        failures.push(`${skill} case ${idx}: missing answer file ${answerFile}`);
+        // Answers mode scores whatever answers exist; skills without an answer
+        // file are simply not evaluated (skipped), not failed.
+        skipped++;
         return;
       }
       haystack = readFileSync(answerFile, "utf8");
@@ -122,13 +125,17 @@ for (const { skill, cases } of suites) {
 if (REPORT) {
   const heading = MODE === "coverage" ? "Coverage report" : "Behavioural eval report";
   console.log(`# ${heading}\n`);
-  console.log(`Total: ${totalMet}/${totalAssertions} expected outcomes met across ${suites.length} skill(s).\n`);
+  const scored = MODE === "answers" ? ` (${skipped} case(s) had no answer file and were skipped)` : "";
+  console.log(`Total: ${totalMet}/${totalAssertions} expected outcomes met across ${suites.length} skill(s).${scored}\n`);
   console.log(reportBlocks.join("\n"));
   process.exit(failures.length === 0 ? 0 : 1);
 }
 
 const label = MODE === "coverage" ? "Coverage eval (knowledge grounded in skill)" : "Behavioural eval (scored answers)";
 console.log(`${label}: ${totalMet}/${totalAssertions} assertions met across ${suites.length} skill(s).`);
+if (MODE === "answers" && skipped > 0) {
+  console.log(`(${skipped} case(s) had no answer file in ${answersDir} and were skipped.)`);
+}
 
 if (failures.length === 0) {
   console.log("PASS - every desired outcome is covered.");
