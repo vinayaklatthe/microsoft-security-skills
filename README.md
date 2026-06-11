@@ -7,6 +7,7 @@
 <p align="center">
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-50E6FF?style=flat-square&labelColor=0A2540" alt="License: MIT"></a>
   <img src="https://img.shields.io/badge/skills-56-50E6FF?style=flat-square&labelColor=0A2540" alt="56 skills">
+  <img src="https://img.shields.io/badge/validated-2%20models-50E6FF?style=flat-square&labelColor=0A2540" alt="Validated across 2 models">
   <img src="https://img.shields.io/badge/grounded%20in-Microsoft%20Learn-50E6FF?style=flat-square&labelColor=0A2540" alt="Grounded in Microsoft Learn">
   <img src="https://img.shields.io/badge/hosts-Copilot%20%7C%20Claude%20%7C%20Cursor%20%7C%20Codex%20%7C%20Gemini-50E6FF?style=flat-square&labelColor=0A2540" alt="Compatible hosts">
 </p>
@@ -29,6 +30,8 @@ opinionated Microsoft Security guidance instead of generic security advice.
 - Coverage: Security, Identity and Management, Compliance and Privacy, Cloud platform security
 - Compatible with GitHub Copilot, Claude Code, Cursor, Codex CLI, Gemini CLI, and other agentic hosts
 - Public knowledge only, grounded in Microsoft Learn
+- Behaviourally validated: a reproducible harness measures the lift each skill adds over an
+  unaided model, verified across two independent frontier models ([details](#validating-the-skills))
 
 ## What this plugin delivers
 
@@ -310,9 +313,16 @@ npm run eval:compare          # baseline vs with-skill, lift summary
 npm run eval:compare:report   # per-case comparison table
 ```
 
-Measured on the 10 high-risk skills: baseline (no skill) scored 51/61, with the skill
-loaded 61/61 - a +10-outcome lift with zero regressions, concentrated on the
-high-consequence operational details a generic answer tends to skip.
+Measured on the 10 high-risk skills (20 prompts, 61 assertions), validated across two
+independent frontier models used as graders:
+
+| Model | Baseline (no skill) | With skill | Lift |
+|---|---|---|---|
+| Claude Opus 4.8 | 51/61 (84%) | 61/61 (100%) | +10 |
+| GPT-5.5 | 55/61 (90%) | 61/61 (100%) | +6 |
+
+The skill never regressed either model, and the gains concentrate on the high-consequence
+operational details a generic answer tends to skip. See `validation/answers/README.md`.
 
 
 All three checks run automatically on every pull request and weekly (link-rot sweep) via

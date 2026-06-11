@@ -39,41 +39,53 @@ A higher with-skill score than baseline is the evidence that the skill works.
 Ideally generate both sets with a *different* model from the one that authored
 the skills, to avoid the author also grading its own work.
 
-## Compare the two side by side
+## Folders
+
+- `with-skill/` - answers generated with the SKILL.md loaded.
+- `baseline-opus-4.8/` - clean-session baseline, Claude Opus 4.8.
+- `baseline-gpt-5.5/` - clean-session baseline, GPT-5.5.
+- `baseline/` - convenience copy of the most recent baseline run.
+
+## Compare side by side
 
 ```bash
-npm run eval:compare          # baseline vs with-skill, lift summary
+npm run eval:compare          # uses answers/baseline vs answers/with-skill
 npm run eval:compare:report   # markdown table, per case
+
+# Compare a specific model baseline:
+node validation/compare-evals.mjs --baseline answers/baseline-opus-4.8 --withskill answers/with-skill
+node validation/compare-evals.mjs --baseline answers/baseline-gpt-5.5  --withskill answers/with-skill
 ```
 
-## Measured result (10 high-risk skills, 20 cases, 61 assertions)
+## Measured result: validated across two independent models
 
-Baseline answers were captured in a separate window with no skill loaded; the
-with-skill answers were generated with the relevant SKILL.md in context.
+10 high-risk skills, 20 prompts, 61 scored assertions. Baselines were captured
+in clean sessions with no skill loaded; with-skill answers had the relevant
+SKILL.md in context. Two different frontier models were used as independent
+graders to avoid one model marking its own work.
 
-| Condition | Score |
-|---|---|
-| Baseline (no skill) | 51/61 (84%) |
-| With skill loaded | 61/61 (100%) |
-| **Lift from skills** | **+10 outcomes, zero regressions** |
+| Model | Baseline (no skill) | With skill | Lift |
+|---|---|---|---|
+| Claude Opus 4.8 | 51/61 (84%) | 61/61 (100%) | **+10** |
+| GPT-5.5 | 55/61 (90%) | 61/61 (100%) | **+6** |
 
-Per-skill improvement:
+Key findings:
 
-| Skill | Baseline | With skill |
-|---|---|---|
-| compromise-recovery | 3/7 | 7/7 |
-| defender-xdr | 4/6 | 6/6 |
-| threat-modelling | 4/6 | 6/6 |
-| purview-dlp-policy | 5/6 | 6/6 |
-| sentinel | 5/6 | 6/6 |
+- **The skill never regressed either model** - with-skill scored 61/61 against both.
+- **A stronger base model needs less help** - GPT-5.5 scored higher unaided, so the
+  lift is smaller. The metric behaves as expected.
+- **Some gaps are missed by both models** (for example, standing up a trusted
+  foundation / PAW before responding to a compromise, and running DLP in simulation
+  mode first). These are the highest-confidence evidence that the skill adds real value.
 
-The gains cluster on high-consequence operational details a generic answer
-tends to skip (coordinated eviction and forensic preservation in incident
-response, attack-disruption scope in Defender XDR, endpoint DLP licensing,
-MITRE mapping in Sentinel). The skill adds the guardrails and gotchas, not the
-basics.
+The gains cluster on high-consequence operational details a generic answer tends
+to skip - coordinated eviction and forensic preservation in incident response,
+cross-workload correlation and attack-disruption scope in Defender XDR, endpoint
+DLP licensing and simulation mode, log-tiering for Sentinel cost. The skill adds
+the guardrails and gotchas, not the basics.
 
-Caveat: scoring is substring presence, so a "Hit" confirms the point was
-mentioned, not that it was correct or well-explained. The lift is therefore a
-floor, not a ceiling, on the skills' real value.
+Caveat: scoring is substring presence, so a "Hit" confirms a point was mentioned,
+not that it was correct or well-explained. The lift is therefore a floor, not a
+ceiling, on the skills' real value.
+
 
