@@ -1,0 +1,10 @@
+To set up enforceable guardrails so oversharing doesn't creep back in SharePoint:
+
+- Use secure-by-default labelling, deriving sensitivity labels from SharePoint sites, so new content is protected automatically without relying on users to remember to label. Train users on managing exceptions rather than on when to protect.
+- Apply sensitivity labels to sensitive content and container labels to sites. Reserve encryption for genuinely sensitive content - do not encrypt everything "to be safe", because that breaks external collaboration and legitimate sharing.
+- Tighten default sharing settings so new sites and content start with an appropriately scoped access level.
+- Govern site lifecycle: apply inactive-site policies and run periodic access reviews so over-broad access is caught and owners re-attest.
+- Treat this as ongoing, continuous governance, not a one-time cleanup - new sites and sharing links appear daily, so a single remediation pass regresses quickly.
+- Keep assessing with SharePoint Advanced Management data access governance reports to confirm exposure keeps shrinking.
+
+These guardrails are the "set up guardrails" pillar of the Secure & Governed Data Foundation blueprint, following the earlier remediate-oversharing work.

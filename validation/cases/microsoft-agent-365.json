@@ -1,0 +1,23 @@
+{
+  "cases": [
+    {
+      "prompt": "Set up Microsoft Agent 365 to manage all our AI agents at scale.",
+      "expect": [
+        { "label": "organise work into observe, govern, and secure pillars", "any": ["observe", "govern", "secure"] },
+        { "label": "build a single agent inventory via the agent registry", "any": ["agent registry", "inventory", "registry"] },
+        { "label": "give each agent a managed Entra Agent ID, not a shared app", "any": ["entra agent id", "managed identity", "distinct"] },
+        { "label": "secure agent data with Microsoft Purview (DSPM for AI, DLP)", "any": ["purview", "dspm for ai", "dlp"] },
+        { "label": "detect unsafe behaviour at runtime with Microsoft Defender", "any": ["defender", "runtime", "real-time"] }
+      ]
+    },
+    {
+      "prompt": "How do I govern and secure third-party and Copilot Studio agents from one control plane?",
+      "expect": [
+        { "label": "treat every agent as a governed least-privilege identity", "any": ["least-privilege", "least privilege", "governed identity"] },
+        { "label": "require security review before tenant-wide publish", "any": ["before", "security review", "review"] },
+        { "label": "fix the data estate first because agents amplify gaps", "any": ["amplify", "data estate", "classification"] },
+        { "label": "retire ownerless or low-value agents on a cadence", "any": ["ownerless", "retire", "lifecycle"] }
+      ]
+    }
+  ]
+}

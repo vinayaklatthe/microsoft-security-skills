@@ -1,0 +1,9 @@
+To govern and secure third-party and Copilot Studio agents from one place:
+
+- Keep a central list of all agents regardless of where they were built.
+- Apply consistent policies and access controls across them.
+- Give each agent appropriate permissions and review access regularly.
+- Monitor activity and audit what the agents do.
+- Make sure data the agents can access is protected.
+
+Having a single governance approach helps you reduce risk and stay compliant as the number of agents grows.

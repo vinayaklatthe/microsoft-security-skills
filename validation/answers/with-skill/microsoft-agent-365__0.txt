@@ -1,0 +1,17 @@
+Microsoft Agent 365 is the control plane for managing AI agents at scale. Organise the work into three pillars: observe, govern, and secure.
+
+Observe - build the inventory:
+- Use the Agent 365 agent registry in the Microsoft 365 admin center to get a single, centralised view of every agent (Microsoft, Copilot Studio, and third-party), including owner, adoption, activity, and health. Use Agent Map to understand relationships and access.
+
+Secure - identity:
+- Give each agent a distinct, managed Microsoft Entra Agent ID so it can be authenticated, authorised, and governed like any other directory identity, rather than running as a shared secret or anonymous app registration.
+
+Govern - lifecycle and access:
+- Onboard agents intentionally with IT oversight, apply least-privilege access to data and resources, require approvals, run periodic access reviews, and retire ownerless or low-value agents on a cadence.
+
+Secure - data and runtime:
+- Bring agent instances into Microsoft Purview for data security: DSPM for AI for visibility, data classification, sensitivity labels, DLP, and Insider Risk Management. New Agent 365 agent instances are auto-enabled for audit and sensitive-data detection.
+- Use Microsoft Defender for Cloud Apps real-time agent protection to detect and block unsafe or malicious behaviour at runtime.
+- Apply Entra Conditional Access for risk-based access, and confirm interactions land in Purview Audit.
+
+Treat every agent as a first-class, governed identity. Agent 365 works best with E5 and requires at least one qualifying Agent 365 license.

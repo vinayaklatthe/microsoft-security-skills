@@ -1,0 +1,24 @@
+{
+  "cases": [
+    {
+      "prompt": "Remediate oversharing across Microsoft 365 before we roll out a new data program.",
+      "expect": [
+        { "label": "follow the three pillars: remediate oversharing, set up guardrails, meet regulations", "any": ["three pillars", "remediate oversharing", "guardrails"] },
+        { "label": "assess first with SharePoint Advanced Management data access governance reports", "any": ["data access governance", "dag report", "sharepoint advanced management"] },
+        { "label": "clean up EEEU (everyone except external users) and sharing links", "any": ["eeeu", "everyone except external users", "sharing link"] },
+        { "label": "use Restricted Access Control / Restricted Content Discovery as interim restriction", "any": ["restricted access control", "restricted content discovery", "rcd"] },
+        { "label": "engage site owners rather than centrally stripping permissions", "any": ["site owners", "owners"] }
+      ]
+    },
+    {
+      "prompt": "Set up enforceable guardrails so oversharing does not creep back in SharePoint.",
+      "expect": [
+        { "label": "secure-by-default labelling derived from SharePoint sites", "any": ["secure by default", "secure-by-default", "default label"] },
+        { "label": "apply sensitivity and container labels, reserve encryption for sensitive content", "any": ["sensitivity label", "container label", "encrypt"] },
+        { "label": "govern site lifecycle and run access reviews to prevent regression", "any": ["lifecycle", "access review", "inactive"] },
+        { "label": "do not encrypt everything to be safe", "any": ["not encrypt everything", "to be safe", "breaks"] },
+        { "label": "oversharing control is ongoing governance not a one-time cleanup", "any": ["ongoing", "continuous", "one-time"] }
+      ]
+    }
+  ]
+}

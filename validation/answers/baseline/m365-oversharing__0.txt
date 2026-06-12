@@ -1,0 +1,10 @@
+To remediate oversharing across Microsoft 365 before a new data program:
+
+- Review who has access to your SharePoint sites, OneDrive, and Teams, and look for sites shared too broadly.
+- Tighten permissions on sensitive sites and remove access that isn't needed.
+- Apply sensitivity labels to classify and protect important content.
+- Clean up broad sharing and reduce the use of "everyone" type permissions.
+- Set up default sharing settings that are more restrictive.
+- Keep monitoring access over time so things don't drift.
+
+Reducing over-broad access and labelling sensitive content will lower your exposure before you turn on the new program.
