@@ -1,0 +1,9 @@
+To stop oversharing from creeping back in SharePoint, set up some guardrails:
+
+- Use sensitivity labels and container labels to protect sites and content.
+- Configure default sharing settings to be more restrictive for new sites.
+- Run periodic access reviews and clean up inactive sites.
+- Educate site owners on good sharing practices.
+- Monitor sharing activity so you can catch issues early.
+
+Putting defaults and reviews in place helps keep permissions under control as your environment grows.

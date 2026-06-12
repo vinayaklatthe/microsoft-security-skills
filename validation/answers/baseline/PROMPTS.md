@@ -40,6 +40,10 @@ If baseline scores lower than with-skill, that gap is the skill's value.
 | `sentinel__1.txt` | Automate incident response in Sentinel. |
 | `purview-dlp-policy__0.txt` | Help me build a Purview DLP policy to stop sensitive data leaving via email and endpoints. |
 | `purview-dlp-policy__1.txt` | Help me tune a DLP rule to reduce false positives on credit card numbers. |
+| `microsoft-agent-365__0.txt` | Set up Microsoft Agent 365 to manage all our AI agents at scale. |
+| `microsoft-agent-365__1.txt` | How do I govern and secure third-party and Copilot Studio agents from one control plane? |
+| `m365-oversharing__0.txt` | Remediate oversharing across Microsoft 365 before we roll out a new data program. |
+| `m365-oversharing__1.txt` | Set up enforceable guardrails so oversharing does not creep back in SharePoint. |
 
 ## Tips for a fair test
 

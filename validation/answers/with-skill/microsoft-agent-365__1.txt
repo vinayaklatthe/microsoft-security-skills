@@ -1,0 +1,10 @@
+Govern and secure third-party and Copilot Studio agents from one control plane (Microsoft Agent 365):
+
+- Treat every agent as a governed, least-privilege identity with a named owner and a renewal cadence - not a feature of an app and not a permanent broad-permission account.
+- Require a security review before any tenant-wide publish, including pre-integrated third-party agents available from the Microsoft 365 admin center.
+- Fix the data estate first. Agent 365 is an orchestration layer over Entra, Purview, and Defender; its protection is only as strong as your classification, labelling, and oversharing posture, because agents amplify every existing gap.
+- Apply least-privilege access so an agent can only reach data sources it was explicitly granted, and use Conditional Access for risk-based conditions.
+- Retire ownerless or low-value agents on a cadence through lifecycle management - leaving them running is a cost and permission-sprawl risk.
+- Bring the agents into Microsoft Purview (DSPM for AI, DLP, sensitivity labels) and Microsoft Defender for runtime detection, and confirm interactions are audited.
+
+Across Microsoft, Copilot Studio, and third-party agents, the registry gives you one inventory and consistent observe/govern/secure controls.

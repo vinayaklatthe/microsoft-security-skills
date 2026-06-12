@@ -1,0 +1,11 @@
+To manage AI agents at scale you should set up centralized oversight and governance. A few suggestions:
+
+- Create an inventory of the agents you have so you know what's running.
+- Assign owners to each agent and review them periodically.
+- Apply least-privilege access so agents only touch what they need.
+- Use your existing identity provider to authenticate agents and apply access policies.
+- Monitor agent activity and log interactions for audit.
+- Put data protection controls in place so agents don't leak sensitive information.
+- Decommission agents that are no longer used.
+
+Establishing clear policies, ownership, and monitoring will help you scale agents safely while keeping risk under control.

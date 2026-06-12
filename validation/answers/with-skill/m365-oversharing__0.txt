@@ -1,0 +1,15 @@
+To remediate oversharing across Microsoft 365 before rolling out a new data program, follow the Secure & Governed Data Foundation blueprint, organised into three pillars: remediate oversharing, set up guardrails, and meet regulations.
+
+1. Assess first. Run SharePoint Advanced Management (SAM) data access governance (DAG) reports to find the riskiest sites - "Everyone Except External Users" (EEEU) applied too broadly, broadly shared sites, sharing-link sprawl, and permissioned-but-sensitive content. Skipping the assess step is the most common failure.
+
+2. Apply interim restrictions on the highest-risk sites using Restricted Access Control / Restricted Content Discovery (RCD) while owners remediate.
+
+3. Engage site owners with the expected fix rather than centrally stripping permissions, which breaks legitimate collaboration and erodes trust.
+
+4. Classify and label - apply sensitivity labels to sensitive content and container labels to sites; reserve encryption for genuinely sensitive content.
+
+5. Set up guardrails: secure-by-default labelling and tightened default sharing so new content is protected automatically; govern site lifecycle with access reviews so oversharing doesn't creep back.
+
+6. Meet regulations: use Purview Audit and Compliance Manager to close audit/legal and AI-regulatory gaps, and monitor continuously.
+
+Remediate before broad enablement; a clean, scoped pilot can proceed but tenant-wide turn-on without assessment generates complaints fast. SAM is licensed (included with Microsoft 365 Copilot or a standalone/E5 SKU).

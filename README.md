@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-50E6FF?style=flat-square&labelColor=0A2540" alt="License: MIT"></a>
-  <img src="https://img.shields.io/badge/skills-56-50E6FF?style=flat-square&labelColor=0A2540" alt="56 skills">
+  <img src="https://img.shields.io/badge/skills-58-50E6FF?style=flat-square&labelColor=0A2540" alt="58 skills">
   <img src="https://img.shields.io/badge/validated-2%20models-50E6FF?style=flat-square&labelColor=0A2540" alt="Validated across 2 models">
   <img src="https://img.shields.io/badge/grounded%20in-Microsoft%20Learn-50E6FF?style=flat-square&labelColor=0A2540" alt="Grounded in Microsoft Learn">
   <img src="https://img.shields.io/badge/hosts-Copilot%20%7C%20Claude%20%7C%20Cursor%20%7C%20Codex%20%7C%20Gemini-50E6FF?style=flat-square&labelColor=0A2540" alt="Compatible hosts">
@@ -26,7 +26,7 @@ follow, and what guardrails matter in this environment. The Microsoft Security S
 packages security expertise into curated skills so compatible coding agents can give accurate,
 opinionated Microsoft Security guidance instead of generic security advice.
 
-- 56 curated Microsoft Security skills
+- 58 curated Microsoft Security skills
 - Coverage: Security, Identity and Management, Compliance and Privacy, Cloud platform security
 - Compatible with GitHub Copilot, Claude Code, Cursor, Codex CLI, Gemini CLI, and other agentic hosts
 - Public knowledge only, grounded in Microsoft Learn
@@ -37,7 +37,7 @@ opinionated Microsoft Security guidance instead of generic security advice.
 
 ### Security skills: the brain
 
-This plugin ships **56 curated Microsoft Security skills** that teach an agent how security
+This plugin ships **58 curated Microsoft Security skills** that teach an agent how security
 work gets done across the Microsoft portfolio. Each skill provides workflows, decision trees,
 and guardrails grounded in public [Microsoft Learn](https://learn.microsoft.com/security/)
 documentation - no proprietary content.
@@ -77,7 +77,7 @@ This is not a prompt pack. It is a packaged Microsoft Security capability layer:
 
 | Component | What it adds | Scope |
 |---|---|---|
-| **56 Microsoft Security skills** | Expertise, decision trees, workflows, and guardrails across the Microsoft Security portfolio | Security, Identity and Management, Compliance and Privacy, Cloud platform security |
+| **58 Microsoft Security skills** | Expertise, decision trees, workflows, and guardrails across the Microsoft Security portfolio | Security, Identity and Management, Compliance and Privacy, Cloud platform security |
 
 ## Install in 60 seconds
 
@@ -209,6 +209,8 @@ Use this table to pick the right skill before asking your question.
 | Investigate legal or HR matters with eDiscovery | `purview-ediscovery` |
 | Monitor what sensitive data flows through AI prompts | `purview-dspm-ai` |
 | Fix oversharing before rolling out Microsoft 365 Copilot | `purview-copilot-oversharing` |
+| Remediate Microsoft 365 oversharing across SharePoint/OneDrive/Teams (data foundation) | `m365-oversharing` |
+| Manage AI agents at scale (observe, govern, secure) with a single control plane | `microsoft-agent-365` |
 | Detect insider data theft or policy violations | `insider-risk-baseline` |
 | Understand which Purview feature to use (orientation) | `purview-general` |
 | Design a Zero Trust security architecture | `security-architecture` |
