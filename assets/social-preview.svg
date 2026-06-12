@@ -42,12 +42,12 @@
   <text x="96" y="380" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="78" font-weight="700" fill="#FFFFFF">AI Agents</text>
 
   <!-- subtitle -->
-  <text x="96" y="440" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="30" font-weight="400" fill="#9FB4CC">56 curated skills - decision trees, workflows, guardrails - grounded in Microsoft Learn</text>
+  <text x="96" y="440" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="30" font-weight="400" fill="#9FB4CC">58 curated skills - decision trees, workflows, guardrails - grounded in Microsoft Learn</text>
 
   <!-- chips -->
   <g font-family="Segoe UI, Inter, Arial, sans-serif" font-size="24" font-weight="600">
     <rect x="96"  y="486" width="150" height="50" rx="25" fill="#50E6FF" fill-opacity="0.12" stroke="#50E6FF" stroke-opacity="0.5"/>
-    <text x="171" y="519" fill="#50E6FF" text-anchor="middle">56 Skills</text>
+    <text x="171" y="519" fill="#50E6FF" text-anchor="middle">58 Skills</text>
 
     <rect x="262" y="486" width="296" height="50" rx="25" fill="#0A2540" stroke="#50E6FF" stroke-opacity="0.35"/>
     <text x="410" y="519" fill="#CFE9F5" text-anchor="middle">Defender . Sentinel . Entra</text>
