@@ -11,8 +11,9 @@ metadata:
 
 Microsoft Agent 365 is the **control plane for agents** - it extends the infrastructure you
 use to manage people (identity, access, data protection, threat defense) to AI agents,
-regardless of where they originate (Microsoft, Copilot Studio, partner/third-party, or
-custom-built). It organises the work into three pillars: **observe, govern, and secure**.
+regardless of where they originate (Microsoft, Copilot Studio, partner/third-party including
+agents built on Anthropic Claude, OpenAI, or Google Gemini, or custom-built). It organises the
+work into three pillars: **observe, govern, and secure**.
 Generally available for Commercial since 1 May 2026, licensed per user, with Microsoft E5 as
 the recommended prerequisite.
 
@@ -87,7 +88,8 @@ app. The more autonomous the agent, the more it must be managed like a privilege
 ## Common anti-patterns
 - No agent inventory - nobody knows how many agents are in production or who owns them.
 - Letting agents run as shared app registrations instead of distinct Entra Agent IDs.
-- Onboarding third-party agents tenant-wide with no DLP, no access scoping, and no review.
+- Onboarding third-party agents (including Claude-, OpenAI-, or Gemini-based agents) tenant-wide
+  with no DLP, no access scoping, and no review.
 - Skipping runtime detection (Defender) and relying only on build-time policy.
 - Leaving ownerless or low-value agents running - cost and permission-sprawl risk.
 
