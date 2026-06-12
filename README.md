@@ -54,6 +54,8 @@ Skills are grouped by portfolio area:
   `purview-ediscovery`, `purview-audit`, `purview-data-classification`,
   `purview-data-lifecycle`, `purview-communication-compliance`, `insider-risk-baseline`,
   and `microsoft-priva`
+- **AI and agent security** with `microsoft-agent-365`, `purview-agent-365-security`,
+  `purview-copilot-oversharing`, `m365-oversharing`, and `purview-dspm-ai`
 - **Endpoint and device management** with `intune-device-mgmt`, `intune-app-protection`,
   `bitlocker-design`, and `paw-design`
 - **Cloud and platform security** with `azure-policy`, `azure-key-vault`,
@@ -232,6 +234,7 @@ Use this table to pick the right skill before asking your question.
 | Identity and Management | Entra, Conditional Access, governance, endpoint management | `entra-id`, `entra-id-governance`, `conditional-access-mfa`, `intune-device-mgmt` |
 | Compliance and Privacy | Purview and Priva controls for data protection and compliance | `purview-dlp-policy`, `purview-ediscovery`, `purview-audit`, `microsoft-priva` |
 | Cloud and platform security | Azure security architecture and control implementation | `azure-policy`, `azure-key-vault`, `azure-network-security-design`, `azure-firewall` |
+| AI and agent security | Governing and securing AI agents and data foundations for AI | `microsoft-agent-365`, `purview-agent-365-security`, `m365-oversharing`, `purview-copilot-oversharing` |
 | Security operations acceleration | Security Copilot and response-oriented workflows | `security-copilot`, `security-copilot-agents`, `compromise-recovery` |
 
 ## How agents use these skills
