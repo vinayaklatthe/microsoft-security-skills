@@ -180,7 +180,7 @@ skills.
    ```bash
    apm install vinayaklatthe/microsoft-security-skills --target copilot
    ```
-   Expected output: `58 skill(s) integrated -> .agents/skills/`
+   Expected output: `88 skill(s) integrated -> .agents/skills/`
 4. **Confirm the skill files are present** (see [Verify the installation](#verify-the-installation) below).
 5. **Use the skills.** Open Copilot Chat and try one of the [Prompts to try](#prompts-to-try).
 
@@ -200,7 +200,7 @@ ls .agents/skills | wc -l
 (Get-ChildItem .agents\skills -Directory).Count
 ```
 
-Expected: around 58 folders, including `defender-xdr`, `entra-id`, `sentinel`,
+Expected: around 88 folders, including `defender-xdr`, `entra-id`, `sentinel`,
 `purview-dlp-policy`, and `m365-oversharing`. If the count is zero or `.agents/skills` is
 missing, the install did not complete - re-run the install command and check the host you
 targeted.
