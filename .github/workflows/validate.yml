@@ -1,0 +1,30 @@
+name: validate-skills
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+  schedule:
+    # Weekly link-rot sweep (Mondays 06:00 UTC) to catch Microsoft Learn URL changes.
+    - cron: "0 6 * * 1"
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Structural check
+        run: node validation/check-structure.mjs
+
+      - name: Coverage eval (desired outcomes grounded in skills)
+        run: node validation/run-evals.mjs
+
+      - name: Link check
+        run: node validation/check-links.mjs
