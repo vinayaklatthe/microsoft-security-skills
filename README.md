@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-50E6FF?style=flat-square&labelColor=0A2540" alt="License: MIT"></a>
-  <img src="https://img.shields.io/badge/skills-58-50E6FF?style=flat-square&labelColor=0A2540" alt="58 skills">
+  <img src="https://img.shields.io/badge/skills-88-50E6FF?style=flat-square&labelColor=0A2540" alt="88 skills">
   <img src="https://img.shields.io/badge/validated-2%20models-50E6FF?style=flat-square&labelColor=0A2540" alt="Validated across 2 models">
   <img src="https://img.shields.io/badge/grounded%20in-Microsoft%20Learn-50E6FF?style=flat-square&labelColor=0A2540" alt="Grounded in Microsoft Learn">
   <img src="https://img.shields.io/badge/hosts-Copilot%20%7C%20Claude%20%7C%20Cursor%20%7C%20Codex%20%7C%20Gemini-50E6FF?style=flat-square&labelColor=0A2540" alt="Compatible hosts">
@@ -31,7 +31,7 @@ opinionated Microsoft Security guidance instead of generic security advice.
 > or Gemini CLI) and invoke skills through that host's chat. If you do not already have a
 > working AI host, see [Prerequisites](#prerequisites) below before installing.
 
-- 58 curated Microsoft Security skills
+- 88 curated Microsoft Security skills
 - Coverage: Security, Identity and Management, Compliance and Privacy, Cloud platform security
 - Compatible with GitHub Copilot, Claude Code, Cursor, Codex CLI, Gemini CLI, and other agentic hosts
 - Public knowledge only, grounded in Microsoft Learn
@@ -42,7 +42,7 @@ opinionated Microsoft Security guidance instead of generic security advice.
 
 ### Security skills: the brain
 
-This plugin ships **58 curated Microsoft Security skills** that teach an agent how security
+This plugin ships **88 curated Microsoft Security skills** that teach an agent how security
 work gets done across the Microsoft portfolio. Each skill provides workflows, decision trees,
 and guardrails grounded in public [Microsoft Learn](https://learn.microsoft.com/security/)
 documentation - no proprietary content.
@@ -50,22 +50,31 @@ documentation - no proprietary content.
 Skills are grouped by portfolio area:
 
 - **Threat protection and SecOps** with `defender-xdr`, `defender-for-endpoint`,
-  `defender-for-identity`, `defender-for-cloud-hardening`, `sentinel`, `unified-secops-platform`,
+  `defender-for-identity`, `defender-for-cloud-hardening`, `defender-for-servers`,
+  `defender-for-storage`, `defender-for-containers`, `defender-for-iot`, `defender-easm`,
+  `defender-tvm`, `sentinel`, `sentinel-detection-engineering`, `unified-secops-platform`,
   and `threat-modelling`
 - **Identity, access, and governance** with `entra-id`, `entra-id-governance`,
-  `entra-id-protection`, `entra-permissions-management`, `conditional-access-mfa`,
-  `azure-pim`, and `windows-hello`
+  `entra-id-protection`, `entra-permissions-management`, `entra-global-secure-access`,
+  `entra-verified-id`, `entra-workload-identity`, `entra-external-id`, `passkeys-fido2`,
+  `conditional-access-mfa`, `azure-pim`, and `windows-hello`
 - **Compliance and data protection** with `purview-dlp-policy`, `purview-advanced-dlp`,
   `purview-ediscovery`, `purview-audit`, `purview-data-classification`,
   `purview-data-lifecycle`, `purview-communication-compliance`, `insider-risk-baseline`,
-  and `microsoft-priva`
+  `purview-insider-risk-management`, `purview-records-management`, `purview-customer-key`,
+  `compliance-manager`, and `microsoft-priva`
 - **AI and agent security** with `microsoft-agent-365`, `purview-agent-365-security`,
-  `purview-copilot-oversharing`, `m365-oversharing`, and `purview-dspm-ai`
+  `purview-copilot-oversharing`, `m365-oversharing`, `purview-dspm-ai`,
+  `copilot-for-m365-readiness`, `purview-ai-hub`, `defender-for-cloud-ai`,
+  `azure-ai-content-safety`, and `agent-identity-governance`
 - **Endpoint and device management** with `intune-device-mgmt`, `intune-app-protection`,
-  `bitlocker-design`, and `paw-design`
+  `bitlocker-design`, `paw-design`, `windows-11-security-baseline`, `macos-intune-baseline`,
+  and `defender-for-business`
 - **Cloud and platform security** with `azure-policy`, `azure-key-vault`,
   `azure-network-security-design`, `azure-firewall`, `azure-app-service-security`,
-  `cloud-app-security-posture`, and `api-security-design`
+  `cloud-app-security-posture`, `api-security-design`, `azure-bastion-jit`,
+  `azure-ddos-protection`, `azure-waf`, `azure-confidential-computing`,
+  `azure-monitor-security`, and `iac-security`
 - **Security operations acceleration** with `security-copilot`, `security-copilot-agents`,
   `compromise-recovery`, and `azure-site-recovery`
 
@@ -84,7 +93,7 @@ This is not a prompt pack. It is a packaged Microsoft Security capability layer:
 
 | Component | What it adds | Scope |
 |---|---|---|
-| **58 Microsoft Security skills** | Expertise, decision trees, workflows, and guardrails across the Microsoft Security portfolio | Security, Identity and Management, Compliance and Privacy, Cloud platform security |
+| **88 Microsoft Security skills** | Expertise, decision trees, workflows, and guardrails across the Microsoft Security portfolio | Security, Identity and Management, Compliance and Privacy, Cloud platform security |
 
 ## Install in 60 seconds
 
@@ -171,7 +180,7 @@ skills.
    ```bash
    apm install vinayaklatthe/microsoft-security-skills --target copilot
    ```
-   Expected output: `58 skill(s) integrated -> .agents/skills/`
+   Expected output: `88 skill(s) integrated -> .agents/skills/`
 4. **Confirm the skill files are present** (see [Verify the installation](#verify-the-installation) below).
 5. **Use the skills.** Open Copilot Chat and try one of the [Prompts to try](#prompts-to-try).
 
@@ -191,7 +200,7 @@ ls .agents/skills | wc -l
 (Get-ChildItem .agents\skills -Directory).Count
 ```
 
-Expected: around 58 folders, including `defender-xdr`, `entra-id`, `sentinel`,
+Expected: around 88 folders, including `defender-xdr`, `entra-id`, `sentinel`,
 `purview-dlp-policy`, and `m365-oversharing`. If the count is zero or `.agents/skills` is
 missing, the install did not complete - re-run the install command and check the host you
 targeted.
