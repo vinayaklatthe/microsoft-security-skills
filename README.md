@@ -26,6 +26,11 @@ follow, and what guardrails matter in this environment. The Microsoft Security S
 packages security expertise into curated skills so compatible coding agents can give accurate,
 opinionated Microsoft Security guidance instead of generic security advice.
 
+> **This is a skills package, not a standalone agent.** There is no `microsoft-security-skills`
+> CLI. You install it into an existing AI host (GitHub Copilot, Claude Code, Cursor, Codex CLI,
+> or Gemini CLI) and invoke skills through that host's chat. If you do not already have a
+> working AI host, see [Prerequisites](#prerequisites) below before installing.
+
 - 58 curated Microsoft Security skills
 - Coverage: Security, Identity and Management, Compliance and Privacy, Cloud platform security
 - Compatible with GitHub Copilot, Claude Code, Cursor, Codex CLI, Gemini CLI, and other agentic hosts
@@ -85,12 +90,23 @@ This is not a prompt pack. It is a packaged Microsoft Security capability layer:
 
 ### Prerequisites
 
-Before you install, make sure you have:
+#### 1. A supported AI host (pick one and verify it works first)
+
+This plugin extends an existing AI host. Confirm your host is installed **and** authenticated
+before you run any install command - a host folder on disk is not the same as a working host.
+
+| Host | Verify it works |
+|---|---|
+| **GitHub Copilot** (VS Code) | Open VS Code, open Copilot Chat, ask any question, confirm a response. |
+| **Claude Code** | `claude --version` **and** confirm you have an active Claude subscription. Licensing is the common trap. |
+| **Codex CLI** | `codex --version` |
+| **Gemini CLI** | `gemini --version` |
+| **Cursor** | Launch Cursor and confirm chat returns a response. |
+
+#### 2. Tooling
 
 - **Git** installed and accessible from the command line
-- **Node.js 18+** available on your PATH if you plan to use `npx skills add` to install
-
-You can verify these with:
+- **Node.js 18+** on your PATH if you plan to use `npx skills add`
 
 ```bash
 git --version
@@ -105,6 +121,11 @@ command installs it across GitHub Copilot, Claude Code, Cursor, OpenCode, Codex,
 ```bash
 apm install vinayaklatthe/microsoft-security-skills
 ```
+
+> **APM target detection caveat.** APM reports a target as `active` when it detects host
+> folders such as `.github/`, `.claude/`, or `.codex/` in your workspace. That does **not**
+> mean the host CLI is installed or licensed. Verify your host with the table above before
+> trusting `active` status.
 
 ### Universal install (all hosts)
 
@@ -138,9 +159,42 @@ npx skills add https://github.com/vinayaklatthe/microsoft-security-skills/tree/m
 gemini extensions install https://github.com/vinayaklatthe/microsoft-security-skills
 ```
 
+## Quick start (GitHub Copilot)
+
+If GitHub Copilot in VS Code is your host, this is the shortest path from zero to working
+skills.
+
+1. **Verify Copilot works.** Open VS Code, open Copilot Chat, ask `What is Microsoft Entra ID?`
+   and confirm you get a response.
+2. **Install APM.** Follow [APM install instructions](https://github.com/microsoft/apm).
+3. **Install the skills.**
+   ```bash
+   apm install vinayaklatthe/microsoft-security-skills --target copilot
+   ```
+   Expected output: `58 skill(s) integrated -> .agents/skills/`
+4. **Confirm the skill files are present** (see [Verify the installation](#verify-the-installation) below).
+5. **Use the skills.** Open Copilot Chat and try one of the [Prompts to try](#prompts-to-try).
+
 ## Verify the installation
 
-After install, try three quick checks.
+After install, run one file check and three behavioural checks.
+
+### 0. Confirm skill files installed
+
+```bash
+# macOS / Linux
+ls .agents/skills | wc -l
+```
+
+```powershell
+# Windows PowerShell
+(Get-ChildItem .agents\skills -Directory).Count
+```
+
+Expected: around 58 folders, including `defender-xdr`, `entra-id`, `sentinel`,
+`purview-dlp-policy`, and `m365-oversharing`. If the count is zero or `.agents/skills` is
+missing, the install did not complete - re-run the install command and check the host you
+targeted.
 
 ### 1. Verify security skills
 
