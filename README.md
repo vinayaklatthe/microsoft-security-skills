@@ -89,6 +89,15 @@ This is not a prompt pack. It is a packaged Microsoft Security capability layer:
 - **Multi-host support** lets you use the same security capability across GitHub Copilot in
   VS Code, Copilot CLI, Claude Code, Cursor, Codex CLI, Gemini CLI, and other compatible hosts.
 
+## Pairs with the agent toolkit
+
+Skills give the agent **knowledge**. To act on real tenant data (run KQL on Microsoft
+Sentinel, read incidents from Microsoft Defender XDR, query Microsoft Graph for Entra
+sign-ins, search Microsoft Purview Audit), pair this plugin with
+[`microsoft-security-agent-toolkit`](https://github.com/vinayaklatthe/microsoft-security-agent-toolkit) -
+MCP servers, KQL snippets, Logic Apps templates, and end-to-end demos. See
+[`INTEGRATIONS.md`](INTEGRATIONS.md).
+
 ## What you get
 
 | Component | What it adds | Scope |
