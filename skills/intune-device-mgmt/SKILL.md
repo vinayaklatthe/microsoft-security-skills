@@ -102,11 +102,11 @@ EDR (`defender-for-endpoint`), or disk encryption (`bitlocker-design`).
 - `Roll out a new compliance policy with grace period and ring strategy.`
 
 ## Microsoft Learn
-- Intune overview: https://learn.microsoft.com/mem/intune/fundamentals/what-is-intune
-- Device enrollment: https://learn.microsoft.com/mem/intune/enrollment/device-enrollment
+- Intune overview: https://learn.microsoft.com/intune/fundamentals/what-is-intune
+- Device enrollment: https://learn.microsoft.com/intune/device-enrollment/enroll-devices
 - Windows Autopilot: https://learn.microsoft.com/autopilot/overview
-- Compliance policies: https://learn.microsoft.com/mem/intune/protect/device-compliance-get-started
-- Security baselines: https://learn.microsoft.com/mem/intune/protect/security-baselines
-- Settings catalog: https://learn.microsoft.com/mem/intune/configuration/settings-catalog
+- Compliance policies: https://learn.microsoft.com/intune/device-security/compliance/overview
+- Security baselines: https://learn.microsoft.com/intune/device-security/security-baselines/overview
+- Settings catalog: https://learn.microsoft.com/intune/device-configuration/settings-catalog/
 - Windows Autopatch: https://learn.microsoft.com/windows/deployment/windows-autopatch/overview/windows-autopatch-overview
-- Filters: https://learn.microsoft.com/mem/intune/fundamentals/filters
+- Filters: https://learn.microsoft.com/intune/fundamentals/filters/overview

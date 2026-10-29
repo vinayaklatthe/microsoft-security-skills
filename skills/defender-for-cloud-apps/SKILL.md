@@ -117,4 +117,4 @@ controls, and managing SaaS posture (SSPM). Use this skill when the question is 
 - Conditional Access App Control: https://learn.microsoft.com/defender-cloud-apps/proxy-intro-aad
 - App connectors: https://learn.microsoft.com/defender-cloud-apps/enable-instant-visibility-protection-and-governance-actions-for-your-apps
 - Anomaly detection: https://learn.microsoft.com/defender-cloud-apps/anomaly-detection-policy
-- SSPM: https://learn.microsoft.com/defender-cloud-apps/security-saas
+- SSPM: https://learn.microsoft.com/defender-cloud-apps/posture-overview

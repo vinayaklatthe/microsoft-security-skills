@@ -130,11 +130,11 @@ M365 Secure Score (general security telemetry).
 
 ## Microsoft Learn
 - Compliance Manager overview: https://learn.microsoft.com/purview/compliance-manager
-- Templates list: https://learn.microsoft.com/purview/compliance-manager-templates-list
+- Templates list: https://learn.microsoft.com/purview/compliance-manager-regulations-list
 - Assessments: https://learn.microsoft.com/purview/compliance-manager-assessments
 - Improvement actions: https://learn.microsoft.com/purview/compliance-manager-improvement-actions
 - Continuous assessment: https://learn.microsoft.com/purview/compliance-manager-setup#turn-on-automatic-testing
-- Custom templates (CSV import): https://learn.microsoft.com/purview/compliance-manager-templates
+- Custom templates (CSV import): https://learn.microsoft.com/purview/compliance-manager-regulations
 - Evidence: https://learn.microsoft.com/purview/compliance-manager-improvement-actions#how-to-export-an-improvement-action-report
-- Compliance score calculation: https://learn.microsoft.com/purview/compliance-score-calculation
+- Compliance score calculation: https://learn.microsoft.com/purview/compliance-manager-scoring
 - Role permissions: https://learn.microsoft.com/purview/compliance-manager-setup#set-user-permissions-and-assign-roles

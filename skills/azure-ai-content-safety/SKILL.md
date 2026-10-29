@@ -138,5 +138,5 @@ application architecture.
 - Groundedness detection: https://learn.microsoft.com/azure/ai-services/content-safety/concepts/groundedness
 - Protected material: https://learn.microsoft.com/azure/ai-services/content-safety/concepts/protected-material
 - Custom categories: https://learn.microsoft.com/azure/ai-services/content-safety/concepts/custom-categories
-- Azure OpenAI content filtering: https://learn.microsoft.com/azure/ai-services/openai/concepts/content-filter
-- Content Safety Studio: https://learn.microsoft.com/azure/ai-services/content-safety/studio-quickstart
+- Azure OpenAI content filtering: https://learn.microsoft.com/azure/foundry-classic/foundry-models/concepts/content-filter
+- Content Safety Studio: https://learn.microsoft.com/azure/ai-services/content-safety/overview

@@ -103,9 +103,9 @@ third-party security data using natural-language workflows.
 - `Pick between standalone and embedded experiences for my analysts.`
 
 ## Microsoft Learn
-- Overview: https://learn.microsoft.com/security-copilot/microsoft-security-copilot
-- Get started / provision SCUs: https://learn.microsoft.com/security-copilot/get-started-security-copilot
-- Plugins: https://learn.microsoft.com/security-copilot/manage-plugins
-- Promptbooks: https://learn.microsoft.com/security-copilot/using-promptbooks
-- Manage usage and capacity: https://learn.microsoft.com/security-copilot/manage-usage
-- Authentication and access: https://learn.microsoft.com/security-copilot/authentication
+- Overview: https://learn.microsoft.com/copilot/security/microsoft-security-copilot
+- Get started / provision SCUs: https://learn.microsoft.com/copilot/security/get-started-security-copilot
+- Plugins: https://learn.microsoft.com/copilot/security/manage-plugins
+- Promptbooks: https://learn.microsoft.com/copilot/security/using-promptbooks
+- Manage usage and capacity: https://learn.microsoft.com/copilot/security/manage-usage
+- Authentication and access: https://learn.microsoft.com/copilot/security/authentication

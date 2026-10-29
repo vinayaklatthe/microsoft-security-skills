@@ -149,12 +149,12 @@ choosing.
 
 ## Microsoft Learn
 - Detection lifecycle: https://learn.microsoft.com/azure/sentinel/threat-detection
-- Analytics rule types: https://learn.microsoft.com/azure/sentinel/detect-threats-built-in
-- Custom analytics rules: https://learn.microsoft.com/azure/sentinel/detect-threats-custom
+- Analytics rule types: https://learn.microsoft.com/azure/sentinel/threat-detection
+- Custom analytics rules: https://learn.microsoft.com/azure/sentinel/create-analytics-rules
 - NRT rules: https://learn.microsoft.com/azure/sentinel/near-real-time-rules
 - Entity mapping: https://learn.microsoft.com/azure/sentinel/map-data-fields-to-entities
 - Automation rules: https://learn.microsoft.com/azure/sentinel/automate-incident-handling-with-automation-rules
-- Playbooks (Logic Apps): https://learn.microsoft.com/azure/sentinel/automate-responses-with-playbooks
+- Playbooks (Logic Apps): https://learn.microsoft.com/azure/sentinel/automation/automate-responses-with-playbooks
 - Watchlists: https://learn.microsoft.com/azure/sentinel/watchlists
 - Repositories (CI/CD): https://learn.microsoft.com/azure/sentinel/ci-cd
 - Content hub: https://learn.microsoft.com/azure/sentinel/sentinel-solutions

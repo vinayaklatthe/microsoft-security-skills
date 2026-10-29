@@ -115,8 +115,8 @@ remediation workflow to an agent and is ready to govern an autonomous workload i
 
 ## Microsoft Learn
 - Agents overview: https://learn.microsoft.com/copilot/security/agents-overview
-- Security Copilot platform: https://learn.microsoft.com/security-copilot/microsoft-security-copilot
+- Security Copilot platform: https://learn.microsoft.com/copilot/security/microsoft-security-copilot
 - Discover agents (catalog): https://learn.microsoft.com/copilot/security/discover-agents
 - Configure and manage agents: https://learn.microsoft.com/copilot/security/agents-manage
 - Entra Agent ID and identity for AI: https://learn.microsoft.com/entra/identity/
-- Manage SCU capacity: https://learn.microsoft.com/security-copilot/manage-usage
+- Manage SCU capacity: https://learn.microsoft.com/copilot/security/manage-usage

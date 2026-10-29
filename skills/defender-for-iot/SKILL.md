@@ -121,5 +121,5 @@ firmware design, or workstation/server EDR (`defender-for-endpoint`).
 - OT sensor architecture: https://learn.microsoft.com/azure/defender-for-iot/organizations/architecture
 - Cloud-connected vs on-prem: https://learn.microsoft.com/azure/defender-for-iot/organizations/architecture-connections
 - Enterprise IoT: https://learn.microsoft.com/azure/defender-for-iot/
-- Sentinel integration: https://learn.microsoft.com/azure/sentinel/iot-solution
+- Sentinel integration: https://learn.microsoft.com/azure/defender-for-iot/organizations/iot-solution
 - Alert reference: https://learn.microsoft.com/azure/defender-for-iot/organizations/alert-engine-messages

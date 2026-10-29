@@ -130,5 +130,5 @@ insufficient and the existing infrastructure cannot be trusted.
 - Incident response playbooks: https://learn.microsoft.com/security/operations/incident-response-playbooks
 - Protect against ransomware: https://learn.microsoft.com/security/ransomware/
 - Privileged access strategy: https://learn.microsoft.com/security/privileged-access-workstations/overview
-- Microsoft Incident Response: https://www.microsoft.com/security/business/microsoft-incident-response
+- Microsoft Incident Response: https://www.microsoft.com/en-us/security/business/microsoft-defender-experts-cybersecurity-incident-response
 - Phishing-resistant MFA methods: https://learn.microsoft.com/entra/identity/authentication/concept-authentication-strengths

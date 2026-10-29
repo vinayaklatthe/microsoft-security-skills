@@ -118,6 +118,6 @@ web crawling to discover related assets. Findings are placed in:
 - Discovery and seeds: https://learn.microsoft.com/azure/external-attack-surface-management/
 - Inventory states: https://learn.microsoft.com/azure/external-attack-surface-management/understanding-inventory-assets
 - Attack surface insights: https://learn.microsoft.com/azure/external-attack-surface-management/understanding-dashboards
-- Labels: https://learn.microsoft.com/azure/external-attack-surface-management/labeling-inventory-assets
+- Labels: https://learn.microsoft.com/azure/external-attack-surface-management/modifying-inventory-assets
 - Defender XDR integration: https://learn.microsoft.com/azure/external-attack-surface-management/
-- Pricing: https://azure.microsoft.com/pricing/details/defender-external-attack-surface-management/
+- Pricing: https://www.microsoft.com/en-us/security/pricing/microsoft-defender-external-attack-surface-management/

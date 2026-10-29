@@ -1,69 +1,87 @@
 ---
 name: entra-permissions-management
-description: "Guidance for Microsoft Entra Permissions Management (CIEM) — discovers, right-sizes, and monitors permissions across Microsoft Azure, AWS, and Google Cloud. Covers cloud onboarding, the Permission Creep Index (PCI), generating least-privilege policies from observed activity, on-demand permission grants, and workload identity coverage. WHEN: Entra Permissions Management, CIEM, multicloud permissions, Permission Creep Index, PCI, right-size permissions, unused permissions, least privilege across AWS GCP Azure, cloud entitlement management, over-privileged workload identity, IAM right-sizing, multicloud IAM posture. DO NOT USE for Azure-only RBAC role choice (use azure-role-selector) or Defender for Cloud security posture (use defender-for-cloud-hardening)."
+description: "Guidance for multicloud Cloud Infrastructure Entitlement Management (CIEM) after the retirement of Microsoft Entra Permissions Management (retired October 1, 2025). Covers CIEM in Microsoft Defender for Cloud (Permissions Management extension of the Defender CSPM plan) across Azure, AWS, and Google Cloud — overprovisioned and inactive identity recommendations, Cloud Security Explorer identity queries, attack paths from overprivileged identities, the CIEM workbook — plus migrating off Entra Permissions Management (Defender CSPM, or Delinea Privilege Control for Cloud Entitlements as Microsoft's recommended successor for full EPM parity). WHEN: Entra Permissions Management, EPM retirement, migrate from Entra Permissions Management, CIEM, Defender CSPM CIEM, multicloud permissions, right-size permissions, unused permissions, inactive identities, overprovisioned identities, least privilege across AWS GCP Azure, cloud entitlement management, over-privileged workload identity, IAM right-sizing, multicloud IAM posture. DO NOT USE for Azure-only RBAC role choice (use azure-role-selector), just-in-time Azure/Entra role elevation (use azure-pim), or general Defender for Cloud posture (use defender-for-cloud-hardening)."
 license: MIT
 metadata:
   author: Microsoft
-  version: "0.1.0"
+  version: "0.2.0"
 ---
 
-# Microsoft Entra Permissions Management
+# Multicloud CIEM (after Entra Permissions Management)
 
-Microsoft Entra Permissions Management is a Cloud Infrastructure Entitlement Management (CIEM)
-solution that provides visibility and control over permissions for identities, actions, and
-resources across **Microsoft Azure, AWS, and Google Cloud** in a single pane.
+> **Retirement notice:** **Microsoft Entra Permissions Management (EPM) was retired on
+> October 1, 2025** (end of sale April 1, 2025). Its documentation now lives under *previous
+> versions*. Microsoft's CIEM capabilities continue in **Microsoft Defender for Cloud** as the
+> **Permissions Management (CIEM) extension of the Defender CSPM plan**. For customers who need
+> EPM-equivalent features (Permission Creep Index, on-demand permission grants, auto-generated
+> policies), Microsoft selected **Delinea Privilege Control for Cloud Entitlements (PCCE)** as
+> the recommended successor.
+
+Cloud Infrastructure Entitlement Management (CIEM) gives visibility and control over permissions
+for human and non-human identities across **Microsoft Azure, AWS, and Google Cloud**, driving
+toward least privilege.
 
 ## When to use
 Discovering and reducing excessive, unused, and over-privileged cloud permissions across a
-multicloud estate, driving toward least privilege. Use this skill when the estate spans
-multiple clouds; for Azure-only RBAC choice use `azure-role-selector`.
+multicloud estate, or planning the move off a retired EPM deployment. For Azure-only RBAC role
+choice use `azure-role-selector`; for just-in-time elevation use `azure-pim`.
 
-## Map the goal to the right CIEM action
+## Map the goal to the right capability
 
 | If the goal is... | Use | Notes |
 |---|---|---|
-| Quantify how over-privileged each identity is | **Permission Creep Index (PCI)** | 0-100; > 65 = high risk |
-| Find unused permissions per identity | **Activity-based right-sizing report** | Compares granted vs used over 90 days |
-| Generate a least-privilege policy from observed activity | **Auto-generated policy** (right-sizing) | Per identity per cloud |
-| Grant elevated permission temporarily | **On-demand permissions request** | Approval-based, time-bound |
-| Detect anomalous permission usage | **Anomaly detection alerts** | First-time-seen action, mass action |
-| Catch over-privileged workload identity | **Non-human identity report** | Service principals, IAM roles, GCP SAs |
+| Find overprovisioned identities (granted vs used) | **Defender CSPM CIEM recommendation** — *overprovisioned identities should have only the necessary permissions* | Azure, AWS, GCP |
+| Remove access from identities that no longer sign in | **Defender CSPM CIEM recommendation** — *permissions of inactive identities should be revoked* | Quick, low-risk wins |
+| Ask "who can reach this sensitive resource?" | **Cloud Security Explorer** identity queries | Combine with data sensitivity and internet exposure |
+| Find lateral movement through overprivileged identities | **Attack path analysis** | Prioritise identities that sit on attack paths |
+| Report CIEM posture to leadership | **CIEM workbook** | Identities, unhealthy recommendations, attack paths |
+| Grant elevated Azure / Entra roles temporarily | **Privileged Identity Management** (`azure-pim`) | Replaces EPM on-demand grants for Azure |
+| EPM-parity features (PCI, on-demand grants for AWS/GCP, auto-generated policies) | **Delinea PCCE** (Microsoft-recommended successor) or cloud-native tools | e.g. AWS IAM last-accessed data, GCP IAM Recommender |
 
-> **Rule of thumb:** start with PCI > 65 identities and the **non-human identity report**.
-> Service principals and machine identities typically hold the largest gap between granted
-> and used permissions and rarely fight back when you right-size them.
+> **Rule of thumb:** start with **inactive identities**, then **overprovisioned non-human
+> identities** that appear on an **attack path**. Service principals and machine identities
+> typically hold the largest gap between granted and used permissions and rarely fight back when
+> you right-size them.
 
 ## Approach
 
-1. **Onboard each cloud** — Connect Azure subscriptions (single or multiple), AWS accounts
-   (per-account or AWS Organizations), and GCP projects. Permissions Management collects
-   entitlement and activity data via read-only roles.
-   *Verify: data collector status = green for each cloud account; activity events flowing
-   within 24 hours.*
+1. **Migrate off EPM (if still referenced)** — Inventory what you used EPM for (PCI reports,
+   on-demand grants, autogenerated policies, alerts to Sentinel). Map each to Defender CSPM CIEM,
+   PIM, cloud-native tools, or Delinea PCCE. Export any historical EPM reports you must retain
+   for audit. Remove EPM-specific runbooks, data collectors, and cross-account roles.
+   *Verify: no remaining automation, dashboards, or AWS/GCP roles reference the retired EPM
+   service.*
 
-2. **Baseline for 90 days** — Don't right-size based on 7 days of activity. Quarterly business
-   cycles (month-end close, audit) need full coverage.
-   *Verify: "data collection period" shows ≥ 90 days before remediation work.*
+2. **Connect each cloud to Defender for Cloud** — Azure subscriptions natively; AWS accounts or
+   Organizations and GCP projects or organisations through multicloud connectors. You need
+   **Security Admin** at subscription (Azure) or account/organisation (AWS/GCP) scope.
+   *Verify: each connector shows healthy and resources appear in the inventory.*
 
-3. **Sort by PCI - top 20 first** — Start with the 20 highest-PCI identities, not the longest
-   list of unused permissions. PCI prioritises by risk (granted breadth + privilege weight),
-   not just count.
-   *Verify: top 20 PCI list reduced by ≥ 50 points cumulative after first sprint.*
+3. **Enable Defender CSPM and turn on Permissions Management (CIEM)** — Environment settings →
+   subscription/connector → Defender CSPM → Settings → **Permissions Management (CIEM)** on.
+   Recommendations appear within a few hours; if CIEM is off they aren't calculated.
+   *Verify: CIEM recommendations (overprovisioned / inactive identities) appear for each cloud.*
 
-4. **Tackle non-human identities first** — Service principals, AWS IAM roles, GCP service
-   accounts. They don't complain when you remove unused permissions and they're often the
-   most over-privileged.
-   *Verify: non-human identity PCI distribution shifts left (lower) month over month.*
+4. **Baseline for a representative period** — Don't right-size on 7 days of activity. Quarterly
+   business cycles (month-end close, audit) need full coverage — plan on ≥ 90 days of observed
+   activity before aggressive removal.
 
-5. **Right-size with auto-generated policies** — Use the activity-based policy generator
-   instead of writing JSON manually. Review the diff, apply to a test workload, then
-   production.
+5. **Prioritise by risk, not count** — Start with identities on attack paths or with access to
+   sensitive / internet-exposed resources (Cloud Security Explorer), then inactive identities,
+   then the rest of the overprovisioned list.
+   *Verify: top-risk identities on attack paths reduced sprint over sprint.*
 
-6. **Enable on-demand permissions** — For high-privilege but rarely-needed permissions,
-   convert standing access to on-demand request flow. Reduces standing risk dramatically.
+6. **Tackle non-human identities first** — Service principals, managed identities, AWS IAM
+   roles, GCP service accounts. They're often the most over-privileged and the least disruptive
+   to fix (see `entra-workload-identity`).
 
-7. **Monitor + alert** — Anomaly detection on first-time-seen action and mass actions.
-   Stream alerts to Sentinel for SOC correlation.
+7. **Right-size and replace standing access** — Remove unused permissions using the
+   recommendation's remediation guidance; for AWS unused-action detail use **IAM last accessed**
+   information directly in AWS. Convert rarely-used high privilege to **PIM** (Azure/Entra) or
+   equivalent just-in-time access in other clouds.
+
+8. **Monitor + alert** — Track CIEM recommendation counts and secure score trend monthly; stream
+   Defender for Cloud alerts and recommendations to Sentinel / Defender XDR for SOC correlation.
 
 ## Guardrails
 - **Validate activity baselines cover a representative period (90 days minimum) before
@@ -76,33 +94,36 @@ multiple clouds; for Azure-only RBAC choice use `azure-role-selector`.
 - **Coordinate remediation with workload owners.** Right-sizing without informing the owner
   of the service account causes outages and erodes trust in the programme.
 - **Don't right-size break-glass / emergency access roles.** Document the exceptions.
-- **PCI is a risk score, not a permissions count.** Don't compare identities on permission
-  count alone - 5 high-privilege unused beats 50 low-privilege unused.
+- **Don't design new work on Entra Permissions Management.** It's retired; any EPM guidance,
+  scripts, or Permission Creep Index KPIs need a replacement in Defender CSPM or Delinea PCCE.
 
 ## Common anti-patterns
 - **"Right-size after 2 weeks of data"** - Misses month-end. Outage.
-- **"Start with the easiest report"** - Many small wins, no risk reduction. Sort by PCI.
+- **"Keep using EPM reports and PCI as the KPI"** - The service is retired; move the KPI to
+  CIEM recommendation counts and attack-path reduction.
+- **"Start with the longest list of unused permissions"** - Many small wins, no risk reduction.
+  Start with identities on attack paths and inactive identities.
 - **"Right-size humans first because there are more of them"** - Humans push back; non-humans
   don't. Non-humans usually carry the highest unused privilege.
-- **"Apply auto-generated policies directly to production"** - Test workload first.
+- **"Apply permission changes directly to production"** - Test workload first.
 - **"Onboard only one cloud at a time over months"** - Loses the multicloud visibility that
-  is the entire point. Onboard all clouds in the same sprint.
-- **"PCI dashboard only - no remediation"** - Visibility without action. Track PCI delta
-  monthly as the KPI.
+  is the entire point. Connect all clouds in the same sprint.
 
 ## Example prompts
-- `Onboard our Azure, AWS, and GCP environments to Entra Permissions Management.`
-- `Show the top 20 identities by Permission Creep Index and propose a remediation order.`
-- `Generate a least-privilege policy for our CI/CD service principal based on 90 days of activity.`
-- `Find non-human identities with PCI > 65 and right-size the top 5.`
-- `Set up on-demand permission requests for elevated AWS roles.`
-- `Stream Permissions Management anomaly alerts into Sentinel.`
+- `We used Entra Permissions Management — what replaces it and how do we migrate?`
+- `Enable CIEM in Defender CSPM for our Azure, AWS, and GCP environments.`
+- `Find overprovisioned and inactive identities across all three clouds and propose a remediation order.`
+- `Which service principals with excessive permissions sit on an attack path to sensitive data?`
+- `Replace EPM on-demand permission requests for Azure with PIM.`
+- `Build a monthly CIEM posture report for leadership.`
 
 ## Microsoft Learn
-- Overview: https://learn.microsoft.com/entra/permissions-management/overview
-- Onboard Azure: https://learn.microsoft.com/entra/permissions-management/onboard-azure
-- Onboard AWS: https://learn.microsoft.com/entra/permissions-management/onboard-aws
-- Onboard GCP: https://learn.microsoft.com/entra/permissions-management/onboard-gcp
-- Permission Creep Index: https://learn.microsoft.com/entra/permissions-management/ui-dashboard
-- Right-size permissions: https://learn.microsoft.com/entra/permissions-management/product-permissions-analytics-reports
-- Anomaly detection: https://learn.microsoft.com/entra/permissions-management/product-statistical-anomalies
+- CIEM in Defender for Cloud: https://learn.microsoft.com/azure/defender-for-cloud/permissions-management
+- Enable CIEM (Defender CSPM): https://learn.microsoft.com/azure/defender-for-cloud/enable-permissions-management
+- Enable Defender CSPM: https://learn.microsoft.com/azure/defender-for-cloud/tutorial-enable-cspm-plan
+- Identity and access recommendations: https://learn.microsoft.com/azure/defender-for-cloud/recommendations-reference-identity-access
+- Cloud Security Explorer: https://learn.microsoft.com/azure/defender-for-cloud/how-to-manage-cloud-security-explorer
+- Attack path analysis: https://learn.microsoft.com/azure/defender-for-cloud/how-to-manage-attack-path
+- Connect AWS: https://learn.microsoft.com/azure/defender-for-cloud/quickstart-onboard-aws
+- Connect GCP: https://learn.microsoft.com/azure/defender-for-cloud/quickstart-onboard-gcp
+- Entra Permissions Management (retired, previous versions): https://learn.microsoft.com/previous-versions/entra/permissions-management/overview

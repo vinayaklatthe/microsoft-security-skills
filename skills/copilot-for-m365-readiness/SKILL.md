@@ -131,8 +131,8 @@ Purview DSPM for AI in isolation (`purview-dspm-ai`), or agent-specific security
 - `Audit and Defender XDR integration for Copilot incidents — runbook for analysts.`
 
 ## Microsoft Learn
-- Copilot readiness overview: https://learn.microsoft.com/microsoft-365-copilot/microsoft-365-copilot-overview
-- Data, privacy, security: https://learn.microsoft.com/copilot/microsoft-365/microsoft-365-copilot-privacy
+- Copilot readiness overview: https://learn.microsoft.com/microsoft-365/copilot/copilot-overview
+- Data, privacy, security: https://learn.microsoft.com/microsoft-365/copilot/microsoft-365-copilot-privacy
 - Restricted SharePoint Search: https://learn.microsoft.com/sharepoint/restricted-sharepoint-search
 - SharePoint Advanced Management: https://learn.microsoft.com/sharepoint/advanced-management
 - Data Access Governance reports: https://learn.microsoft.com/sharepoint/data-access-governance-reports
@@ -140,4 +140,4 @@ Purview DSPM for AI in isolation (`purview-dspm-ai`), or agent-specific security
 - DLP for Copilot: https://learn.microsoft.com/purview/ai-microsoft-purview
 - Restricted Access Control: https://learn.microsoft.com/sharepoint/restricted-access-control
 - Copilot audit: https://learn.microsoft.com/purview/audit-copilot
-- Copilot in Defender XDR: https://learn.microsoft.com/copilot/microsoft-365/microsoft-365-copilot-overview
+- Copilot in Defender XDR: https://learn.microsoft.com/microsoft-365/copilot/copilot-overview

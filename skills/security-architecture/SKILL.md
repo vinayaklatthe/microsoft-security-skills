@@ -108,7 +108,7 @@ framework, or reviewing an architecture for gaps before a major programme of wor
 ## Microsoft Learn
 - Zero Trust overview: https://learn.microsoft.com/security/zero-trust/zero-trust-overview
 - MCRA (Microsoft Cybersecurity Reference Architectures): https://learn.microsoft.com/security/adoption/mcra
-- CAF Secure methodology: https://learn.microsoft.com/azure/cloud-adoption-framework/secure/
+- CAF Secure methodology: https://learn.microsoft.com/azure/cloud-adoption-framework/secure/overview
 - Well-Architected Security pillar: https://learn.microsoft.com/azure/well-architected/security/
 - Microsoft Cloud Security Benchmark: https://learn.microsoft.com/security/benchmark/azure/
 - Zero Trust deployment guides: https://learn.microsoft.com/security/zero-trust/deploy/overview

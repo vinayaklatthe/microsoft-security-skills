@@ -113,7 +113,7 @@ rotation.
 
 ## Microsoft Learn
 - Key Vault overview: https://learn.microsoft.com/azure/key-vault/general/overview
-- Security features: https://learn.microsoft.com/azure/key-vault/general/security-features
+- Security features: https://learn.microsoft.com/azure/key-vault/general/secure-key-vault
 - RBAC guide: https://learn.microsoft.com/azure/key-vault/general/rbac-guide
 - Soft delete + purge protection: https://learn.microsoft.com/azure/key-vault/general/soft-delete-overview
 - Private endpoints: https://learn.microsoft.com/azure/key-vault/general/private-link-service

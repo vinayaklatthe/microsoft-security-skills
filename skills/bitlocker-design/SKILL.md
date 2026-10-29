@@ -110,9 +110,9 @@ encryption (`azure-key-vault`).
 
 ## Microsoft Learn
 - BitLocker overview: https://learn.microsoft.com/windows/security/operating-system-security/data-protection/bitlocker/
-- Manage BitLocker with Intune: https://learn.microsoft.com/mem/intune/protect/encrypt-devices
-- Disk encryption policy: https://learn.microsoft.com/mem/intune/protect/endpoint-security-disk-encryption-policy
+- Manage BitLocker with Intune: https://learn.microsoft.com/intune/device-configuration/endpoint-security/encrypt-bitlocker-windows
+- Disk encryption policy: https://learn.microsoft.com/intune/device-configuration/endpoint-security/disk-encryption
 - Silent encryption: https://learn.microsoft.com/intune/device-configuration/endpoint-security/encrypt-bitlocker-windows
 - Recovery keys in Entra: https://learn.microsoft.com/entra/identity/devices/manage-device-identities
-- BitLocker To Go: https://learn.microsoft.com/windows/security/operating-system-security/data-protection/bitlocker/bitlocker-to-go-faq
+- BitLocker To Go: https://learn.microsoft.com/windows/security/operating-system-security/data-protection/bitlocker/faq
 - BitLocker recovery: https://learn.microsoft.com/windows/security/operating-system-security/data-protection/bitlocker/recovery-overview

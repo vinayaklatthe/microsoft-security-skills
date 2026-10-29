@@ -49,7 +49,8 @@ generic agent build guidance.
 
 2. **Scope permissions tightly.**
    - Microsoft Graph: prefer **Sites.Selected** over `Sites.Read.All`, **mailbox
-     scoping via Application Access Policy** over `Mail.Send`, custom security
+     scoping via Exchange Online RBAC for Applications** (the successor to Application
+     Access Policies) over tenant-wide `Mail.Send`, custom security
      attributes over broad directory roles.
    - Azure: scope role assignments at RG or resource, never subscription Owner unless
      truly required.
@@ -161,9 +162,9 @@ generic agent build guidance.
 - Entra ID Governance overview: https://learn.microsoft.com/entra/id-governance/identity-governance-overview
 - Access reviews for service principals: https://learn.microsoft.com/entra/id-governance/create-access-review
 - Conditional Access for workload identities: https://learn.microsoft.com/entra/identity/conditional-access/workload-identity
-- Application access policies (Graph mailbox scoping): https://learn.microsoft.com/graph/auth-limit-mailbox-access
+- RBAC for Applications in Exchange Online (mailbox scoping): https://learn.microsoft.com/exchange/permissions-exo/application-rbac
 - Sites.Selected: https://learn.microsoft.com/sharepoint/dev/solution-guidance/security-apponly-azuread
 - Copilot Studio security and governance: https://learn.microsoft.com/microsoft-copilot-studio/security-and-governance
-- Microsoft Foundry agent security: https://learn.microsoft.com/azure/ai-foundry/concepts/ai-resources
+- Microsoft Foundry agent security: https://learn.microsoft.com/azure/foundry/agents/concepts/agent-identity
 - Audit (unified) for Copilot: https://learn.microsoft.com/purview/audit-copilot
 - Workload identity federation: https://learn.microsoft.com/entra/workload-id/workload-identity-federation

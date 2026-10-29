@@ -116,7 +116,7 @@ VM disk-level malware (`defender-for-servers`), or M365 file workloads
 ## Microsoft Learn
 - Overview: https://learn.microsoft.com/azure/defender-for-cloud/defender-for-storage-introduction
 - Enable plan: https://learn.microsoft.com/azure/defender-for-cloud/defender-for-storage-introduction
-- Malware scanning: https://learn.microsoft.com/azure/defender-for-cloud/defender-for-storage-malware-scan
+- Malware scanning: https://learn.microsoft.com/azure/defender-for-cloud/introduction-malware-scanning
 - Sensitive data threat detection: https://learn.microsoft.com/azure/defender-for-cloud/defender-for-storage-data-sensitivity
 - Event Grid response: https://learn.microsoft.com/azure/defender-for-cloud/defender-for-storage-configure-malware-scan
 - Migration from v1: https://learn.microsoft.com/azure/defender-for-cloud/defender-for-storage-classic-migrate

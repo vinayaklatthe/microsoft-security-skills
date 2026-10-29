@@ -121,7 +121,7 @@ this skill when the question is "where do certificates come from and how do they
 - Key Vault Managed HSM: https://learn.microsoft.com/azure/key-vault/managed-hsm/overview
 - Entra certificate-based auth: https://learn.microsoft.com/entra/identity/authentication/concept-certificate-based-authentication
 - CBA strong authentication binding: https://learn.microsoft.com/entra/identity/authentication/concept-certificate-based-authentication-technical-deep-dive
-- Intune certificate profiles: https://learn.microsoft.com/mem/intune/protect/certificates-configure
-- Intune SCEP: https://learn.microsoft.com/mem/intune/protect/certificates-scep-configure
+- Intune certificate profiles: https://learn.microsoft.com/intune/fundamentals/certificates/overview
+- Intune SCEP: https://learn.microsoft.com/intune/fundamentals/certificates/scep-infrastructure
 - AD CS design guidance: https://learn.microsoft.com/windows-server/identity/ad-cs/active-directory-certificate-services-overview
 - Certificate lifecycle in Key Vault: https://learn.microsoft.com/azure/key-vault/certificates/create-certificate

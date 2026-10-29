@@ -1,6 +1,6 @@
 ---
 name: defender-for-cloud-ai
-description: "Guidance for Microsoft Defender for Cloud — AI workload protection (AI-SPM and runtime threat detection for generative AI). Covers AI Security Posture Management (discovery of Azure OpenAI / Azure AI Foundry / Amazon Bedrock / Google Vertex AI resources, identification of grounding data exposure, model deployment posture), runtime threat detection on Azure OpenAI (prompt injection / jailbreak attempts, sensitive data leakage in prompts/responses, wallet abuse, credential leakage), integration with Azure AI Content Safety Prompt Shields, attack path analysis for AI workloads, alert investigation in Defender XDR, and pairing with Purview DSPM for AI (user side) and Azure AI Content Safety (model side). WHEN: Defender for Cloud AI, AI-SPM, AI workload protection, Azure OpenAI threat detection, prompt injection alert, jailbreak alert Azure OpenAI, AI wallet abuse, AI workload posture, Amazon Bedrock posture, Vertex AI posture, generative AI security Azure. DO NOT USE for end-user AI usage governance (use purview-ai-hub), content moderation API (use azure-ai-content-safety), or M365 Copilot rollout (use copilot-for-m365-readiness)."
+description: "Guidance for Microsoft Defender for Cloud — AI workload protection (AI-SPM and runtime threat detection for generative AI). Covers AI Security Posture Management (discovery of Azure OpenAI / Microsoft Foundry (formerly Azure AI Foundry) / Amazon Bedrock / Google Vertex AI resources, identification of grounding data exposure, model deployment posture), runtime threat detection on Azure OpenAI (prompt injection / jailbreak attempts, sensitive data leakage in prompts/responses, wallet abuse, credential leakage), integration with Azure AI Content Safety Prompt Shields, attack path analysis for AI workloads, alert investigation in Defender XDR, and pairing with Purview DSPM for AI (user side) and Azure AI Content Safety (model side). WHEN: Defender for Cloud AI, AI-SPM, AI workload protection, Azure OpenAI threat detection, prompt injection alert, jailbreak alert Azure OpenAI, AI wallet abuse, AI workload posture, Amazon Bedrock posture, Vertex AI posture, generative AI security Azure. DO NOT USE for end-user AI usage governance (use purview-ai-hub), content moderation API (use azure-ai-content-safety), or M365 Copilot rollout (use copilot-for-m365-readiness)."
 license: MIT
 metadata:
   author: Microsoft
@@ -10,7 +10,7 @@ metadata:
 # Microsoft Defender for Cloud — AI Workload Protection
 
 Defender for Cloud's AI plan protects the **AI workloads themselves** — the Azure OpenAI,
-Azure AI Foundry, Amazon Bedrock, and Google Vertex AI deployments your organization runs.
+Microsoft Foundry (formerly Azure AI Foundry), Amazon Bedrock, and Google Vertex AI deployments your organization runs.
 Two capabilities:
 
 - **AI Security Posture Management (AI-SPM)**: agentless discovery and posture (where AI
@@ -20,7 +20,7 @@ Two capabilities:
   integrating Azure AI Content Safety **Prompt Shields**.
 
 ## When to use
-You build or operate generative AI applications on Azure OpenAI / Azure AI Foundry (and
+You build or operate generative AI applications on Azure OpenAI / Microsoft Foundry (and
 optionally Bedrock/Vertex), and need posture + runtime detection on the workload side.
 
 **Do not use this skill** for end-user-side AI governance (`purview-ai-hub`), Content
@@ -140,5 +140,5 @@ Safety policy authoring (`azure-ai-content-safety`), or M365 Copilot rollout
 - Alerts reference (AI): https://learn.microsoft.com/azure/defender-for-cloud/alerts-reference#alerts-ai
 - Attack path: https://learn.microsoft.com/azure/defender-for-cloud/concept-attack-path
 - Azure AI Content Safety Prompt Shields: https://learn.microsoft.com/azure/ai-services/content-safety/concepts/jailbreak-detection
-- Azure OpenAI Entra auth: https://learn.microsoft.com/azure/ai-services/openai/how-to/managed-identity
-- Multicloud connectors: https://learn.microsoft.com/azure/defender-for-cloud/multicloud
+- Azure OpenAI Entra auth: https://learn.microsoft.com/azure/foundry-classic/openai/how-to/managed-identity
+- Multicloud connectors: https://learn.microsoft.com/azure/defender-for-cloud/quickstart-onboard-aws

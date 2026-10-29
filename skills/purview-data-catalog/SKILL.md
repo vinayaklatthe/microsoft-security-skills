@@ -122,9 +122,9 @@ order; each step gates the next.
 
 ## Microsoft Learn
 - Unified Catalog overview: https://learn.microsoft.com/purview/unified-catalog
-- Governance domains: https://learn.microsoft.com/purview/concept-governance-domain
-- Data products: https://learn.microsoft.com/purview/concept-data-products
-- Glossary terms: https://learn.microsoft.com/purview/concept-business-glossary
-- Data quality overview: https://learn.microsoft.com/purview/data-quality-overview
-- Roles in Unified Catalog: https://learn.microsoft.com/purview/catalog-permissions
-- Power BI integration: https://learn.microsoft.com/purview/how-to-search-catalog
+- Governance domains: https://learn.microsoft.com/purview/unified-catalog-governance-domains
+- Data products: https://learn.microsoft.com/purview/unified-catalog-data-products
+- Glossary terms: https://learn.microsoft.com/purview/unified-catalog-glossary-terms
+- Data quality overview: https://learn.microsoft.com/purview/unified-catalog-data-quality
+- Roles in Unified Catalog: https://learn.microsoft.com/purview/data-gov-classic-permissions
+- Power BI integration: https://learn.microsoft.com/purview/unified-catalog-data-assets-search

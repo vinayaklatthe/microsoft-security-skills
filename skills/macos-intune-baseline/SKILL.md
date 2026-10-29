@@ -152,13 +152,13 @@ authoring (`defender-for-endpoint`), or iOS / iPadOS management.
   pipeline.`
 
 ## Microsoft Learn
-- Intune macOS overview: https://learn.microsoft.com/intune/intune-service/configuration/device-restrictions-macos
-- macOS enrollment (ABM / ADE): https://learn.microsoft.com/intune/intune-service/enrollment/device-enrollment-program-enroll-macos
+- Intune macOS overview: https://learn.microsoft.com/intune/device-configuration/templates/ref-device-restrictions-apple
+- macOS enrollment (ABM / ADE): https://learn.microsoft.com/intune/device-enrollment/apple/setup-automated-macos
 - Platform SSO for Entra ID on macOS: https://learn.microsoft.com/entra/identity-platform/apple-sso-plugin
-- Enterprise SSO plug-in for macOS: https://learn.microsoft.com/intune/intune-service/configuration/use-enterprise-sso-plug-in-ios-ipados-macos
-- FileVault: https://learn.microsoft.com/intune/intune-service/protect/encrypt-devices-filevault
+- Enterprise SSO plug-in for macOS: https://learn.microsoft.com/intune/device-configuration/enterprise-sso-plugin
+- FileVault: https://learn.microsoft.com/intune/device-configuration/endpoint-security/encrypt-filevault-macos
 - Defender for Endpoint on macOS: https://learn.microsoft.com/defender-endpoint/microsoft-defender-endpoint-mac
-- System extensions: https://learn.microsoft.com/intune/intune-service/configuration/device-features-configure#system-extensions
-- Privacy Preferences Policy Control: https://learn.microsoft.com/intune/intune-service/configuration/preference-file-settings-macos
-- Managed Software Updates / DDM: https://learn.microsoft.com/intune/intune-service/protect/managed-software-updates-ios-macos
-- Compliance policies for macOS: https://learn.microsoft.com/intune/intune-service/protect/compliance-policy-create-mac-os
+- System extensions: https://learn.microsoft.com/intune/device-configuration/templates/configure-device-features-apple
+- Privacy Preferences Policy Control: https://learn.microsoft.com/intune/device-configuration/templates/configure-preference-file-macos
+- Managed Software Updates / DDM: https://learn.microsoft.com/intune/device-updates/apple/
+- Compliance policies for macOS: https://learn.microsoft.com/intune/device-security/compliance/ref-macos-settings

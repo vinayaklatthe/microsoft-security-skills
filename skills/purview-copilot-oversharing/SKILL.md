@@ -87,9 +87,9 @@ failure.
 - `Apply restricted content discovery to a sensitive site.`
 
 ## Microsoft Learn
-- Copilot data protection considerations: https://learn.microsoft.com/purview/ai-microsoft-purview-considerations
+- Copilot data protection considerations: https://learn.microsoft.com/purview/dspm-for-ai-considerations
 - SharePoint Advanced Management: https://learn.microsoft.com/sharepoint/advanced-management
 - Data access governance reports: https://learn.microsoft.com/sharepoint/data-access-governance-reports
 - Restricted content discovery: https://learn.microsoft.com/sharepoint/restricted-content-discovery
-- Prepare for Copilot: https://learn.microsoft.com/copilot/microsoft-365/microsoft-365-copilot-requirements
+- Prepare for Copilot: https://learn.microsoft.com/microsoft-365/copilot/microsoft-copilot-requirements
 - DLP for Microsoft 365 (overview): https://learn.microsoft.com/purview/dlp-learn-about-dlp

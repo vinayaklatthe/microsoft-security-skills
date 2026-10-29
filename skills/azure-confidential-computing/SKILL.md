@@ -142,8 +142,8 @@ encryption, or non-Azure TEE / Intel SGX-only designs.
 ## Microsoft Learn
 - Confidential computing overview: https://learn.microsoft.com/azure/confidential-computing/overview
 - Confidential VMs: https://learn.microsoft.com/azure/confidential-computing/confidential-vm-overview
-- AMD SEV-SNP CVMs: https://learn.microsoft.com/azure/confidential-computing/virtual-machine-solutions-amd
-- Intel TDX CVMs: https://learn.microsoft.com/azure/confidential-computing/tdx-confidential-vm-overview
+- AMD SEV-SNP CVMs: https://learn.microsoft.com/azure/confidential-computing/confidential-vm-overview
+- Intel TDX CVMs: https://learn.microsoft.com/azure/virtual-machines/sizes/general-purpose/dcesv6-series
 - Confidential containers on AKS: https://learn.microsoft.com/azure/confidential-computing/confidential-containers-on-aks-preview
 - Confidential GPU (NCC H100 v5): https://learn.microsoft.com/azure/confidential-computing/confidential-vm-overview#confidential-vms-with-gpu
 - Microsoft Azure Attestation: https://learn.microsoft.com/azure/attestation/overview

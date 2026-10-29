@@ -113,7 +113,7 @@ and management groups. Use this skill to pick effects, design initiatives, and r
 
 ## Microsoft Learn
 - Azure Policy overview: https://learn.microsoft.com/azure/governance/policy/overview
-- Policy effects: https://learn.microsoft.com/azure/governance/policy/concepts/effects
+- Policy effects: https://learn.microsoft.com/azure/governance/policy/concepts/effect-basics
 - Initiatives (policy sets): https://learn.microsoft.com/azure/governance/policy/concepts/initiative-definition-structure
 - Remediation tasks: https://learn.microsoft.com/azure/governance/policy/how-to/remediate-resources
 - Management group scope: https://learn.microsoft.com/azure/governance/management-groups/overview

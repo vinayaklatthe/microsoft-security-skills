@@ -118,7 +118,7 @@ workloads, or VM-hosted web apps.
 - Easy Auth: https://learn.microsoft.com/azure/app-service/overview-authentication-authorization
 - Key Vault references: https://learn.microsoft.com/azure/app-service/app-service-key-vault-references
 - Networking features: https://learn.microsoft.com/azure/app-service/networking-features
-- Private endpoints: https://learn.microsoft.com/azure/app-service/networking/private-endpoint
+- Private endpoints: https://learn.microsoft.com/azure/app-service/overview-private-endpoint
 - Access restrictions: https://learn.microsoft.com/azure/app-service/app-service-ip-restrictions
 - TLS / HTTPS: https://learn.microsoft.com/azure/app-service/configure-ssl-bindings
 - Defender for App Service: https://learn.microsoft.com/azure/defender-for-cloud/defender-for-app-service-introduction

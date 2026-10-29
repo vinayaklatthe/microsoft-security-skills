@@ -80,6 +80,6 @@ recommendations rather than building bespoke policies from scratch.
 - DSPM for AI overview: https://learn.microsoft.com/purview/dspm-for-ai
 - Considerations & setup: https://learn.microsoft.com/purview/dspm-for-ai-considerations
 - Secure & govern AI with Purview: https://learn.microsoft.com/purview/ai-microsoft-purview
-- Copilot data protection considerations: https://learn.microsoft.com/purview/ai-microsoft-purview-considerations
+- Copilot data protection considerations: https://learn.microsoft.com/purview/dspm-for-ai-considerations
 - DLP for Microsoft 365 (overview): https://learn.microsoft.com/purview/dlp-learn-about-dlp
 - SharePoint Advanced Management (oversharing): https://learn.microsoft.com/sharepoint/advanced-management

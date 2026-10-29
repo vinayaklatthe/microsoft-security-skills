@@ -131,7 +131,7 @@ IP Protection is per-IP. Estate size flips the economics — model both before c
 - Tier comparison: https://learn.microsoft.com/azure/ddos-protection/ddos-protection-sku-comparison
 - Enable Network Protection: https://learn.microsoft.com/azure/ddos-protection/manage-ddos-protection
 - Enable IP Protection: https://learn.microsoft.com/azure/ddos-protection/manage-ddos-protection
-- Metrics and alerts: https://learn.microsoft.com/azure/ddos-protection/diagnostic-logging
+- Metrics and alerts: https://learn.microsoft.com/azure/ddos-protection/ddos-view-diagnostic-logs
 - Simulation testing: https://learn.microsoft.com/azure/ddos-protection/test-through-simulations
 - Rapid Response: https://learn.microsoft.com/azure/ddos-protection/ddos-rapid-response
 - Cost protection / SLA: https://learn.microsoft.com/azure/ddos-protection/ddos-protection-overview

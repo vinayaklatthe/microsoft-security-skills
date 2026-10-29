@@ -123,10 +123,10 @@ workflows (`entra-id-governance`).
 - `When should I use Administrative Units vs custom roles for delegated admin?`
 
 ## Microsoft Learn
-- Overview: https://learn.microsoft.com/entra/fundamentals/whatis
+- Overview: https://learn.microsoft.com/entra/fundamentals/what-is-entra
 - Entra Cloud Sync: https://learn.microsoft.com/entra/identity/hybrid/cloud-sync/what-is-cloud-sync
-- Authentication methods policy: https://learn.microsoft.com/entra/identity/authentication/concept-authentication-methods
-- Passkeys (FIDO2): https://learn.microsoft.com/entra/identity/authentication/concept-authentication-passwordless
+- Authentication methods policy: https://learn.microsoft.com/entra/identity/authentication/overview-authentication
+- Passkeys (FIDO2): https://learn.microsoft.com/entra/identity/authentication/concept-authentication-passkeys-fido2
 - Break-glass accounts: https://learn.microsoft.com/entra/identity/role-based-access-control/security-emergency-access
 - Admin consent workflow: https://learn.microsoft.com/entra/identity/enterprise-apps/configure-admin-consent-workflow
 - Administrative Units: https://learn.microsoft.com/entra/identity/role-based-access-control/administrative-units

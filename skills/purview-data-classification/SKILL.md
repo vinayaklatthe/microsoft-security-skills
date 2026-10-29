@@ -82,7 +82,7 @@ customer table". Don't try to make one method do all three jobs.
 
 ## Microsoft Learn
 - Sensitivity labels: https://learn.microsoft.com/purview/sensitivity-labels
-- Sensitive information types: https://learn.microsoft.com/purview/sensitive-information-type-learn-about
+- Sensitive information types: https://learn.microsoft.com/purview/sit-sensitive-information-type-learn-about
 - Trainable classifiers: https://learn.microsoft.com/purview/trainable-classifiers-learn-about
 - Auto-labelling: https://learn.microsoft.com/purview/apply-sensitivity-label-automatically
 - Exact Data Match: https://learn.microsoft.com/purview/sit-learn-about-exact-data-match-based-sits

@@ -116,8 +116,8 @@ state of the AD environment.
 - WHfB overview: https://learn.microsoft.com/windows/security/identity-protection/hello-for-business/
 - Plan a deployment: https://learn.microsoft.com/windows/security/identity-protection/hello-for-business/deploy/
 - Cloud Kerberos trust: https://learn.microsoft.com/windows/security/identity-protection/hello-for-business/deploy/hybrid-cloud-kerberos-trust
-- Prerequisites: https://learn.microsoft.com/windows/security/identity-protection/hello-for-business/deploy/requirements
-- Intune Account Protection policy: https://learn.microsoft.com/mem/intune/protect/endpoint-security-account-protection-policy
+- Prerequisites: https://learn.microsoft.com/windows/security/identity-protection/hello-for-business/deploy/
+- Intune Account Protection policy: https://learn.microsoft.com/intune/device-configuration/endpoint-security/account-protection
 - Authentication strengths in CA: https://learn.microsoft.com/entra/identity/authentication/concept-authentication-strengths
-- PIN reset: https://learn.microsoft.com/windows/security/identity-protection/hello-for-business/hello-feature-pin-reset
-- Multi-factor unlock: https://learn.microsoft.com/windows/security/identity-protection/hello-for-business/feature-multifactor-unlock
+- PIN reset: https://learn.microsoft.com/windows/security/identity-protection/hello-for-business/pin-reset
+- Multi-factor unlock: https://learn.microsoft.com/windows/security/identity-protection/hello-for-business/trusted-signal-unlock

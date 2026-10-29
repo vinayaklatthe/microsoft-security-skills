@@ -102,9 +102,9 @@ app. The more autonomous the agent, the more it must be managed like a privilege
 
 ## Microsoft Learn
 - Microsoft Agent 365 overview: https://learn.microsoft.com/en-us/microsoft-agent-365/overview
-- Agent management in Microsoft 365 admin center: https://learn.microsoft.com/en-us/microsoft-365/admin/manage/agent-365-overview
-- Agent registry: https://learn.microsoft.com/en-us/microsoft-365/admin/manage/agent-registry
+- Agent management in Microsoft 365 admin center: https://learn.microsoft.com/microsoft-agent-365/admin/agent-365-overview
+- Agent registry: https://learn.microsoft.com/microsoft-agent-365/admin/agent-registry-overview
 - Purview for Microsoft Agent 365: https://learn.microsoft.com/en-us/purview/ai-agent-365
-- Real-time agent protection (Defender for Cloud Apps): https://learn.microsoft.com/en-us/defender-cloud-apps/real-time-agent-protection-during-runtime
+- Real-time agent protection (Defender for Cloud Apps): https://learn.microsoft.com/defender-xdr/security-for-ai/ai-agent-real-time-protection
 - Microsoft Entra licensing (incl. Entra Agent ID): https://learn.microsoft.com/en-us/entra/fundamentals/licensing
 - Responsible AI FAQ for Agent 365: https://learn.microsoft.com/en-us/microsoft-agent-365/admin/responsible-ai-faq

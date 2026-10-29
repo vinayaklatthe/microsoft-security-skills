@@ -165,4 +165,4 @@ sensitivity-label rollout (`purview-information-governance`), or GRC frameworks
 - DKE overview: https://learn.microsoft.com/purview/double-key-encryption
 - DKE deploy service: https://learn.microsoft.com/purview/double-key-encryption-setup
 - Customer Lockbox (distinct): https://learn.microsoft.com/purview/customer-lockbox-requests
-- Service encryption (Microsoft-managed baseline): https://learn.microsoft.com/purview/office-365-service-encryption
+- Service encryption (Microsoft-managed baseline): https://learn.microsoft.com/purview/microsoft-365-service-encryption

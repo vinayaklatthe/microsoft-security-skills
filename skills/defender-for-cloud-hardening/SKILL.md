@@ -113,8 +113,8 @@ remediation, and how to operationalise findings.
 - Defender for Cloud overview: https://learn.microsoft.com/azure/defender-for-cloud/defender-for-cloud-introduction
 - Secure Score: https://learn.microsoft.com/azure/defender-for-cloud/secure-score-security-controls
 - Defender CSPM + attack paths: https://learn.microsoft.com/azure/defender-for-cloud/concept-attack-path
-- Connect AWS / GCP: https://learn.microsoft.com/azure/defender-for-cloud/multicloud
+- Connect AWS / GCP: https://learn.microsoft.com/azure/defender-for-cloud/quickstart-onboard-aws
 - Defender plans pricing: https://learn.microsoft.com/azure/defender-for-cloud/defender-for-cloud-glossary
 - Cloud security graph: https://learn.microsoft.com/azure/defender-for-cloud/concept-data-security-posture
 - Governance rules: https://learn.microsoft.com/azure/defender-for-cloud/governance-rules
-- Workflow automation: https://learn.microsoft.com/azure/defender-for-cloud/workflow-automation
+- Workflow automation: https://learn.microsoft.com/azure/defender-for-cloud/workflow-automations

@@ -107,5 +107,5 @@ microsegmentation (NSGs - see `azure-network-security-design`), or third-party N
 - Hub-spoke + firewall: https://learn.microsoft.com/azure/architecture/networking/architecture/hub-spoke
 - FQDN tags: https://learn.microsoft.com/azure/firewall/fqdn-tags
 - Threat intelligence: https://learn.microsoft.com/azure/firewall/threat-intel
-- Structured logs: https://learn.microsoft.com/azure/firewall/firewall-structured-logs
+- Structured logs: https://learn.microsoft.com/azure/firewall/monitor-firewall
 - Forced tunneling: https://learn.microsoft.com/azure/firewall/forced-tunneling

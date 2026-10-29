@@ -1,8 +1,14 @@
 {
   "cases": [
     {
-      "prompt": "Right-size cloud permissions using the Permission Creep Index.",
+      "prompt": "Right-size multicloud cloud permissions now that Entra Permissions Management is retired.",
       "expect": [
+        {
+          "label": "EPM is retired; CIEM continues in Defender CSPM (Permissions Management extension)",
+          "any": [
+            "defender cspm"
+          ]
+        },
         {
           "label": "Validate activity baselines cover a representative period before aggressively r...",
           "any": [

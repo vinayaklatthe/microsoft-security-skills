@@ -1,6 +1,6 @@
 ---
 name: defender-for-servers
-description: "Guidance for Microsoft Defender for Servers (Plan 1 and Plan 2) — server-specific protection in Microsoft Defender for Cloud. Covers plan selection, agentless vs agent-based scanning, MDE for Servers integration, file integrity monitoring (FIM via MDE), just-in-time VM access, vulnerability assessment, adaptive application controls, network hardening, and free data ingestion to Sentinel/Log Analytics. Applies to Azure VMs, Azure Arc-enabled servers (on-prem, AWS EC2, GCP Compute), and Azure VMSS. WHEN: Defender for Servers, MDE for Servers, server EDR, FIM, file integrity monitoring, JIT VM access, just-in-time access, agentless scanning servers, vulnerability assessment for VMs, hybrid server protection, Arc-enabled servers security, AWS EC2 in Defender for Cloud, GCP Compute in Defender for Cloud, server hardening Azure, Plan 1 vs Plan 2 servers. DO NOT USE for endpoint client devices (use defender-for-endpoint), generic Azure resource posture (use defender-for-cloud-hardening), or container hosts (use defender-for-containers)."
+description: "Guidance for Microsoft Defender for Servers (Plan 1 and Plan 2) — server-specific protection in Microsoft Defender for Cloud. Covers plan selection, agentless vs agent-based scanning, MDE for Servers integration, file integrity monitoring (FIM via MDE), just-in-time VM access, vulnerability assessment, application allow-listing (App Control for Business; adaptive application controls are retired), network hardening, and free data ingestion to Sentinel/Log Analytics. Applies to Azure VMs, Azure Arc-enabled servers (on-prem, AWS EC2, GCP Compute), and Azure VMSS. WHEN: Defender for Servers, MDE for Servers, server EDR, FIM, file integrity monitoring, JIT VM access, just-in-time access, agentless scanning servers, vulnerability assessment for VMs, hybrid server protection, Arc-enabled servers security, AWS EC2 in Defender for Cloud, GCP Compute in Defender for Cloud, server hardening Azure, Plan 1 vs Plan 2 servers. DO NOT USE for endpoint client devices (use defender-for-endpoint), generic Azure resource posture (use defender-for-cloud-hardening), or container hosts (use defender-for-containers)."
 license: MIT
 metadata:
   author: Microsoft
@@ -76,8 +76,13 @@ Defender for Cloud posture (`defender-for-cloud-hardening`).
    *Verify: FIM events appear in MDE advanced hunting `DeviceFileEvents` with
    ActionType = FileCreated/Modified on the monitored paths.*
 
-7. **Adaptive application controls** (Plan 2). Run in audit for 14 days to learn the app
-   baseline per VM group, then enforce. Skip on highly dynamic workloads (CI build agents).
+7. **Application allow-listing via App Control for Business (formerly WDAC).** Adaptive
+   application controls were **retired with the Log Analytics agent (August 2024)** — do not
+   design around them. Deploy App Control for Business policies (Intune, GPO, or Azure Policy
+   guest configuration) in **audit mode** for 14+ days, review `DeviceEvents` AppControl audit
+   events in MDE advanced hunting, then enforce. Skip highly dynamic workloads (CI build agents).
+   *Verify: no unexpected `AppControlCodeIntegrityPolicyBlocked` events during a pilot ring
+   before broad enforcement.*
 
 8. **Free 500 MB/day Log Analytics ingestion.** Stream the security event set to a workspace
    you can query from Sentinel — but keep the volume budget in mind; high-volume DCs blow past
@@ -109,8 +114,9 @@ Defender for Cloud posture (`defender-for-cloud-hardening`).
   IP locked.
 - **"FIM enabled on every file path on every server"** — alert fatigue. Tier-0 systems +
   app-specific config paths only.
-- **"Adaptive application controls enforce on day one"** — blocks legitimate admin tooling.
-  14 days audit, then enforce.
+- **"App Control for Business enforced on day one"** — blocks legitimate admin tooling.
+  14+ days audit, then enforce.
+- **"We'll use adaptive application controls"** — retired; use App Control for Business.
 - **"Skipped agentless scan because we already run MDE Vulnerability Management"** — they're
   complementary; agentless catches unmanaged disks and stopped VMs.
 
@@ -122,15 +128,17 @@ Defender for Cloud posture (`defender-for-cloud-hardening`).
 - `Stream Defender for Servers events into Sentinel using the 500 MB free allowance — what
   do we ingest?`
 - `Connect an AWS account with 300 EC2 instances and enable Defender for Servers P2.`
-- `Tune adaptive application controls for a fleet of IIS web servers.`
+- `Replace adaptive application controls with App Control for Business on IIS web servers.`
 
 ## Microsoft Learn
-- Overview: https://learn.microsoft.com/azure/defender-for-cloud/defender-for-servers-introduction
+- Overview: https://learn.microsoft.com/azure/defender-for-cloud/plan-defender-for-servers
 - Plan features: https://learn.microsoft.com/azure/defender-for-cloud/plan-defender-for-servers-select-plan
 - MDE integration: https://learn.microsoft.com/azure/defender-for-cloud/integration-defender-for-endpoint
 - Just-in-time VM access: https://learn.microsoft.com/azure/defender-for-cloud/just-in-time-access-overview
 - File Integrity Monitoring: https://learn.microsoft.com/azure/defender-for-cloud/file-integrity-monitoring-overview
 - Agentless scanning for machines: https://learn.microsoft.com/azure/defender-for-cloud/concept-agentless-data-collection
-- Adaptive application controls: https://learn.microsoft.com/azure/defender-for-cloud/adaptive-application-controls
-- Connect AWS / GCP: https://learn.microsoft.com/azure/defender-for-cloud/multicloud
+- App Control for Business (replaces adaptive application controls): https://learn.microsoft.com/windows/security/application-security/application-control/app-control-for-business/appcontrol
+- Log Analytics agent retirement impact: https://learn.microsoft.com/azure/defender-for-cloud/prepare-deprecation-log-analytics-mma-agent
+- Connect AWS: https://learn.microsoft.com/azure/defender-for-cloud/quickstart-onboard-aws
+- Connect GCP: https://learn.microsoft.com/azure/defender-for-cloud/quickstart-onboard-gcp
 - Azure Arc onboarding: https://learn.microsoft.com/azure/azure-arc/servers/overview

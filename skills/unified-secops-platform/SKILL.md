@@ -37,6 +37,10 @@ and reducing context-switching for analysts.
 > unified portal. The Azure Sentinel portal is the legacy surface; new investments land in the
 > Defender portal first.
 
+> **Deadline:** Microsoft Sentinel in the **Azure portal retires on March 31, 2027** (extended
+> from July 1, 2026). After that date Sentinel is available only in the Defender portal — plan
+> onboarding, RBAC, and automation changes well before the cutoff.
+
 ## Approach
 
 1. **Confirm prerequisites** - A Microsoft Sentinel workspace, Microsoft Defender XDR onboarded
@@ -112,8 +116,9 @@ and reducing context-switching for analysts.
 - `What changes for my analysts after onboarding Sentinel to the Defender portal?`
 
 ## Microsoft Learn
-- Unified SecOps overview: https://learn.microsoft.com/unified-secops-platform/overview-unified-security
+- Unified SecOps overview: https://learn.microsoft.com/defender-xdr/isoc-overview
 - Connect Sentinel to the Defender portal: https://learn.microsoft.com/azure/sentinel/microsoft-sentinel-defender-portal
+- Transition Sentinel to the Defender portal: https://learn.microsoft.com/azure/sentinel/move-to-defender
 - Microsoft Defender portal: https://learn.microsoft.com/defender-xdr/microsoft-365-defender-portal
 - Unified RBAC in the Defender portal: https://learn.microsoft.com/defender-xdr/manage-rbac
 - Microsoft Security Exposure Management: https://learn.microsoft.com/security-exposure-management/microsoft-security-exposure-management

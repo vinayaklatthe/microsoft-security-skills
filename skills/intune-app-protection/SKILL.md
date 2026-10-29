@@ -103,10 +103,10 @@ encryption (`bitlocker-design`).
 - `Wipe corporate data from a departing contractor's personal phone without touching personal data.`
 
 ## Microsoft Learn
-- APP overview: https://learn.microsoft.com/mem/intune/apps/app-protection-policy
-- APP settings - iOS: https://learn.microsoft.com/mem/intune/apps/app-protection-policy-settings-ios
-- APP settings - Android: https://learn.microsoft.com/mem/intune/apps/app-protection-policy-settings-android
-- MAM without enrollment: https://learn.microsoft.com/mem/intune/apps/app-protection-policies
-- Supported apps: https://learn.microsoft.com/mem/intune/apps/apps-supported-intune-apps
+- APP overview: https://learn.microsoft.com/intune/app-management/protection/overview
+- APP settings - iOS: https://learn.microsoft.com/intune/app-management/protection/ref-settings-ios
+- APP settings - Android: https://learn.microsoft.com/intune/app-management/protection/ref-settings-android
+- MAM without enrollment: https://learn.microsoft.com/intune/app-management/protection/create-policy
+- Supported apps: https://learn.microsoft.com/intune/app-management/ref-protected-apps
 - CA - Require app protection policy: https://learn.microsoft.com/entra/identity/conditional-access/concept-conditional-access-grant
-- Selective wipe: https://learn.microsoft.com/mem/intune/apps/apps-selective-wipe
+- Selective wipe: https://learn.microsoft.com/intune/app-management/protection/wipe-corporate-data

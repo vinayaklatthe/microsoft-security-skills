@@ -84,7 +84,7 @@ identity - not just a piece of UX.
 ## Microsoft Learn
 - Secure & govern AI with Purview: https://learn.microsoft.com/purview/ai-microsoft-purview
 - DSPM for AI: https://learn.microsoft.com/purview/dspm-for-ai
-- Copilot data protection considerations: https://learn.microsoft.com/purview/ai-microsoft-purview-considerations
+- Copilot data protection considerations: https://learn.microsoft.com/purview/dspm-for-ai-considerations
 - Audit AI interactions: https://learn.microsoft.com/purview/audit-solutions-overview
 - Copilot Studio security & governance: https://learn.microsoft.com/microsoft-copilot-studio/security-and-governance
 - Communication Compliance: https://learn.microsoft.com/purview/communication-compliance

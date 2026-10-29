@@ -147,5 +147,5 @@ cross-product investigation (`defender-xdr`), or Azure server protection
 - Mobile threat defense: https://learn.microsoft.com/defender-business/mdb-mtd
 - Vulnerability management: https://learn.microsoft.com/defender-business/mdb-view-tvm-dashboard
 - Microsoft 365 Lighthouse: https://learn.microsoft.com/microsoft-365/lighthouse/m365-lighthouse-overview
-- GDAP: https://learn.microsoft.com/partner-center/gdap-introduction
+- GDAP: https://learn.microsoft.com/partner-center/customers/gdap-introduction
 - Microsoft 365 Business Premium: https://learn.microsoft.com/microsoft-365/business-premium/

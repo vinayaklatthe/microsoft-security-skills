@@ -115,4 +115,4 @@ skill to pick topology, design segmentation, and place controls.
 - Zero Trust network: https://learn.microsoft.com/security/zero-trust/deploy/networks
 - DDoS Protection: https://learn.microsoft.com/azure/ddos-protection/ddos-protection-overview
 - Azure Bastion: https://learn.microsoft.com/azure/bastion/bastion-overview
-- NSG flow logs: https://learn.microsoft.com/azure/network-watcher/network-watcher-nsg-flow-logging-overview
+- NSG flow logs: https://learn.microsoft.com/azure/network-watcher/nsg-flow-logs-overview

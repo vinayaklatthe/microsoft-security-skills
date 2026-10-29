@@ -135,7 +135,7 @@ for SKU selection, JIT policy, public-IP elimination, and the operational workfl
 - Bastion overview: https://learn.microsoft.com/azure/bastion/bastion-overview
 - SKUs and features: https://learn.microsoft.com/azure/bastion/configuration-settings
 - Bastion subnet NSG requirements: https://learn.microsoft.com/azure/bastion/bastion-nsg
-- Native client connection: https://learn.microsoft.com/azure/bastion/connect-native-client-windows
+- Native client connection: https://learn.microsoft.com/azure/bastion/native-client
 - Shareable links: https://learn.microsoft.com/azure/bastion/shareable-link
 - Session recording (Premium): https://learn.microsoft.com/azure/bastion/session-recording
 - Just-in-time VM access: https://learn.microsoft.com/azure/defender-for-cloud/just-in-time-access-overview

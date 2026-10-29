@@ -91,7 +91,7 @@ second.
 ## Microsoft Learn
 - Secure & governed data foundation (oversharing blueprint): https://learn.microsoft.com/en-us/microsoft-365/copilot/secure-govern-copilot-foundational-deployment-guidance
 - Configure a secure and governed foundation: https://learn.microsoft.com/en-us/microsoft-365/copilot/configure-secure-governed-data-foundation-microsoft-365-copilot
-- Purview blueprint - secure by default: https://learn.microsoft.com/en-us/purview/deploymentmodels/depmod-securebydefault-intro
+- Purview blueprint - secure by default: https://learn.microsoft.com/purview/deploymentmodels/depmod-secure-by-default-intro
 - SharePoint Advanced Management: https://learn.microsoft.com/sharepoint/advanced-management
 - Data access governance reports: https://learn.microsoft.com/sharepoint/data-access-governance-reports
 - Restricted content discovery: https://learn.microsoft.com/sharepoint/restricted-content-discovery

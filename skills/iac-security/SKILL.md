@@ -159,7 +159,7 @@ general CI/CD architecture, or app-layer security.
 
 ## Microsoft Learn
 - Defender for Cloud DevOps Security: https://learn.microsoft.com/azure/defender-for-cloud/defender-for-devops-introduction
-- Microsoft Security DevOps (MSDO): https://learn.microsoft.com/azure/defender-for-cloud/azure-devops-extension
+- Microsoft Security DevOps (MSDO): https://learn.microsoft.com/azure/defender-for-cloud/configure-azure-devops-extension
 - Connect GitHub: https://learn.microsoft.com/azure/defender-for-cloud/quickstart-onboard-github
 - Connect Azure DevOps: https://learn.microsoft.com/azure/defender-for-cloud/quickstart-onboard-devops
 - Bicep deployment stacks: https://learn.microsoft.com/azure/azure-resource-manager/bicep/deployment-stacks

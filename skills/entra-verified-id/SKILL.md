@@ -128,5 +128,5 @@ presents it, the verifier validates the signature against the issuer's DID. Opti
 - Face Check: https://learn.microsoft.com/entra/verified-id/verifiable-credentials-faq
 - Rules and display files: https://learn.microsoft.com/entra/verified-id/rules-and-display-definitions-model
 - Status list revocation: https://learn.microsoft.com/entra/verified-id/how-to-issuer-revoke
-- Partner ecosystem: https://learn.microsoft.com/entra/verified-id/partner-gallery
+- Partner ecosystem: https://learn.microsoft.com/entra/verified-id/idv-partners
 - Conditional Access with Verified ID: https://learn.microsoft.com/entra/verified-id/decentralized-identifier-overview

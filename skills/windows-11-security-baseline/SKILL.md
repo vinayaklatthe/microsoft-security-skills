@@ -150,7 +150,7 @@ Intune device management (`intune-device-mgmt`), or BitLocker-only design
 ## Microsoft Learn
 - Windows 11 security book: https://learn.microsoft.com/windows/security/book/
 - Security baselines for Windows 11: https://learn.microsoft.com/windows/security/operating-system-security/device-management/windows-security-configuration-framework/windows-security-baselines
-- Intune security baselines: https://learn.microsoft.com/intune/intune-service/protect/security-baselines
+- Intune security baselines: https://learn.microsoft.com/intune/device-security/security-baselines/overview
 - VBS / HVCI / Memory Integrity: https://learn.microsoft.com/windows/security/hardware-security/enable-virtualization-based-protection-of-code-integrity
 - Credential Guard: https://learn.microsoft.com/windows/security/identity-protection/credential-guard/
 - LSA protection: https://learn.microsoft.com/windows-server/security/credentials-protection-and-management/configuring-additional-lsa-protection
@@ -158,5 +158,5 @@ Intune device management (`intune-device-mgmt`), or BitLocker-only design
 - Smart App Control: https://learn.microsoft.com/windows/security/application-security/application-control/app-control-for-business/
 - WDAC / App Control for Business: https://learn.microsoft.com/windows/security/application-security/application-control/app-control-for-business/
 - Personal Data Encryption: https://learn.microsoft.com/windows/security/operating-system-security/data-protection/personal-data-encryption/
-- Controlled folder access: https://learn.microsoft.com/defender-endpoint/controlled-folders
+- Controlled folder access: https://learn.microsoft.com/defender-endpoint/controlled-folder-access-overview
 - Microsoft Security Compliance Toolkit (GPO baselines): https://www.microsoft.com/download/details.aspx?id=55319

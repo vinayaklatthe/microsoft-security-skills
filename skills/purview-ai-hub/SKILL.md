@@ -124,7 +124,7 @@ playbook (`copilot-for-m365-readiness`).
 - Get started with DSPM for AI: https://learn.microsoft.com/purview/dspm-for-ai-considerations
 - Discover AI apps (Defender for Cloud Apps): https://learn.microsoft.com/defender-cloud-apps/risk-score
 - DLP for generative AI: https://learn.microsoft.com/purview/dlp-learn-about-dlp
-- Ready-to-use AI policies: https://learn.microsoft.com/purview/ai-microsoft-purview-considerations
+- Ready-to-use AI policies: https://learn.microsoft.com/purview/dspm-for-ai-considerations
 - Audit Copilot: https://learn.microsoft.com/purview/audit-copilot
 - IRM risky AI usage: https://learn.microsoft.com/purview/insider-risk-management-policies#risky-ai-usage
 - Browser DLP / Edge for Business: https://learn.microsoft.com/purview/endpoint-dlp-using

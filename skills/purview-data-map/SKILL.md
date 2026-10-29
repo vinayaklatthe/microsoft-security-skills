@@ -82,9 +82,9 @@ requires it - and treat the SHIR host as Tier-0 infrastructure.
 - `Design a Purview collection hierarchy aligned to business domains.`
 
 ## Microsoft Learn
-- Data Map overview: https://learn.microsoft.com/purview/concept-elastic-data-map
-- Register & scan sources: https://learn.microsoft.com/purview/scan-data-sources
-- Manage integration runtimes: https://learn.microsoft.com/purview/manage-integration-runtimes
-- Classifications: https://learn.microsoft.com/purview/concept-classification
-- Collections & access control: https://learn.microsoft.com/purview/how-to-create-and-manage-collections
-- Pricing & capacity: https://learn.microsoft.com/purview/concept-elastic-data-map
+- Data Map overview: https://learn.microsoft.com/purview/data-map
+- Register & scan sources: https://learn.microsoft.com/purview/data-map-scan-data-sources
+- Manage integration runtimes: https://learn.microsoft.com/purview/data-map-integration-runtime-self-hosted
+- Classifications: https://learn.microsoft.com/purview/data-map-classification
+- Collections & access control: https://learn.microsoft.com/purview/data-map-collections-manage-classic
+- Pricing & capacity: https://learn.microsoft.com/purview/data-map

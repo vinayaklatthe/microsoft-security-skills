@@ -15,6 +15,10 @@ ingests logs from Microsoft and third-party sources, runs scheduled and near-rea
 detections in KQL, correlates alerts into incidents, and orchestrates response via Logic Apps
 playbooks.
 
+> **Portal note:** Sentinel in the Azure portal retires on **March 31, 2027**; after that it is
+> available only in the Microsoft Defender portal. Design new deployments for the Defender
+> portal (see `unified-secops-platform`).
+
 ## When to use
 Centralising security logs from Microsoft and third-party sources, building detections,
 hunting across data, and automating response. Use Sentinel when you need a single SIEM across
@@ -122,7 +126,7 @@ Pick the tier first, then the connector. Tier choice drives cost more than anyth
 - Costs & ingestion tiers: https://learn.microsoft.com/azure/sentinel/billing
 - Commitment tiers: https://learn.microsoft.com/azure/sentinel/billing-pre-purchase-plan
 - Auxiliary logs: https://learn.microsoft.com/azure/sentinel/basic-logs-use-cases
-- Workspace design: https://learn.microsoft.com/azure/sentinel/design-your-workspace-architecture
+- Workspace design: https://learn.microsoft.com/azure/azure-monitor/logs/workspace-design
 - Automation & playbooks: https://learn.microsoft.com/azure/sentinel/automation/automation
 - UEBA: https://learn.microsoft.com/azure/sentinel/identify-threats-with-entity-behavior-analytics
 - Content Hub: https://learn.microsoft.com/azure/sentinel/sentinel-solutions-deploy

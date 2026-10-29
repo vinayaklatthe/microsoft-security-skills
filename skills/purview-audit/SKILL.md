@@ -82,7 +82,7 @@ single most common gap that turns a "we have audit logs" into "we don't have the
 
 ## Microsoft Learn
 - Audit solutions overview: https://learn.microsoft.com/purview/audit-solutions-overview
-- Audit Standard vs Premium: https://learn.microsoft.com/purview/audit-premium
+- Audit Standard vs Premium: https://learn.microsoft.com/purview/audit-solutions-overview
 - Search the audit log: https://learn.microsoft.com/purview/audit-search
 - Audit log retention policies: https://learn.microsoft.com/purview/audit-log-retention-policies
 - Office 365 Management Activity API: https://learn.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference

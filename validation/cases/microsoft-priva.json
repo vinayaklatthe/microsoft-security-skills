@@ -1,8 +1,12 @@
 {
   "cases": [
     {
-      "prompt": "Set up Microsoft Priva to manage subject rights requests (DSARs).",
+      "prompt": "Set up a process to manage subject rights requests (DSARs) in Microsoft 365.",
       "expect": [
+        {
+          "label": "Priva SRR is retired - handle DSARs in Purview eDiscovery (Premium)",
+          "any": ["ediscovery (premium)", "retired"]
+        },
         {
           "label": "Priva depends on accurate classification - SITs first",
           "any": ["priva depends", "classification prerequisite", "sits"]
@@ -12,11 +16,11 @@
           "any": ["coordinate", "legal", "privacy office"]
         },
         {
-          "label": "Apply least-privilege roles; SRR content is highly sensitive",
+          "label": "Apply least-privilege roles; DSAR content is highly sensitive",
           "any": ["least-privilege", "least privilege", "privacy management"]
         },
         {
-          "label": "Test SRR workflow with a dry-run before publishing intake form",
+          "label": "Test DSAR workflow with a dry-run before publishing intake form",
           "any": ["dry-run", "test", "reviewer"]
         }
       ]
@@ -25,25 +29,25 @@
       "prompt": "Which Priva solution should I roll out first?",
       "expect": [
         {
-          "label": "Start with Privacy Risk Management overexposure before SRR",
+          "label": "Start with Privacy Risk Management overexposure before scaling DSARs",
           "any": ["privacy risk management", "overexposure", "fix the leak first"]
         },
         {
-          "label": "Reason: leaks generate more SRRs than you can handle",
-          "any": ["more srrs", "leak first", "fix the leak"]
+          "label": "Reason: leaks generate more DSARs than you can handle",
+          "any": ["more dsars", "leak first", "fix the leak"]
         }
       ]
     },
     {
-      "prompt": "What licence do I need for Priva Subject Rights Requests?",
+      "prompt": "What licence do I need for subject rights requests after the Priva SRR retirement?",
       "expect": [
         {
-          "label": "Priva is a separate add-on SKU, not bundled in M365 E5 Compliance",
+          "label": "Priva Privacy Risk Management is a separate add-on SKU, not bundled in M365 E5 Compliance",
           "any": ["separate add-on", "separate sku", "not bundled"]
         },
         {
-          "label": "SRR is licensed per request; Privacy Risk Management is per-user per-month",
-          "any": ["per request", "per-user per-month"]
+          "label": "DSARs now need eDiscovery (Premium) licensing; no more per-request SRR bundles",
+          "any": ["ediscovery (premium) licensing", "no more per-request"]
         }
       ]
     }

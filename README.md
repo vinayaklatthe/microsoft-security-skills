@@ -271,7 +271,7 @@ Use this table to pick the right skill before asking your question.
 | Detect risky users or leaked credentials | `entra-id-protection` |
 | Remove standing admin rights and implement JIT access | `azure-pim` |
 | Govern identity lifecycle and access packages | `entra-id-governance` |
-| Manage multicloud permissions across AWS, GCP, Azure | `entra-permissions-management` |
+| Manage multicloud permissions (CIEM) across AWS, GCP, Azure; migrate off retired Entra Permissions Management | `entra-permissions-management` |
 | Protect endpoints with EDR, attack surface reduction | `defender-for-endpoint` |
 | Detect identity-based attacks on Active Directory | `defender-for-identity` |
 | Protect email from phishing and business email compromise | `defender-for-office-365` |
@@ -348,6 +348,29 @@ metadata:
 
 <concise, public-knowledge guidance, with Microsoft Learn links>
 ```
+
+## Recent updates
+
+**October 2026 - product retirements and link refresh**
+
+- **Link refresh:** 123 Microsoft Learn links that silently redirected (Intune `mem/` →
+  `intune/`, Security Copilot, Purview Unified Catalog, Azure Monitor, Defender for Cloud,
+  and others) now point to their canonical pages. All 562 links resolve with no redirects.
+- **`entra-permissions-management`** - Microsoft Entra Permissions Management retired on
+  October 1, 2025. The skill now covers CIEM in Defender for Cloud (Permissions Management
+  extension of Defender CSPM) and how to migrate off EPM, including Delinea PCCE as
+  Microsoft's recommended successor for full feature parity.
+- **`microsoft-priva`** - Priva Subject Rights Requests retired on May 9, 2026. Data subject
+  requests (DSARs) now run in Purview eDiscovery (Premium); licensing guidance updated.
+- **`defender-for-servers`** - adaptive application controls are retired; application
+  allow-listing now uses App Control for Business.
+- **`defender-tvm`** - the standalone Defender TI portal retired in August 2026; threat intel
+  now lives under Threat intelligence in the Defender portal (Intel explorer).
+- **`agent-identity-governance`** - Exchange Application Access Policies replaced by RBAC for
+  Applications for mailbox scoping.
+- **`sentinel`, `unified-secops-platform`** - added the March 31, 2027 retirement date for
+  Sentinel in the Azure portal.
+- **`defender-for-cloud-ai`** - Azure AI Foundry renamed to Microsoft Foundry.
 
 ## Validating the skills
 

@@ -76,7 +76,8 @@ reviewing existing assignments for excess privilege.
    *Verify: privileged role assignments are *Eligible*, not *Active*; activation requires MFA
    and produces an audit log.*
 7. **Govern continuously** - Run **access reviews** quarterly on privileged scopes, **remove
-   unused assignments** detected by Entra Permissions Management or PIM activity reports, and
+   unused assignments** detected by Defender for Cloud CIEM recommendations (Defender CSPM) or
+   PIM activity reports, and
    re-baseline when ownership changes.
    *Verify: an access-review cadence is documented; unused-assignment report is reviewed and
    actioned.*

@@ -116,7 +116,7 @@ should we fix next?".
 
 ## Microsoft Learn
 - Defender for Cloud CSPM: https://learn.microsoft.com/azure/defender-for-cloud/concept-cloud-security-posture-management
-- SaaS security posture (SSPM): https://learn.microsoft.com/defender-cloud-apps/security-saas
+- SaaS security posture (SSPM): https://learn.microsoft.com/defender-cloud-apps/posture-overview
 - Attack path analysis: https://learn.microsoft.com/azure/defender-for-cloud/concept-attack-path
 - Cloud security graph: https://learn.microsoft.com/azure/defender-for-cloud/concept-attack-path
 - Secure Score: https://learn.microsoft.com/azure/defender-for-cloud/secure-score-security-controls

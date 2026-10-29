@@ -132,10 +132,10 @@ hardening (`defender-for-cloud-hardening`), or identity-side detection (`defende
 - Overview: https://learn.microsoft.com/defender-endpoint/microsoft-defender-endpoint
 - MDE Plan 1 overview: https://learn.microsoft.com/defender-endpoint/defender-endpoint-plan-1
 - Onboarding: https://learn.microsoft.com/defender-endpoint/onboarding
-- ASR rules: https://learn.microsoft.com/defender-endpoint/attack-surface-reduction
+- ASR rules: https://learn.microsoft.com/defender-endpoint/attack-surface-reduction-rules-overview
 - ASR rules reference: https://learn.microsoft.com/defender-endpoint/attack-surface-reduction-rules-reference
 - EDR in block mode: https://learn.microsoft.com/defender-endpoint/edr-in-block-mode
-- Tamper protection: https://learn.microsoft.com/defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection
+- Tamper protection: https://learn.microsoft.com/defender-endpoint/tamper-protection-overview
 - Device groups: https://learn.microsoft.com/defender-endpoint/machine-groups
 - Vulnerability management: https://learn.microsoft.com/defender-vulnerability-management/defender-vulnerability-management
 - Live response: https://learn.microsoft.com/defender-endpoint/live-response

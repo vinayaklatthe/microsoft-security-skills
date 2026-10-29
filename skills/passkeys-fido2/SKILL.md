@@ -143,9 +143,9 @@ issuance (`entra-verified-id`).
 - `Compare device-bound vs synced passkeys for a Mac-heavy creative workforce.`
 
 ## Microsoft Learn
-- Passkey overview in Entra: https://learn.microsoft.com/entra/identity/authentication/concept-authentication-passwordless
+- Passkey overview in Entra: https://learn.microsoft.com/entra/identity/authentication/concept-authentication-passkeys-fido2
 - Microsoft Authenticator passkeys: https://learn.microsoft.com/entra/identity/authentication/how-to-enable-authenticator-passkey
-- FIDO2 security keys: https://learn.microsoft.com/entra/identity/authentication/concept-authentication-passwordless#fido2-security-keys
+- FIDO2 security keys: https://learn.microsoft.com/entra/identity/authentication/concept-authentication-passkeys-fido2
 - Attestation and AAGUIDs: https://learn.microsoft.com/entra/identity/authentication/concept-fido2-compatibility
 - Temporary Access Pass: https://learn.microsoft.com/entra/identity/authentication/howto-authentication-temporary-access-pass
 - Authentication strengths in CA: https://learn.microsoft.com/entra/identity/authentication/concept-authentication-strengths

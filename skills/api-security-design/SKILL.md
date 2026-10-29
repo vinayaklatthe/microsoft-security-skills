@@ -122,9 +122,9 @@ sensitive-data APIs - before they go live or as part of a recurring design revie
 - `What controls cover BOLA and BFLA on Azure API Management?`
 
 ## Microsoft Learn
-- API Management security baseline: https://learn.microsoft.com/azure/api-management/security-baseline
+- API Management security baseline: https://learn.microsoft.com/security/benchmark/azure/baselines/api-management-security-baseline
 - Protect a backend with Entra ID: https://learn.microsoft.com/azure/api-management/api-management-howto-protect-backend-with-aad
 - `validate-jwt` policy: https://learn.microsoft.com/azure/api-management/validate-jwt-policy
 - Mitigate OWASP API threats: https://learn.microsoft.com/azure/api-management/mitigate-owasp-api-threats
 - Defender for APIs: https://learn.microsoft.com/azure/defender-for-cloud/defender-for-apis-introduction
-- APIM landing zone accelerator: https://learn.microsoft.com/azure/cloud-adoption-framework/scenarios/app-platform/api-management/landing-zone-accelerator
+- APIM landing zone accelerator: https://learn.microsoft.com/azure/well-architected/service-guides/azure-api-management

@@ -142,5 +142,5 @@ disposition workflows.
 - Auto-apply policies: https://learn.microsoft.com/purview/apply-retention-labels-automatically
 - Disposition: https://learn.microsoft.com/purview/disposition
 - Disposition reviewers: https://learn.microsoft.com/purview/disposition#stages-of-disposition
-- Compliance role groups: https://learn.microsoft.com/purview/microsoft-365-compliance-center-permissions
+- Compliance role groups: https://learn.microsoft.com/purview/purview-permissions
 - Licensing: https://learn.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance

@@ -152,10 +152,10 @@ region before commit.
 ## Microsoft Learn
 - Log Analytics workspace design: https://learn.microsoft.com/azure/azure-monitor/logs/workspace-design
 - Table tiers (Analytics / Basic / Auxiliary): https://learn.microsoft.com/azure/azure-monitor/logs/data-platform-logs#table-plans
-- Retention and archive: https://learn.microsoft.com/azure/azure-monitor/logs/data-retention-archive
+- Retention and archive: https://learn.microsoft.com/azure/azure-monitor/logs/data-retention-configure
 - Azure Monitor Agent: https://learn.microsoft.com/azure/azure-monitor/agents/azure-monitor-agent-overview
-- Data collection rules: https://learn.microsoft.com/azure/azure-monitor/essentials/data-collection-rule-overview
-- Ingestion-time transformations: https://learn.microsoft.com/azure/azure-monitor/essentials/data-collection-transformations
+- Data collection rules: https://learn.microsoft.com/azure/azure-monitor/data-collection/data-collection-rule-overview
+- Ingestion-time transformations: https://learn.microsoft.com/azure/azure-monitor/data-collection/data-collection-transformations
 - Commitment tiers and pricing: https://learn.microsoft.com/azure/azure-monitor/logs/cost-logs
 - Workspace customer-managed keys: https://learn.microsoft.com/azure/azure-monitor/logs/customer-managed-keys
 - Table-level RBAC: https://learn.microsoft.com/azure/azure-monitor/logs/manage-access#table-level-azure-rbac

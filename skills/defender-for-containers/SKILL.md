@@ -118,10 +118,10 @@ networking design (`azure-network-security-design`), or generic AKS operations (
 
 ## Microsoft Learn
 - Overview: https://learn.microsoft.com/azure/defender-for-cloud/defender-for-containers-introduction
-- Enable plan: https://learn.microsoft.com/azure/defender-for-cloud/defender-for-containers-enable
+- Enable plan: https://learn.microsoft.com/azure/defender-for-cloud/defender-for-containers-deployment-overview
 - Architecture: https://learn.microsoft.com/azure/defender-for-cloud/defender-for-containers-architecture
 - Vulnerability assessment: https://learn.microsoft.com/azure/defender-for-cloud/agentless-vulnerability-assessment-azure
 - Runtime detection alerts: https://learn.microsoft.com/azure/defender-for-cloud/alerts-reference#alerts-k8scluster
 - Azure Policy for Kubernetes: https://learn.microsoft.com/azure/governance/policy/concepts/policy-for-kubernetes
-- EKS / GKE protection: https://learn.microsoft.com/azure/defender-for-cloud/defender-for-containers-enable?pivots=defender-for-container-eks
+- EKS / GKE protection: https://learn.microsoft.com/azure/defender-for-cloud/defender-for-containers-deployment-overview
 - Attack path analysis: https://learn.microsoft.com/azure/defender-for-cloud/concept-attack-path

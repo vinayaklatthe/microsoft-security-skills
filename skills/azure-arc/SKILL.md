@@ -117,4 +117,4 @@ across hybrid / multicloud machines.
 - Onboard at scale: https://learn.microsoft.com/azure/azure-arc/servers/onboard-service-principal
 - Arc-enabled Kubernetes: https://learn.microsoft.com/azure/azure-arc/kubernetes/overview
 - Azure Update Manager: https://learn.microsoft.com/azure/update-manager/overview
-- Machine configuration: https://learn.microsoft.com/azure/governance/machine-configuration/overview
+- Machine configuration: https://learn.microsoft.com/azure/governance/machine-configuration/overview/01-overview-concepts

@@ -16,7 +16,9 @@ This skill covers two complementary capabilities:
   certificates, and security baselines.
 - **Microsoft Defender Threat Intelligence (Defender TI / MDTI)** — Microsoft's
   finished-intel and raw-IOC product for adversary tracking, infrastructure pivoting, and
-  threat hunting enrichment.
+  threat hunting enrichment. The **standalone Defender TI portal was retired (August 2026)**;
+  its capabilities now live in the Microsoft Defender portal under **Threat intelligence**
+  (Overview, Intel explorer) and in entity pages via the **Threat Intelligence Insights** tab.
 
 Both feed Defender XDR and Sentinel.
 
@@ -75,12 +77,15 @@ detection rules (`sentinel-detection-engineering`), or outside-in attack surface
 
 ### Defender TI workflow
 
-1. **Intel profiles** — track named adversaries (e.g., Storm-####), threat tools, CVEs,
-   campaigns. Subscribe relevant ones; updates surface in Defender XDR.
+1. **Intel explorer** (Defender portal → Threat intelligence) — browse and filter threat
+   actors (e.g., Storm-####), campaigns, tools, vulnerabilities, attack patterns, and
+   reports. Threat analytics reports are available directly in Intel explorer.
 
-2. **Infrastructure pivoting.** Given an indicator (IP, domain, hash), Defender TI shows
-   pDNS, WHOIS history, certificate associations, related infrastructure — pivot to find
-   adversary infrastructure your SIEM hasn't seen yet.
+2. **Infrastructure pivoting.** Given an indicator (IP, domain, URL, file), the entity
+   page's **Threat Intelligence Insights** tab shows reputation, attributed reports, and
+   infrastructure relationships (pDNS, WHOIS, certificates) — pivot to find adversary
+   infrastructure your SIEM hasn't seen yet. Update runbooks and bookmarks that still point
+   at the retired standalone portal.
 
 3. **Bring intel into hunting.**
    - Defender XDR advanced hunting: indicators are first-class joinable entities.
@@ -90,9 +95,10 @@ detection rules (`sentinel-detection-engineering`), or outside-in attack surface
 4. **MDTI API for automation.** Pull articles/indicators into a SOAR playbook for
    auto-enrichment of incidents.
 
-5. **Free vs Premium.** Defender TI portal has a free tier (limited articles,
-   pivots/day); Premium unlocks unlimited pivots, full intel-profile catalogue, and API
-   throughput. Most enterprise SOC use needs Premium.
+5. **Licensing has changed.** The standalone MDTI SKUs are no longer sold; threat
+   intelligence is delivered through Defender XDR and Sentinel entitlements. Confirm which
+   capabilities (API throughput, historical data) your current licences include before
+   designing automation around them.
 
 ## Guardrails
 - **Don't drown in CVE counts.** Exposure score + threat insight is the actionable view.
@@ -105,8 +111,10 @@ detection rules (`sentinel-detection-engineering`), or outside-in attack surface
   desirable; pick the security-impacting subset.
 - **Intel without context is noise.** Don't ingest every MDTI indicator into a Sentinel
   watchlist as a "match-and-alert" — match-rate × low fidelity = alert fatigue.
-- **Confirm licensing.** MDTI Premium and the MDVM add-on are separately licensed;
-  customers often think they're included in M365 E5 — they aren't.
+- **Confirm licensing.** The MDVM add-on is separately licensed — customers often think
+  it's included in M365 E5; it isn't. Threat-intel capabilities now come with Defender XDR /
+  Sentinel entitlements, so verify API and data-retention limits rather than assuming the old
+  MDTI Premium feature set.
 - **Scan results lag** by hours; don't expect minute-by-minute vuln status.
 
 ## Common anti-patterns
@@ -129,7 +137,8 @@ detection rules (`sentinel-detection-engineering`), or outside-in attack surface
 - `Roll out CIS Windows baseline assessment across 30,000 endpoints.`
 - `Wire MDVM remediation requests to Intune and an ITSM ticket queue.`
 - `Pivot from a suspicious domain to related adversary infrastructure using MDTI.`
-- `Connect MDTI Premium to Sentinel and build a hunting workbook.`
+- `Bring Microsoft threat intelligence into Sentinel and build a hunting workbook.`
+- `Migrate our analyst runbooks off the retired standalone Defender TI portal.`
 - `Pilot block-vulnerable-apps for outdated Java runtimes on dev machines.`
 - `Build a quarterly executive exposure-score and intel-profile briefing.`
 
@@ -140,6 +149,6 @@ detection rules (`sentinel-detection-engineering`), or outside-in attack surface
 - Threat insights & prioritization: https://learn.microsoft.com/defender-vulnerability-management/tvm-weaknesses
 - Security baselines assessment: https://learn.microsoft.com/defender-vulnerability-management/tvm-security-baselines
 - Block vulnerable apps: https://learn.microsoft.com/defender-vulnerability-management/tvm-block-vuln-apps
-- Defender TI overview: https://learn.microsoft.com/defender/threat-intelligence/what-is-microsoft-defender-threat-intelligence-defender-ti
-- Intel profiles: https://learn.microsoft.com/defender/threat-intelligence/using-tags
+- Threat intelligence in the Defender portal: https://learn.microsoft.com/defender-xdr/defender-threat-intelligence
+- Intel explorer: https://learn.microsoft.com/defender-xdr/threat-intelligence-explorer
 - MDTI in Sentinel: https://learn.microsoft.com/azure/sentinel/understand-threat-intelligence
